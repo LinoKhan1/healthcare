@@ -90,27 +90,57 @@ const Home = () => {
                     {/** About Section */}
                     <section className="section">
                         <div className="about-section">
+                            <h1>
+                                Fall in love with your doctor’s office
+                            </h1>
+                            <p>
+                                We accept most major health insurance plans for scheduled in-office and remote visits just like a typical doctor’s office, but we make it faster, easier, and more enjoyable to get care.
+
+
+                            </p>
+                            <h3> See if we're in network with your insurance</h3>
                             <div className="row">
                                 <div className="col">
+                                    <img src="" alt="" />
+                                    <p>Same/next-day appointments, in person or over video, that start on time</p>
+                                    <h3>Learn more</h3>
 
                                 </div>
                                 <div className="col">
+                                    <img src="" alt="" />
+                                    <p>Longer appointments so you don’t feel rushed</p>
+                                    <h3>Discover the difference</h3>
 
 
                                 </div>
                                 <div className="col">
+                                    <img src="" alt="" />
+                                    <p>Drop-in lab services at our offices to save you extra trips</p>
+                                    <h3>Explore lab services</h3>
 
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col">
+                                    <img src="" alt="" />
+                                    <p>Covering everything from physicals and chronic care to mental health</p>
+                                    <h3>Explore care</h3>
 
                                 </div>
                                 <div className="col">
+                                    <img src="" alt="" />
+                                    <p>Primary care offices in many US cities</p>
+                                    <h3>Visit us</h3>
 
 
                                 </div>
                                 <div className="col">
+                                    <img src="" alt="" />
+                                    <p>
+
+                                        Compassionate providers who are experts at medicine and caring
+                                    </p>
+                                    <h3>Find a provider</h3>
 
                                 </div>
                             </div>
@@ -124,13 +154,29 @@ const Home = () => {
                         <div className="membership-section">
                             <div className="row">
                                 <div className="col">
+                                    <h1>
+                                        Membership gives you access to our app where you can:
+                                    </h1>
+                                    <ul>
+                                        <li>
+                                            Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                        </li>
+                                        <li>Send and receive secure messages with a provider</li>
+                                        <li>Easily access your health records and care plans</li>
+                                        <li>Request prescription refills and renewals</li>
+                                        <li>Book an in-person or remote visit in a state where we have offices</li>
+                                    </ul>
 
                                 </div>
                                 <div className="col">
+                                    <img src="" alt="" />
 
                                 </div>
                             </div>
                             <div className="row">
+                                <h1>Membership costs only $199/year.</h1>
+                                <h2>Learn more about membership </h2>
+                                <button>Join now</button>
 
                             </div>
                         </div>
@@ -140,6 +186,7 @@ const Home = () => {
                     {/** Testimonial Section */}
                     <section className="section">
                         <div className="testimonial-section">
+                            <h1>See what makes One Medical different</h1>
 
                         </div>
 
@@ -147,20 +194,28 @@ const Home = () => {
 
                     {/** Partners Section */}
                     <section className="section">
-                        <div className="row">
-                            <div className="col">
+                        <div className="partners-section">
+                            <h1>We’re an employee benefit at 8,500+ companies
+                            </h1>
+                            <div className="row">
 
-                            </div>
-                            <div className="col">
+                                <div className="col">
 
-                            </div>
-                            <div className="col">
+                                </div>
+                                <div className="col">
 
-                            </div>
-                            <div className="col">
+                                </div>
+                                <div className="col">
 
+                                </div>
+                                <div className="col">
+
+                                </div>
                             </div>
+
                         </div>
+
+
                     </section>
 
 
