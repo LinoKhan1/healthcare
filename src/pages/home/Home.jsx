@@ -30,6 +30,7 @@ const Home = () => {
 
                                 </div>
                                 <div className="col">
+                                    <img src="" alt="" />
 
                                 </div>
 
@@ -44,16 +45,42 @@ const Home = () => {
                         <div className="services-section">
                             <div className="row">
                                 <div className="col">
+                                    <img src="" alt="" />
+                                    <h1>
+                                        FLU SEASON
+                                    </h1>
+                                    <h2>
+                                        Book your stress-free flu shot today
+                                    </h2>
+                                    <h3>
+                                        Learn more Clicking here takes you to the Same-day care at One Medical page.
+                                    </h3>
+
 
                                 </div>
                                 <div className="col">
+                                    <img src="" alt="" />
+                                    <h1>ONE MEDICAL KIDS</h1>
+                                    <h2>A healthy school year starts here</h2>
+                                    <h3>Learn more Clicking here takes you to the Same-day care at One Medical page.</h3>
 
                                 </div>
                                 <div className="col">
+                                    <img src="" alt="" />
+                                    <h1>AMAZON PHARMACY</h1>
+                                    <h2>Finally, a pharmacy that really delivers</h2>
+                                    <h3>Learn more Clicking here takes you to the Same-day care at One Medical page.</h3>
 
                                 </div>
                             </div>
                             <div className="row">
+                                <h1>
+
+                                    Get care today for vaccinations
+                                </h1>
+                                <h3>
+                                    See all our services
+                                </h3>
 
                             </div>
                         </div>
