@@ -1,4 +1,6 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './home.scss';
 
 const Home = () => {
 
@@ -11,7 +13,7 @@ const Home = () => {
                         <div className="hero-section">
                             <div className="row">
                                 <div className="col">
-                                    <h1>
+                                    <h1 className="display-1">
                                         Healthcare just got less painful
                                     </h1>
                                     <p>
@@ -43,7 +45,7 @@ const Home = () => {
                     {/** Services Section */}
                     <section className="section">
                         <div className="services-section">
-                            <div className="row">
+                            <div className="row service-preview">
                                 <div className="col">
                                     <img src="" alt="" />
                                     <h1>
@@ -53,7 +55,7 @@ const Home = () => {
                                         Book your stress-free flu shot today
                                     </h2>
                                     <h3>
-                                        Learn more Clicking here takes you to the Same-day care at One Medical page.
+                                        Learn more 
                                     </h3>
 
 
@@ -62,19 +64,19 @@ const Home = () => {
                                     <img src="" alt="" />
                                     <h1>ONE MEDICAL KIDS</h1>
                                     <h2>A healthy school year starts here</h2>
-                                    <h3>Learn more Clicking here takes you to the Same-day care at One Medical page.</h3>
+                                    <h3>Learn more </h3>
 
                                 </div>
                                 <div className="col">
                                     <img src="" alt="" />
                                     <h1>AMAZON PHARMACY</h1>
                                     <h2>Finally, a pharmacy that really delivers</h2>
-                                    <h3>Learn more Clicking here takes you to the Same-day care at One Medical page.</h3>
+                                    <h3>Learn more </h3>
 
                                 </div>
                             </div>
-                            <div className="row">
-                                <h1>
+                            <div className="row view-services">
+                                <h1 className="display-1">
 
                                     Get care today for vaccinations
                                 </h1>
@@ -90,7 +92,7 @@ const Home = () => {
                     {/** About Section */}
                     <section className="section">
                         <div className="about-section">
-                            <h1>
+                            <h1 className="display-1">
                                 Fall in love with your doctor’s office
                             </h1>
                             <p>

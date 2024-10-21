@@ -1,0 +1,125 @@
+// Global styles (will remove it from home.scss)
+@import url('./font.css');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Ginto Regular';
+
+}
+
+/* Section */
+.section {
+    position: relative;
+    padding: 75px 50px;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+p,
+li,
+a,
+button {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'GT-Super Regular';
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-family: 'Ginto Regular';
+
+}
+
+h3 {
+    font-size: 1rem;
+    font-family: 'Ginto Regular';
+
+}
+
+p,
+li,
+a {
+    font-size: 1rem;
+    font-family: 'Ginto Regular';
+
+}
+
+button {
+    font-size: 1.2rem;
+    background-color: #005450;
+    color: #fff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 36px;
+    font-family: 'Ginto Regular';
+
+
+}
+
+/* Hero Section */
+.hero-section {
+    h1 {
+        color: #0578FF;
+
+    }
+}
+
+
+/* Services */
+.services-section {
+    .service-preview {
+
+        h1,
+        h2,
+        h3 {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            color: #004D49;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-family: 'GT-Super Regular';
+            color: #005450;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+
+        }
+
+    }
+
+
+    /* View Services */
+    .view-services {
+        text-align: center;
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        h1 {
+            color: #005450;
+        }
+    }
+}
+
+/* About Section */
+.about-section{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
