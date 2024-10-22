@@ -32,6 +32,10 @@
     src: url('../../assets/fonts/GT-Super/GT-Super/GT-Super-Display-Regular-Trial.otf');
 }
 @font-face {
+    font-family: 'GT-Super Bold';
+    src: url('../../assets/fonts/GT-Super/GT-Super/GT-Super-Display-Bold-Trial.otf');
+}
+@font-face {
     font-family: 'GET-Super Light';
     src: url('../../assets/fonts/GT-Super/GT-Super/GT-Super-Display-Light-Trial.otf');
 }

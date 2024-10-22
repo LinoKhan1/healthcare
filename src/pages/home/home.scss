@@ -6,7 +6,6 @@ html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: 'Ginto Regular';
 
 }
 
@@ -26,6 +25,8 @@ a,
 button {
     margin-top: 24px;
     margin-bottom: 24px;
+    font-family: 'GT-Super Regular';
+
 }
 
 h1 {
@@ -34,33 +35,34 @@ h1 {
 }
 
 h2 {
-    font-size: 1.4rem;
-    font-family: 'Ginto Regular';
+    font-size: 2rem;
+    font-family: 'GT-Super Regular';
 
 }
 
 h3 {
-    font-size: 1rem;
-    font-family: 'Ginto Regular';
+    font-size: 1.2rem;
+    font-family: 'GT-Super Regular';
+    color: #068466;
 
 }
 
 p,
 li,
 a {
-    font-size: 1rem;
-    font-family: 'Ginto Regular';
+    font-size: 1.4rem;
+    font-family: 'GT-Super Regular';
 
 }
 
 button {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     background-color: #005450;
     color: #fff;
     padding: 14px 32px;
     border: none;
     border-radius: 36px;
-    font-family: 'Ginto Regular';
+    font-family: 'GT-Super Regular';
 
 
 }
@@ -71,18 +73,20 @@ button {
         color: #0578FF;
 
     }
+    background-color: #f4f4f4;
 }
 
 
 /* Services */
 .services-section {
 
-    .section{
+    .section {
         padding-left: 0;
         padding-right: 0;
+        padding-top: 0;
     }
-    
-    
+
+
     .service-preview {
         background-color: #e8f8f5;
         padding: 0 50px;
@@ -96,7 +100,8 @@ button {
 
         h1 {
             font-size: 1.2rem;
-            color: #004D49;
+            color: #068466;
+
         }
 
         h2 {
@@ -109,14 +114,16 @@ button {
             font-size: 1rem;
 
         }
-        img{
+
+        img {
             border-radius: 25px;
         }
-        .col{
+
+        .col {
             padding: 25px;
             position: relative;
             margin-top: -75px;
-            
+
         }
 
     }
@@ -136,8 +143,110 @@ button {
 }
 
 /* About Section */
-.about-section{
+.about-section {
+
     text-align: center;
-    width: 60%;
     margin: auto;
+
+    h1 {
+        color: #005450;
+
+    }
+
+    .preview {
+        width: 60%;
+        margin: auto;
+        padding: 50px 0;
+    }
+}
+
+/** Membership Section */
+.membership-section {
+
+    .section {
+        padding: 75px 0;
+    }
+
+    .list-options {
+        padding: 0 50px;
+    }
+
+    h1 {
+        color: #005450;
+
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+
+        .check {
+            margin-right: 8px;
+            color: #005450;
+
+        }
+    }
+
+    .join {
+        text-align: center;
+
+        h1 {
+            color: #fff;
+        }
+
+        position: relative;
+        color: #fff;
+        margin: 75px 0;
+        padding: 75px 0;
+        background: linear-gradient(180deg, #005450 56.17%, #abcc76 215.69%);
+
+        button {
+            background-color: #FFC776;
+            color: #004D49;
+            padding: 14px 32px;
+            width: 15%;
+            margin: auto;
+
+
+        }
+    }
+}
+
+/** Testimonial */
+.testimonial-section {
+    text-align: center;
+
+    h1 {
+        color: #068466;
+    }
+}
+
+/* Partner */
+.partners-section {
+    text-align: center;
+
+    h1 {
+        color: #005450;
+    }
+
+    .brand-icons {
+        display: flex;
+        padding: 50px 0;
+        justify-content: center;
+        /* Center the icons */
+        align-items: center;
+        /* Vertically align icons */
+        gap: 100px;
+        /* Add space between icons */
+    }
+
+    .icon {
+        /* Optionally add some styling for the icons here */
+        color: #068466;
+        /* Change color if needed */
+    }
 }
