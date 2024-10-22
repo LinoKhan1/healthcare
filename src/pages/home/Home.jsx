@@ -1,6 +1,9 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.scss';
+import Care_one from '../../assets/images/care_one.png';
+import Care_two from '../../assets/images/care_two.png';
+import Care_three from '../../assets/images/care_three.png';
 
 const Home = () => {
 
@@ -43,11 +46,13 @@ const Home = () => {
                     </section>
 
                     {/** Services Section */}
-                    <section className="section">
-                        <div className="services-section">
+
+                    <div className="services-section">
+                        <section className="section">
                             <div className="row service-preview">
+                              
                                 <div className="col">
-                                    <img src="" alt="" />
+                                    <img className="img-fluid" src={Care_three} alt="" />
                                     <h1>
                                         FLU SEASON
                                     </h1>
@@ -55,20 +60,20 @@ const Home = () => {
                                         Book your stress-free flu shot today
                                     </h2>
                                     <h3>
-                                        Learn more 
+                                        Learn more
                                     </h3>
 
 
                                 </div>
                                 <div className="col">
-                                    <img src="" alt="" />
+                                    <img className="img-fluid" src={Care_one} alt="" />
                                     <h1>ONE MEDICAL KIDS</h1>
                                     <h2>A healthy school year starts here</h2>
                                     <h3>Learn more </h3>
 
                                 </div>
                                 <div className="col">
-                                    <img src="" alt="" />
+                                    <img className="img-fluid" src={Care_two} alt="" />
                                     <h1>AMAZON PHARMACY</h1>
                                     <h2>Finally, a pharmacy that really delivers</h2>
                                     <h3>Learn more </h3>
@@ -85,9 +90,10 @@ const Home = () => {
                                 </h3>
 
                             </div>
-                        </div>
+                        </section>
+                    </div>
 
-                    </section>
+
 
                     {/** About Section */}
                     <section className="section">

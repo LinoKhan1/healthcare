@@ -76,7 +76,16 @@ button {
 
 /* Services */
 .services-section {
+
+    .section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    
     .service-preview {
+        background-color: #e8f8f5;
+        padding: 0 50px;
 
         h1,
         h2,
@@ -97,8 +106,17 @@ button {
         }
 
         h3 {
-            font-size: 1.2rem;
+            font-size: 1rem;
 
+        }
+        img{
+            border-radius: 25px;
+        }
+        .col{
+            padding: 25px;
+            position: relative;
+            margin-top: -75px;
+            
         }
 
     }
