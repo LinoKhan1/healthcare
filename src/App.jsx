@@ -5,6 +5,7 @@ import Home from './pages/home/Home';
 import Overview from './pages/business/Overview';
 import Contact from './pages/contact/Contact';
 import Blog from './pages/blog/Blog';
+import './styles/global.scss';
 
 
 function App() {
