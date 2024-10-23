@@ -1,0 +1,42 @@
+
+/* styles/fonts.css */
+/* Ginto Font Family */
+@font-face {
+    font-family: 'Ginto Black' ;
+    src: url('../../assets/fonts/ginto-font-family/ABCGintoNord-Black-Trial-BF651b7b7719b0f.otf');
+}
+@font-face{
+    font-family: 'Ginto Bold';
+    src: url('../../assets/fonts/ginto-font-family/ABCGintoNord-Bold-Trial-BF651b7b7670e10.otf')
+}
+@font-face {
+    font-family: 'Ginto Medium';
+    src: url('../../assets/fonts/ginto-font-family/ABCGintoNord-Medium-Trial-BF651b7b7839fc0.otf');
+}
+@font-face {
+    font-family: 'Ginto Normal Regular';
+    src: url('../../assets/fonts/ginto-font-family/ABCGintoNormal-Regular-Trial-BF651b7b7846685.otf');
+}
+@font-face {
+    font-family: 'Ginto Regular';
+    src: url('../../assets/fonts/ginto-font-family/ABCGintoNord-Regular-Trial-BF651b7b7786b8a.otf');
+}
+
+@font-face {
+    font-family: 'Ginto Light';
+    src: url('../../assets/fonts/ginto-font-family/ABCGintoNord-Light-Trial-BF651b7b774e227.otf');
+}
+
+/* GT-Super */
+@font-face {
+    font-family: 'GT-Super Regular';
+    src: url('../../assets/fonts/GT-Super/GT-Super/GT-Super-Display-Regular-Trial.otf');
+}
+@font-face {
+    font-family: 'GT-Super Bold';
+    src: url('../../assets/fonts/GT-Super/GT-Super/GT-Super-Display-Bold-Trial.otf');
+}
+@font-face {
+    font-family: 'GET-Super Light';
+    src: url('../../assets/fonts/GT-Super/GT-Super/GT-Super-Display-Light-Trial.otf');
+}
