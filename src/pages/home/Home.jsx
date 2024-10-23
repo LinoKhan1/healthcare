@@ -8,9 +8,7 @@ import Care_three from '../../assets/images/care_three.png';
 import Membership from '../../assets/images/membership.png';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faMedrt, faAirbnb, faGoogle, faMedium } from '@fortawesome/free-brands-svg-icons';
-
-
-
+import '../../styles/global.scss';
 
 const Home = () => {
 
@@ -30,7 +28,7 @@ const Home = () => {
                                     <p>
                                         Now Amazon Prime members can add a One Medical membership for only $9/month or $99/year.*
                                     </p>
-                                    <button>Get started on Amazon</button>
+                                    <button className="primary-btn">Get started on Amazon</button>
                                     <p>
                                         *Purchase terms apply.
                                     </p>
@@ -226,7 +224,7 @@ const Home = () => {
                             <div className="row join">
                                 <h1 className="display-1">Membership costs only $199/year.</h1>
                                 <h2>Learn more about membership </h2>
-                                <button>Join now</button>
+                                <button className="secondary-btn">Join now</button>
 
                             </div>
                         </section>
