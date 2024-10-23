@@ -1,4 +1,4 @@
-/* Footer CSS */
+// layout.scss
 
 body,
 html {
@@ -6,6 +6,40 @@ html {
     margin: 0;
 }
 
+/* Navbar */
+.navbar {
+    .container-fluid {
+        padding: 0px 50px;
+        margin: 0;
+        .navbar-brand{
+            color: #005450;
+            font-size: 3rem;
+        }
+        .navbar-brand, li{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.navbar .nav-link {
+    margin-left: 15px;
+    /* Add space between nav links */
+}
+
+.navbar .btn {
+    /* Ensure button has space from links */
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #005450;
+    border: none;
+    border-radius: 36px;
+    padding: 14px 32px;
+    margin-top: -10px;
+
+}
+
+/* Footer CSS */
 .footer-component {
     .section {
         padding: 75px 0;
@@ -79,16 +113,18 @@ html {
     }
 
 }
-.copyright-section{
+
+.copyright-section {
     padding-top: 75px;
     color: #abcc76;
 
-    li{
+    li {
         font-size: 1rem;
         margin-top: 0;
         margin-bottom: 8px;
     }
-    p{
+
+    p {
         font-size: 1rem;
         margin-bottom: 0;
     }

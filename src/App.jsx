@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Home from './pages/home/Home';
 import Overview from './pages/business/Overview';
 import Contact from './pages/contact/Contact';
 import Blog from './pages/blog/Blog';
-import './styles/global.scss';
 
 
 function App() {
