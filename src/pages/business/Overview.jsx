@@ -3,6 +3,18 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { faMedrt } from "@fortawesome/free-brands-svg-icons";
+import Value_img1 from '../../assets/images/value_one.png';
+import Value_img2 from '../../assets/images/value_two.png';
+import Value_img3 from '../../assets/images/value_three.png';
+import Blog_img1 from '../../assets/images/blog_img1.png';
+import Blog_img2 from '../../assets/images/blog_img2.png';
+import Blog_img3 from '../../assets/images/blog_img3.png';
+import Blog_img4 from '../../assets/images/blog_img4.png';
+import Blog_img5 from '../../assets/images/blog_img5.png';
+import Blog_img6 from '../../assets/images/blog_img6.png';
+
+import './business.scss';
+import TestimonialCarousel from "./TestimonialCarousel";
 
 const Overview = () => {
 
@@ -45,29 +57,29 @@ const Overview = () => {
                             </div>
                             <div className="row">
                                 <div className="col">
-                                    <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                    <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                     <p>In-network primary care at offices in many U.S. cities with onsite labs</p>
                                     <h3>Learn about our locations</h3>
                                 </div>
                                 <div className="col">
-                                    <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                    <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                     <p>In-network primary care at offices in many U.S. cities with onsite labs</p>
                                     <h3>Learn about virtual care </h3>
                                 </div>
                                 <div className="col">
-                                    <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                    <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                     <p>Pediatric and Family Care</p>
                                     <h3>One Medical Kids</h3>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col">
-                                    <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                    <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                     <p>Integrated mental health with coaching and therapy</p>
                                     <h3>Mindset by One Medical</h3>
                                 </div>
                                 <div className="col">
-                                    <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                    <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                     <p>Chronic condition management and prevention program</p>
                                     <h3>Impact by One Care Medical</h3>
                                 </div>
@@ -99,9 +111,7 @@ const Overview = () => {
                                 <h1 className="display-1">We work with 8,500+ organizations of all shapes and sizes</h1>
 
                             </div>
-                            <div className="carousel">
 
-                            </div>
 
 
                         </section>
@@ -115,19 +125,19 @@ const Overview = () => {
                             </div>
                             <div className="row">
                                 <div className="col">
-                                    <img src="" alt="" />
+                                    <img className="img-fluid" src={Value_img1} alt="" />
                                     <h2>Easy access to care</h2>
                                     <p>Same/next-day appointments and 24/7 virtual care</p>
 
                                 </div>
                                 <div className="col">
-                                    <img src="" alt="" />
+                                    <img className="img-fluid" src={Value_img2} alt="" />
                                     <h2>Happy, engaged employees</h2>
                                     <p>90+ Net Promoter Score and 9 of 10 clients renew 1</p>
 
                                 </div>
                                 <div className="col">
-                                    <img src="" alt="" />
+                                    <img className="img-fluid" src={Value_img3} alt="" />
                                     <h2>Demonstrated cost savings</h2>
                                     <p>8%+ savings in total cost of care 2</p>
 
@@ -149,9 +159,7 @@ const Overview = () => {
                     {/** Testimonial Section */}
                     <div className="testimonial-section">
                         <section className="section">
-                            <div className="carousel">
-
-                            </div>
+                           <TestimonialCarousel/>
 
                         </section>
                     </div>
@@ -160,7 +168,7 @@ const Overview = () => {
                         <section className="section">
                             <div className="row">
                                 <div className="col-lg-6">
-                                    <h1>Technology designed for modern life</h1>
+                                    <h1 className="display-1">Technology designed for modern life</h1>
                                     <ul>
                                         <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
                                             Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
@@ -203,19 +211,19 @@ const Overview = () => {
                                 </div>
                                 <div className="row">
                                     <div className="col">
-                                        <img src="" alt="" />
+                                        <img className="img-fluid" src={Blog_img1} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
                                     </div>
                                     <div className="col">
-                                        <img src="" alt="" />
+                                        <img className="img-fluid" src={Blog_img2} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
                                     </div>
                                     <div className="col">
-                                        <img src="" alt="" />
+                                        <img className="img-fluid" src={Blog_img3} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
@@ -230,19 +238,19 @@ const Overview = () => {
                                 </div>
                                 <div className="row">
                                     <div className="col">
-                                        <img src="" alt="" />
+                                        <img src={Blog_img4} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
                                     </div>
                                     <div className="col">
-                                        <img src="" alt="" />
+                                        <img src={Blog_img5} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
                                     </div>
                                     <div className="col">
-                                        <img src="" alt="" />
+                                        <img src={Blog_img6} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
@@ -258,7 +266,7 @@ const Overview = () => {
                     <div className="contact-section">
                         <section className="section">
                             <h1 className="display-1">Help your employees stay healthy and happy</h1>
-                            <button>Get in touch</button>
+                            <button className="secondary-btn">Get in touch</button>
 
                         </section>
                     </div>

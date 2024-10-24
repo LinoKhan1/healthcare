@@ -1,0 +1,297 @@
+// business.scss
+// Overview Page
+.overview-page {
+
+    // Hero Section
+    .hero-section {
+        background-image: url("../../assets/images/overview-hero-img.png");
+        background-size: cover;
+
+        h1 {
+            line-height: 1;
+        }
+
+    }
+
+    // About Section
+    .about-section {
+        .title {
+            text-align: center;
+
+            h1 {
+                color: #005450;
+                width: 70%;
+                margin: auto;
+            }
+        }
+
+        .row {
+            margin: 50px 0;
+            text-align: center;
+
+            .col {
+                .icon {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+
+    // Offer Section
+    .offer-section {
+        background-color: #005450;
+        color: #fff;
+
+        .row {
+            .col-lg-3 {
+                display: flex;
+                justify-content: center;
+                /* Center horizontally */
+                align-items: center;
+
+                button {
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    /** Industry Section */
+    .industry-section {
+        .title {
+            text-align: center;
+
+            h1 {
+                width: 70%;
+                margin: auto;
+                color: #005450;
+            }
+        }
+
+
+    }
+}
+
+
+
+// Value Section
+.value-section {
+    .section {
+        padding: 75px 0;
+        padding-bottom: 0;
+    }
+
+    .title {
+        text-align: center;
+
+        h1 {
+            width: 70%;
+            margin: auto;
+        }
+    }
+
+    .row {
+        margin-top: 50px;
+        padding: 0 75px;
+        text-align: center;
+
+
+        .col {
+            img {
+                border-radius: 50%;
+                width: 70%;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    // View results
+    .view-results {
+        background-color: #f1dfca;
+        color: #005450;
+        padding: 75px 75px;
+
+        h1 {
+            text-align: left;
+        }
+
+        .col-lg-3 {
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+        }
+
+
+    }
+}
+
+// Blog Section
+.blog-section{
+    img{
+        width: 80%;
+    }
+    .blog-preview{
+        .title{
+            text-align: center;
+            h1{
+                width: 40%;
+                margin: auto;
+                color: #005450;
+            }
+        }
+        .row{
+            margin-top:50px;
+        }
+    }
+}
+
+// Testimonial
+.testimonial-section{
+    background-color: #EEF6F4;
+    padding: 50px 0;
+
+}
+.carousel-container {
+    position: relative;
+    /* Ensure this container is a positioning reference */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .title {
+        font-style: italic;
+        color: #555;
+    }
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+.name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #005450;
+    border: 1px solid #005450;
+    padding: 10px;
+    width: 75px;
+    /* Ensuring a perfect circle */
+    height: 75px;
+    /* Ensuring a perfect circle */
+    border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    /* Make sure arrows are above other elements */
+}
+
+.prev {
+    left: 20px;
+    /* Ensures it's within the container and visible */
+}
+
+.next {
+    right: 20px;
+    /* Ensures it's within the container and visible */
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #005450;
+    color: #fff;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* Contact Section */
+.contact-section{
+    background-color: #005450;
+    text-align: center;
+    color: #fff;
+    h1{
+        width: 70%;
+        margin: auto;
+    }
+}
+
+// Result Page
+
+
+// Mental Health Page
