@@ -10,8 +10,8 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faMedrt, faAirbnb, faGoogle, faMedium } from '@fortawesome/free-brands-svg-icons';
 import '../../styles/global.scss';
 
+  
 const Home = () => {
-
     return (
         <>
             <div className="home-page">
@@ -283,7 +283,6 @@ const Home = () => {
         </>
 
     );
-
 }
 
 export default Home;
