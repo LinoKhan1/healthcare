@@ -8,9 +8,10 @@ import Care_three from '../../assets/images/care_three.png';
 import Membership from '../../assets/images/membership.png';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faMedrt, faAirbnb, faGoogle, faMedium } from '@fortawesome/free-brands-svg-icons';
+import Medical from '../../assets/video/medical.mp4';
 import '../../styles/global.scss';
 
-  
+
 const Home = () => {
     return (
         <>
@@ -238,6 +239,13 @@ const Home = () => {
                         <section className="section">
                             <h1>See what makes One Medical different</h1>
                             <div className="testimonial-video">
+                                <video width="1200" controls>
+                                    <source src={Medical} type="video/mp4" />
+
+                                    Your browser does not support the video tag.
+
+                                </video>
+
 
                             </div>
                         </section>
