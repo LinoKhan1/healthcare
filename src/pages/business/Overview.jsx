@@ -1,4 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { faMedrt } from "@fortawesome/free-brands-svg-icons";
 
 const Overview = () => {
 
@@ -12,39 +16,60 @@ const Overview = () => {
                         <section className="section">
                             <div className="row">
                                 <div className="col-lg-6">
+                                    <h1 className="display-1">
+                                        The primary care benefit employees love
+                                    </h1>
+                                    <p>
+                                        Attract and retain top talent with a modern healthcare benefit (and doctor’s office) that helps your team stay healthy and happy.
+                                    </p>
+                                    <span>
+                                        <button className="primary-btn">Get in touch</button>
+                                        <button className="primary-btn">See our results</button>
 
-                                </div>
-                                <div className="col-lg-6">
-
+                                    </span>
+                                    <span>
+                                        <p>Activating a sponsored membership? </p><Link to="">Click here</Link>
+                                    </span>
                                 </div>
                             </div>
-
-
                         </section>
                     </div>
                     {/** About Section */}
                     <div className="about-section">
                         <section className="section">
                             <div className="title">
+                                <h1 className="display-1">
+                                    A modern benefit for physical and mental health
+                                </h1>
 
                             </div>
                             <div className="row">
                                 <div className="col">
-
+                                    <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                    <p>In-network primary care at offices in many U.S. cities with onsite labs</p>
+                                    <h3>Learn about our locations</h3>
                                 </div>
                                 <div className="col">
-
+                                    <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                    <p>In-network primary care at offices in many U.S. cities with onsite labs</p>
+                                    <h3>Learn about virtual care </h3>
                                 </div>
                                 <div className="col">
-
+                                    <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                    <p>Pediatric and Family Care</p>
+                                    <h3>One Medical Kids</h3>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col">
-
+                                    <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                    <p>Integrated mental health with coaching and therapy</p>
+                                    <h3>Mindset by One Medical</h3>
                                 </div>
                                 <div className="col">
-
+                                    <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                    <p>Chronic condition management and prevention program</p>
+                                    <h3>Impact by One Care Medical</h3>
                                 </div>
                             </div>
 
@@ -55,9 +80,11 @@ const Overview = () => {
                         <section className="section">
                             <div className="row">
                                 <div className="col-lg-9">
+                                    <h1 className="display-1">One Medical now offers direct primary care</h1>
 
                                 </div>
                                 <div className="col-lg-3">
+                                    <button className="secondary-btn">Learn More</button>
 
                                 </div>
                             </div>
@@ -69,6 +96,7 @@ const Overview = () => {
                     <div className="industry-section">
                         <section className="section">
                             <div className="title">
+                                <h1 className="display-1">We work with 8,500+ organizations of all shapes and sizes</h1>
 
                             </div>
                             <div className="carousel">
@@ -82,25 +110,36 @@ const Overview = () => {
                     <div className="value-section">
                         <section className="section">
                             <div className="title">
+                                <h1 className="display-1">Good for the health of your teams and your bottom line</h1>
 
                             </div>
                             <div className="row">
                                 <div className="col">
+                                    <img src="" alt="" />
+                                    <h2>Easy access to care</h2>
+                                    <p>Same/next-day appointments and 24/7 virtual care</p>
 
                                 </div>
                                 <div className="col">
+                                    <img src="" alt="" />
+                                    <h2>Happy, engaged employees</h2>
+                                    <p>90+ Net Promoter Score and 9 of 10 clients renew 1</p>
 
                                 </div>
                                 <div className="col">
+                                    <img src="" alt="" />
+                                    <h2>Demonstrated cost savings</h2>
+                                    <p>8%+ savings in total cost of care 2</p>
 
                                 </div>
                             </div>
                             <div className="row view-results">
                                 <div className="col-lg-9">
+                                    <h1 className="display-1">Learn more about the value we bring to your team</h1>
 
                                 </div>
                                 <div className="col-lg-3">
-
+                                    <button className="primary-btn">See our results</button>
                                 </div>
 
                             </div>
@@ -121,9 +160,33 @@ const Overview = () => {
                         <section className="section">
                             <div className="row">
                                 <div className="col-lg-6">
+                                    <h1>Technology designed for modern life</h1>
+                                    <ul>
+                                        <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                            Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                        </span></li>
+                                        <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                            Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                        </span></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                            Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                        </span></li>
+                                        <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                            Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                        </span></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                            Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                        </span></li>
+                                    </ul>
+
 
                                 </div>
                                 <div className="col-lg-6">
+                                    <img src="" alt="" />
 
                                 </div>
                             </div>
@@ -135,35 +198,58 @@ const Overview = () => {
                         <section className="section">
                             <div className="blog-preview">
                                 <div className="title">
+                                    <h1 className="display-1">The latest from One Medical</h1>
 
                                 </div>
                                 <div className="row">
                                     <div className="col">
+                                        <img src="" alt="" />
+                                        <h3>One Medical Report</h3>
+                                        <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
                                     </div>
                                     <div className="col">
+                                        <img src="" alt="" />
+                                        <h3>One Medical Report</h3>
+                                        <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
                                     </div>
                                     <div className="col">
+                                        <img src="" alt="" />
+                                        <h3>One Medical Report</h3>
+                                        <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
                                     </div>
                                 </div>
+                                <button className="primary-btn">See more</button>
                             </div>
                             <div className="blogs">
                                 <div className="title">
+                                    <h1 className="display-1">Blog</h1>
 
                                 </div>
                                 <div className="row">
                                     <div className="col">
+                                        <img src="" alt="" />
+                                        <h3>One Medical Report</h3>
+                                        <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
                                     </div>
                                     <div className="col">
+                                        <img src="" alt="" />
+                                        <h3>One Medical Report</h3>
+                                        <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
                                     </div>
                                     <div className="col">
+                                        <img src="" alt="" />
+                                        <h3>One Medical Report</h3>
+                                        <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
                                     </div>
                                 </div>
+                                <button className="primary-btn">See more</button>
+
                             </div>
 
                         </section>
@@ -171,6 +257,8 @@ const Overview = () => {
                     {/** Contact Section */}
                     <div className="contact-section">
                         <section className="section">
+                            <h1 className="display-1">Help your employees stay healthy and happy</h1>
+                            <button>Get in touch</button>
 
                         </section>
                     </div>
