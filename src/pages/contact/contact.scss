@@ -1,0 +1,78 @@
+// Conatct Page 
+
+.hero-section {
+
+    background-image: url('../../assets/images/contact-hero-img.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 200px 0;
+    text-align: center;
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h3 {
+        color: #fff;
+    }
+
+    .arrow-down {
+        position: absolute;
+
+        bottom: -150px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+        animation: circular 2s infinite;
+
+        &:hover {
+            color: #004D49;
+        }
+    }
+
+    @keyframes circular {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        50% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        51% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+}
+
+.help-section,
+.contact-info-section {
+    .section {
+        width: 70%;
+        margin: auto;
+        color: #004D49;
+    }
+}
+.contact-info-section{
+    .section{
+        padding-top:0;
+    }
+}
+
+.member-section{
+    background-color: #005450;
+    color: #fff;
+    text-align: center;
+    h1{
+        width: 50%;
+        margin: auto;
+    }
+}
