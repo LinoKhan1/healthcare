@@ -6,9 +6,9 @@ import Care_one from '../../../assets/images/value_one.png';
 import Care_two from '../../../assets/images/value_two.png';
 import Care_three from '../../../assets/images/value_three.png';
 
-import './result.scss';
+import './mental.scss';
 
-const Result = ({ title, children }) => {
+const Mental = ({ title, children }) => {
     const scrollToHelpSection = () => {
         document.querySelector(".help-section").scrollIntoView({ behavior: "smooth" });
     };
@@ -177,4 +177,4 @@ const Result = ({ title, children }) => {
 
 }
 
-export default Result;
+export default Mental;

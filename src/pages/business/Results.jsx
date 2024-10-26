@@ -1,6 +1,6 @@
 import React from "react";
 
-const MentalHealth = () => {
+const Results = () => {
 
     return (
         <div>
@@ -10,4 +10,4 @@ const MentalHealth = () => {
 
 }
 
-export default MentalHealth;
+export default Results;
