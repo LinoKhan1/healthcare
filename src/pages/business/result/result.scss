@@ -1,0 +1,164 @@
+// Hero Section
+.hero-section {
+    padding: 150px 0;
+    background-image: url('../../../assets/images/mental-hero-img.png');
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+    h1 {
+        width: 70%;
+        margin: auto;
+        font-size: 6rem;
+    }
+
+    .arrow-down {
+        position: absolute;
+
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+        animation: circular 2s infinite;
+
+        &:hover {
+            color: #004D49;
+        }
+    }
+
+    @keyframes circular {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        50% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        51% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+// Help section
+.help-section {
+    .help-preview {
+        text-align: center;
+
+        p {
+            color: #004D49;
+            width: 60%;
+            margin: auto;
+        }
+
+        h1 {
+            color: #004D49;
+        }
+    }
+
+    .row {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 50px;
+
+        .col {
+            h2{
+                color: #004D49;
+            }
+            .image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 70%;
+                    border-radius: 50%;
+
+                }
+            }
+
+        }
+    }
+}
+
+// Book Section
+.book-section{
+    background-color: #005450;
+    color: #fff;
+    .col-lg-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+// Areas Section
+.areas-section{
+    background-color: #eff5e5;
+
+    .row{
+        display: flex;
+        flex: 1;
+        .col-lg-6{
+            padding: 50px;
+            h1{
+                color: #004D49;
+                line-height: 1;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    margin-bottom: 16px;
+                    margin-top: 0;
+                }
+            }
+        }
+
+    }
+    
+
+}
+// Testimonial Section
+.testimonial-section{
+    background-color: #004D49;
+    color: #fff;
+    .title{
+        text-align: center;
+        h1{
+            width: 70%;
+            margin: auto;
+        }
+    }
+
+}
+
+// FAQ Section
+.faq-section{
+    h1{
+        text-align: center;
+        color: #004D49;
+    }
+    .accordion{
+        width: 70%;
+        margin: auto;
+        .accordion-item{
+            border: none;
+        }
+    }
+    
+   
+}

@@ -32,7 +32,7 @@ h1 {
     font-family: 'GT-Super Regular';
 }
 
-h2 {
+h2, .accordion-button {
     font-size: 2rem;
     font-family: 'GT-Super Regular';
 
@@ -47,6 +47,7 @@ h3 {
 
 p,
 li,
+.accordion-body,
 a {
     font-size: 1.4rem;
     font-family: 'GT-Super Regular';
