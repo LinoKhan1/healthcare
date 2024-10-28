@@ -1,0 +1,35 @@
+// blog.scss
+
+// Hero Section
+.blog-page{
+    .hero-section{
+        text-align: center;
+        color: #005450;
+        h1{
+            font-size: 6rem;
+        }
+    }
+}
+
+// Blog section
+.blog-section{
+
+    .col{
+        span{
+            display: flex;
+            align-items: center;
+            p{
+                margin-left: 50px;
+            }
+        }
+    }
+    .services-section{
+        background-color: #abcc76;
+        color: #005450;
+        padding: 150px 0;
+        margin: 75px 0;
+        text-align: center;
+    }
+
+
+}
