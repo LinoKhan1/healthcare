@@ -1,55 +1,59 @@
 // Hero Section
-.hero-section {
-    padding: 150px 0;
-    background-image: url('../../../assets/images/mental-hero-img.png');
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-
-    h1 {
-        width: 70%;
-        margin: auto;
-        font-size: 6rem;
-    }
-
-    .arrow-down {
-        position: absolute;
-
-        bottom: -100px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 2rem;
+.mental-page{
+    .hero-section {
+        padding: 150px 0;
+        background-image: url('../../../assets/images/mental-hero-img.png');
+        background-size: cover;
+        text-align: center;
         color: #fff;
-        cursor: pointer;
-        animation: circular 2s infinite;
-
-        &:hover {
-            color: #004D49;
+    
+        h1 {
+            width: 70%;
+            margin: auto;
+            font-size: 6rem;
+        }
+    
+        .arrow-down {
+            position: absolute;
+    
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+            animation: circular 2s infinite;
+    
+            &:hover {
+                color: #004D49;
+            }
+        }
+    
+        @keyframes circular {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+    
+            50% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+    
+            51% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+    
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     }
 
-    @keyframes circular {
-        0% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        50% {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        51% {
-            opacity: 0;
-            transform: translateY(-20px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
 }
+
 
 // Help section
 .help-section {
@@ -133,6 +137,7 @@
 
 }
 // Testimonial Section
+
 .testimonial-section{
     background-color: #004D49;
     color: #fff;

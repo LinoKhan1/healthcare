@@ -16,7 +16,7 @@ const Mental = ({ title, children }) => {
 
     return (
         <div>
-            <div className="result-page">
+            <div className="mental-page">
                 <div className="main">
                     <div className="hero-section">
                         <section className="section">

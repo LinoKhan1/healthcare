@@ -32,7 +32,7 @@ h1 {
     font-family: 'GT-Super Regular';
 }
 
-h2, .accordion-button {
+h2, .accordion-button,.circle-label {
     font-size: 2rem;
     font-family: 'GT-Super Regular';
 
@@ -48,28 +48,34 @@ h3 {
 p,
 li,
 .accordion-body,
-a {
+a, .circle-text {
     font-size: 1.4rem;
     font-family: 'GT-Super Regular';
 
 }
 /* Buttons */
-
-.primary-btn {
+button{
     font-size: 1.4rem;
-    background-color: #005450;
-    color: #fff;
     padding: 14px 32px;
     border: none;
     border-radius: 36px;
     font-family: 'GT-Super Regular';
 }
+
+.primary-btn {
+    background-color: #005450;
+    color: #fff;
+    
+}
 .secondary-btn {
-    font-size: 1.4rem;
     background-color: #FFC776;
     color: #004D49;
-    padding: 14px 32px;
-    border: none;
-    border-radius: 36px;
-    font-family: 'GT-Super Regular';
+}
+.tertiary-btn{
+    background-color: #abcc76;
+    color: #005450;
+}
+.quaternary-btn{
+    background-color: #fff;
+    color: #005450;
 }
