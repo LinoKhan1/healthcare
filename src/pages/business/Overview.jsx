@@ -27,7 +27,7 @@ const Overview = () => {
                     <div className="hero-section">
                         <section className="section">
                             <div className="row">
-                                <div className="col-lg-6">
+                                <div className="col-lg-7">
                                     <h1 className="display-1">
                                         The primary care benefit employees love
                                     </h1>
@@ -97,11 +97,8 @@ const Overview = () => {
                                 </div>
                                 <div className="col-lg-3">
                                     <button className="secondary-btn">Learn More</button>
-
                                 </div>
                             </div>
-
-
                         </section>
                     </div>
                     {/** Industry Section */}
@@ -109,11 +106,7 @@ const Overview = () => {
                         <section className="section">
                             <div className="title">
                                 <h1 className="display-1">We work with 8,500+ organizations of all shapes and sizes</h1>
-
                             </div>
-
-
-
                         </section>
                     </div>
                     {/** Value Section */}
