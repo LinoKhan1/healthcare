@@ -1,7 +1,6 @@
 // React
 import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 
 
 // Styles & CSS
@@ -53,19 +52,7 @@ const Home = React.memo(() => {
 
     return (
         <div className="home-page">
-             <Helmet>
-                <title>VitalPath Healthcare</title>
-                <meta
-                    name="description"
-                    content="VitalPath Healthcare offers personalized health services and innovative solutions tailored to enhance your wellness journey. Discover our commitment to patient-centered care and advanced medical technology."
-                />
-                <meta
-                    name="keywords"
-                    content="VitalPath Healthcare, personalized health services, patient-centered care, wellness, healthcare solutions, innovative medical technology"
-                />
-                <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://yourwebsite.com/home" />
-            </Helmet>
+
             <div className="main">
                 {/** Hero Section */}
                 <div className="hero-section">
@@ -111,7 +98,9 @@ const Home = React.memo(() => {
                             ))}
                         </div>
                         <div className="row view-services">
-                            <h1 className="display-1">Get personalized care for all your healthcare needs</h1>
+                            <div className="title">
+                                <h1 className="display-1">Get personalized care for all your healthcare needs</h1>
+                            </div>
                             <Link to="/services">
                                 <h3>
                                     See all our services

@@ -59,10 +59,11 @@ $background-gradient: linear-gradient(180deg, $main-color 56.17%, #abcc76 215.69
             h1 {
                 font-size: 1.2rem;
                 color: $accent-color;
+                margin-top: 24px;
             }
 
             h2 {
-                color: darken($main-color, 10%);
+                color: $main-color;
             }
 
             h3 {
