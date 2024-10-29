@@ -1,11 +1,17 @@
 /* home.scss */
 
+/* Variables */
+$light-gray: #f4f4f4;
+$main-color: #005450;
+$accent-color: #068466;
+$background-gradient: linear-gradient(180deg, $main-color 56.17%, #abcc76 215.69%);
+
 /* Hero Section */
 .hero-section {
-    background-color: #f4f4f4;
+    background-color: $light-gray;
 
     .section {
-        padding: 0px 0px 50px 50px;
+        padding: 0 0 50px 50px;
     }
 
     .col-lg-7 {
@@ -20,10 +26,9 @@
 
             h3 {
                 font-size: 1rem;
-                margin: 8px 0px;
+                margin: 8px 0;
                 color: #000;
             }
-
         }
     }
 
@@ -33,14 +38,11 @@
     }
 }
 
-
-/* Services */
+/* Services Section */
 .services-section {
-
     .section {
-        padding: 0px;
+        padding: 0;
     }
-
 
     .service-preview {
         background-color: #e8f8f5;
@@ -48,50 +50,38 @@
         display: flex;
         flex-wrap: wrap;
 
-        col {
-            flex: 1;
-        }
-
-
-
-        h1 {
-            font-size: 1.2rem;
-            color: #068466;
-
-        }
-
-        h2 {
-
-            color: #005450;
-        }
-
-        h3 {
-            font-size: 1rem;
-
-        }
-
-        img {
-            border-radius: 25px;
-        }
-
         .col {
+            flex: 1;
             padding: 25px;
             position: relative;
             margin-top: -75px;
 
-        }
+            h1 {
+                font-size: 1.2rem;
+                color: $accent-color;
+            }
 
+            h2 {
+                color: darken($main-color, 10%);
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            img {
+                border-radius: 25px;
+            }
+        }
     }
 
     /* View Services */
     .view-services {
         text-align: center;
-        position: relative;
         margin-top: 50px;
 
-
         h1 {
-            color: #005450;
+            color: $main-color;
         }
     }
 }
@@ -99,17 +89,15 @@
 /* About Section */
 .home-page {
     .about-section {
-
         text-align: center;
         margin: auto;
 
         .section {
-            padding: 50px 50px;
+            padding: 50px;
         }
 
         h1 {
-            color: #005450;
-
+            color: $main-color;
         }
 
         .preview {
@@ -127,15 +115,12 @@
             }
         }
     }
-
 }
 
-
-/** Membership Section */
+/* Membership Section */
 .membership-section {
-
     .section {
-        padding: 75px 0px 0px 0px;
+        padding: 75px 0 0;
     }
 
     .list-options {
@@ -149,8 +134,7 @@
     }
 
     h1 {
-        color: #005450;
-
+        color: $main-color;
     }
 
     ul {
@@ -163,74 +147,62 @@
 
         .check {
             margin-right: 8px;
-            color: #005450;
-
+            color: $main-color;
         }
     }
 
     .join {
         text-align: center;
-
-        h1 {
-            color: #fff;
-        }
-
         position: relative;
         color: #fff;
         margin: 75px 0;
         padding: 75px 0;
-        background: linear-gradient(180deg, #005450 56.17%, #abcc76 215.69%);
+        background: $background-gradient;
 
-
+        h1 {
+            color: #fff;
+        }
     }
 }
 
-/** Testimonial */
+/* Testimonial Section */
 .home-page {
     .testimonial-section {
         text-align: center;
-        .section{
-            padding: 0px 50px;
+
+        .section {
+            padding: 0 50px;
         }
 
         h1 {
-            color: #068466;
+            color: $accent-color;
         }
     }
-
 }
 
-
-/* Partner */
+/* Partner Section */
 .partners-section {
     text-align: center;
 
     h1 {
-        color: #005450;
+        color: $main-color;
     }
 
     .brand-icons {
         display: flex;
         padding: 50px 0;
         justify-content: center;
-        /* Center the icons */
         align-items: center;
-        /* Vertically align icons */
         gap: 100px;
-        /* Add space between icons */
-    }
 
-    .icon {
-        /* Optionally add some styling for the icons here */
-        color: #068466;
-        /* Change color if needed */
+        .icon {
+            color: $accent-color;
+        }
     }
 }
 
-// Media Queries
+/* Media Queries */
 @media only screen and (max-width: 1200px) {
-
-    // Membership Section
     .membership-section {
         .list-options {
             h1 {
@@ -245,8 +217,6 @@
 }
 
 @media only screen and (max-width: 992px) {
-
-    // Services section
     .services-section {
         .service-preview {
             .col {
@@ -261,7 +231,6 @@
         }
     }
 
-    // Membership Section
     .membership-section {
         .list-options {
             h1 {
@@ -276,16 +245,11 @@
                     font-size: 1.4rem;
                 }
             }
-
         }
     }
-
-
 }
 
 @media only screen and (max-width: 768px) {
-
-    // Services section
     .services-section {
         .service-preview {
             .col {
@@ -295,18 +259,15 @@
 
                 h1 {
                     font-size: 1.2rem;
-
                 }
 
                 h2 {
                     font-size: 2rem;
                 }
             }
-
         }
     }
 
-    // About Section
     .home-page {
         .about-section {
             .preview {
@@ -317,14 +278,11 @@
                 .col {
                     flex: 100%;
                     max-width: 100%;
-
                 }
             }
         }
-
     }
 
-    // Membership Section
     .membership-section {
         .list-options {
             h1 {
@@ -332,8 +290,4 @@
             }
         }
     }
-
-       
-
 }
-
