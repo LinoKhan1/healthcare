@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './business.scss'; // Import CSS for styling
-import carousel_img1 from '../../assets/images/carousel_one.jpg'
-import carousel_img2 from '../../assets/images/carousel_two.jpg'
-import carousel_img3 from '../../assets/images/carousel_three.jpg'
+import carousel_img1 from '../../assets/images/carousel_one.webp'
+import carousel_img2 from '../../assets/images/carousel_two.webp'
+import carousel_img3 from '../../assets/images/carousel_three.webp'
 
 
 const Carousel = () => {
