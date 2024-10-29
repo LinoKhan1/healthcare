@@ -1,5 +1,5 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 import './home.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Care_one from '../../assets/images/care_one.png';
@@ -9,8 +9,6 @@ import Membership from '../../assets/images/membership.png';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faMedrt, faAirbnb, faGoogle, faMedium } from '@fortawesome/free-brands-svg-icons';
 import Medical from '../../assets/video/medical.mp4';
-import '../../styles/global.scss';
-
 
 const Home = () => {
     return (
@@ -20,276 +18,234 @@ const Home = () => {
                     {/** Hero Section */}
                     <div className="hero-section">
                         <section className="section">
-
                             <div className="row">
-                                <div className="col">
-                                    <h1 className="display-1">
-                                        Healthcare just got less painful
-                                    </h1>
-                                    <p>
-                                        Now Amazon Prime members can add a One Medical membership for only $9/month or $99/year.*
-                                    </p>
-                                    <button className="primary-btn">Get started on Amazon</button>
-                                    <p>
-                                        *Purchase terms apply.
-                                    </p>
-                                    <p>
-                                        Already a One Medical member? Follow these steps to apply the Amazon Prime savings.
-                                    </p>
-                                    <p>
-                                        Have a company sponsored membership? Click here.
-                                    </p>
+                                <div className="col-lg-7">
+                                    <div className="hero-text">
+                                        <h1 className="display-1">
+                                            Experience Care with VitalPath
+                                        </h1>
+                                        <p>
+                                            VitalPath brings quality healthcare to your fingertips for an affordable monthly or annual membership.
+                                        </p>
 
+                                        <button className="primary-btn">
+                                            <Link className="link" to="/contact">
+                                                Join VitalPath Today
+                                            </Link>
+                                        </button>
+                                        <h3>
+                                            *Membership terms and conditions apply.
+                                        </h3>
+                                        <h3>
+                                            Already a member? Sign in to access exclusive benefits.
+                                        </h3>
+                                        <h3>
+                                            Have a company-sponsored membership? Click here.
+                                        </h3>
+                                    </div>
                                 </div>
-                                <div className="col">
-                                    <img src="" alt="" />
-
+                                <div className="col-lg-5 hero-image">
+                                    {/* Add an image or animation here */}
                                 </div>
-
                             </div>
                         </section>
-
-
                     </div>
 
-
                     {/** Services Section */}
-
                     <div className="services-section">
                         <section className="section">
                             <div className="row service-preview">
-
                                 <div className="col">
                                     <img className="img-fluid" src={Care_three} alt="" />
                                     <h1>
-                                        FLU SEASON
+                                        VACCINATIONS
                                     </h1>
                                     <h2>
-                                        Book your stress-free flu shot today
+                                        Book a stress-free vaccination appointment today
                                     </h2>
                                     <h3>
                                         Learn more
                                     </h3>
-
-
                                 </div>
                                 <div className="col">
                                     <img className="img-fluid" src={Care_one} alt="" />
-                                    <h1>ONE MEDICAL KIDS</h1>
-                                    <h2>A healthy school year starts here</h2>
-                                    <h3>Learn more </h3>
-
+                                    <h1>CHILDREN'S HEALTH</h1>
+                                    <h2>Supporting your child’s healthy start</h2>
+                                    <h3>Learn more</h3>
                                 </div>
                                 <div className="col">
                                     <img className="img-fluid" src={Care_two} alt="" />
-                                    <h1>AMAZON PHARMACY</h1>
-                                    <h2>Finally, a pharmacy that really delivers</h2>
-                                    <h3>Learn more </h3>
-
+                                    <h1>PHARMACY SERVICES</h1>
+                                    <h2>Convenient, reliable pharmacy delivery options</h2>
+                                    <h3>Learn more</h3>
                                 </div>
                             </div>
                             <div className="row view-services">
                                 <h1 className="display-1">
-
-                                    Get care today for
+                                    Get personalized care for
                                 </h1>
                                 <h1 className="display-1">
-                                    erectile dysfunction
-
+                                    all your healthcare needs
                                 </h1>
                                 <h3>
-                                    See all our services
+                                    <Link to="/services">
+                                        See all our services
+                                    </Link>
                                 </h3>
-
                             </div>
                         </section>
                     </div>
 
-
-
                     {/** About Section */}
-                    <section className="section">
-                        <div className="about-section">
+                    <div className="about-section">
+                        <section className="section">
                             <div className="preview">
                                 <h1 className="display-1">
-                                    Fall in love with your doctor’s office
+                                    Discover the VitalPath Difference
                                 </h1>
                                 <p>
-                                    We accept most major health insurance plans for scheduled in-office and remote visits just like a typical doctor’s office, but we make it faster, easier, and more enjoyable to get care.
-
-
+                                    VitalPath accepts most major health insurance plans for in-office and virtual appointments. We provide fast, friendly, and personalized healthcare.
                                 </p>
-                                <h3> See if we're in network with your insurance</h3>
-
+                                <h3>Check if your insurance is accepted</h3>
                             </div>
-
                             <div className="row">
                                 <div className="col">
                                     <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
-                                    <p>Same/next-day appointments, in person or over video, that start on time</p>
+                                    <p>Convenient, same-day or next-day appointments</p>
                                     <h3>Learn more</h3>
-
                                 </div>
                                 <div className="col">
                                     <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
-                                    <p>Longer appointments so you don’t feel rushed</p>
+                                    <p>Extended appointment times so you never feel rushed</p>
                                     <h3>Discover the difference</h3>
-
-
                                 </div>
                                 <div className="col">
                                     <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
-                                    <p>Drop-in lab services at our offices to save you extra trips</p>
+                                    <p>Comprehensive lab services at our locations</p>
                                     <h3>Explore lab services</h3>
-
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col">
                                     <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
-                                    <p>Covering everything from physicals and chronic care to mental health</p>
-                                    <h3>Explore care</h3>
-
+                                    <p>Access to virtual consultations and telemedicine</p>
+                                    <h3>Start a virtual visit</h3>
                                 </div>
                                 <div className="col">
                                     <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
-                                    <p>Primary care offices in many US cities</p>
-                                    <h3>Visit us</h3>
-
-
+                                    <p>Personalized healthcare plans tailored to you</p>
+                                    <h3>Get a custom plan</h3>
                                 </div>
                                 <div className="col">
                                     <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
-                                    <p>
-
-                                        Compassionate providers who are experts at medicine and caring
-                                    </p>
-                                    <h3>Find a provider</h3>
-
+                                    <p>Wellness programs for long-term health</p>
+                                    <h3>Explore wellness programs</h3>
                                 </div>
                             </div>
-
-                        </div>
-
-                    </section>
+                        </section>
+                    </div>
 
                     {/** Membership Section */}
                     <div className="membership-section">
                         <section className="section">
-
                             <div className="row list-options">
                                 <div className="col">
                                     <h1>
-                                        Membership gives you access to our app where you can:
+                                        VitalPath Membership includes:
                                     </h1>
                                     <ul>
                                         <li>
                                             <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost.
                                             </span>
-
                                         </li>
                                         <li>
                                             <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                                Schedule same/next-day appointments easily.
                                             </span>
-
                                         </li>
                                         <li>
                                             <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                                Access lab services at our offices to save you extra trips.
                                             </span>
-
                                         </li>
                                         <li>
                                             <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                                Get expert care from compassionate providers.
                                             </span>
-
                                         </li>
                                         <li>
                                             <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                                Access primary care offices in many US cities.
                                             </span>
-
+                                        </li>
+                                        <li>
+                                            <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                                Receive personalized treatment for your health needs.
+                                            </span>
                                         </li>
                                     </ul>
-                                    <h3>Learn more about One Medical membership</h3>
-
+                                    <h3>Learn more about VitalPath membership</h3>
                                 </div>
                                 <div className="col">
                                     <img className="img-fluid" src={Membership} alt="" />
-
                                 </div>
                             </div>
                             <div className="row join">
-                                <h1 className="display-1">Membership costs only $199/year.</h1>
-                                <h2>Learn more about membership </h2>
-                                <button className="secondary-btn">Join now</button>
-
+                                <div className="col">
+                                    <h1 className="display-1">Join for just $199/year.</h1>
+                                    <h2>Learn more about membership</h2>
+                                    <button className="secondary-btn">Join now</button>
+                                </div>
                             </div>
                         </section>
-
                     </div>
-
 
                     {/** Testimonial Section */}
-
                     <div className="testimonial-section">
                         <section className="section">
-                            <h1>See what makes One Medical different</h1>
+                            <h1 className="display-1">Why Patients Choose VitalPath</h1>
                             <div className="testimonial-video">
-                                <video width="1200" controls>
+                                <video width={1200} className="img-fluid" controls>
                                     <source src={Medical} type="video/mp4" />
-
                                     Your browser does not support the video tag.
-
                                 </video>
-
-
                             </div>
                         </section>
                     </div>
 
-
                     {/** Partners Section */}
-                    <section className="section">
-                        <div className="partners-section">
-                            <h1>We’re an employee benefit at 8,500+ companies
-                            </h1>
-                            <div className="row">
-
-                                <div className="brand-icons">
+                    <div className="partners-section">
+                        <section className="section">
+                            <h1 className="display-1">Trusted by Top Employers Nationwide</h1>
+                            <div className="row brand-icons" >
+                                <div className="col">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={faAirbnb} size="4x" />
                                     </span>
+                                </div>
+                                <div className="col">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={faGoogle} size="4x" />
                                     </span>
+                                </div>
+                                <div className="col">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={faMedrt} size="4x" />
                                     </span>
+                                </div>
+                                <div className="col">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={faMedium} size="4x" />
                                     </span>
                                 </div>
-                                <h3>Learn more about One Medical membership</h3>
-
                             </div>
-
-                        </div>
-
-
-                    </section>
-
-
-
-
+                            <h3>Learn more about VitalPath membership</h3>
+                        </section>
+                    </div>
                 </div>
-
             </div>
         </>
-
     );
 }
 

@@ -2,11 +2,35 @@
 
 /* Hero Section */
 .hero-section {
-    h1 {
-        color: #0578FF;
-
-    }
     background-color: #f4f4f4;
+
+    .section {
+        padding: 0px 0px 50px 50px;
+    }
+
+    .col-lg-7 {
+        .hero-text {
+            width: 80%;
+            margin: 50px 0;
+
+            h1 {
+                color: #0578FF;
+                line-height: 1;
+            }
+
+            h3 {
+                font-size: 1rem;
+                margin: 8px 0px;
+                color: #000;
+            }
+
+        }
+    }
+
+    .hero-image {
+        background-image: url('../../assets/images/home-hero-image.webp');
+        background-size: cover;
+    }
 }
 
 
@@ -14,22 +38,21 @@
 .services-section {
 
     .section {
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 0;
+        padding: 0px;
     }
 
 
     .service-preview {
         background-color: #e8f8f5;
         padding: 0 50px;
+        display: flex;
+        flex-wrap: wrap;
 
-        h1,
-        h2,
-        h3 {
-            margin-top: 24px;
-            margin-bottom: 24px;
+        col {
+            flex: 1;
         }
+
+
 
         h1 {
             font-size: 1.2rem;
@@ -38,8 +61,7 @@
         }
 
         h2 {
-            font-size: 2rem;
-            font-family: 'GT-Super Regular';
+
             color: #005450;
         }
 
@@ -61,13 +83,12 @@
 
     }
 
-
     /* View Services */
     .view-services {
         text-align: center;
         position: relative;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        margin-top: 50px;
+
 
         h1 {
             color: #005450;
@@ -76,32 +97,55 @@
 }
 
 /* About Section */
-.about-section {
+.home-page {
+    .about-section {
 
-    text-align: center;
-    margin: auto;
-
-    h1 {
-        color: #005450;
-
-    }
-
-    .preview {
-        width: 60%;
+        text-align: center;
         margin: auto;
-        padding: 50px 0;
+
+        .section {
+            padding: 50px 50px;
+        }
+
+        h1 {
+            color: #005450;
+
+        }
+
+        .preview {
+            width: 60%;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+
+            .col {
+                flex: 1;
+            }
+        }
     }
+
 }
+
 
 /** Membership Section */
 .membership-section {
 
     .section {
-        padding: 75px 0;
+        padding: 75px 0px 0px 0px;
     }
 
     .list-options {
         padding: 0 50px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .col {
+            flex: 1;
+        }
     }
 
     h1 {
@@ -137,26 +181,25 @@
         padding: 75px 0;
         background: linear-gradient(180deg, #005450 56.17%, #abcc76 215.69%);
 
-        button {
-            background-color: #FFC776;
-            color: #004D49;
-            padding: 14px 32px;
-            width: 15%;
-            margin: auto;
 
-
-        }
     }
 }
 
 /** Testimonial */
-.testimonial-section {
-    text-align: center;
+.home-page {
+    .testimonial-section {
+        text-align: center;
+        .section{
+            padding: 0px 50px;
+        }
 
-    h1 {
-        color: #068466;
+        h1 {
+            color: #068466;
+        }
     }
+
 }
+
 
 /* Partner */
 .partners-section {
@@ -183,3 +226,114 @@
         /* Change color if needed */
     }
 }
+
+// Media Queries
+@media only screen and (max-width: 1200px) {
+
+    // Membership Section
+    .membership-section {
+        .list-options {
+            h1 {
+                font-size: 3rem;
+            }
+
+            li {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    // Services section
+    .services-section {
+        .service-preview {
+            .col {
+                h1 {
+                    font-size: 1rem;
+                }
+
+                h2 {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    // Membership Section
+    .membership-section {
+        .list-options {
+            h1 {
+                font-size: 4rem;
+            }
+
+            .col {
+                flex: 100%;
+                max-width: 100%;
+
+                li {
+                    font-size: 1.4rem;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    // Services section
+    .services-section {
+        .service-preview {
+            .col {
+                flex: 100%;
+                max-width: 100%;
+                margin-bottom: 24px;
+
+                h1 {
+                    font-size: 1.2rem;
+
+                }
+
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+
+        }
+    }
+
+    // About Section
+    .home-page {
+        .about-section {
+            .preview {
+                width: 100%;
+            }
+
+            .row {
+                .col {
+                    flex: 100%;
+                    max-width: 100%;
+
+                }
+            }
+        }
+
+    }
+
+    // Membership Section
+    .membership-section {
+        .list-options {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+       
+
+}
+
