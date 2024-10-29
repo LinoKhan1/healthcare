@@ -1,5 +1,7 @@
+// React
 import React from "react";
 import { Link } from "react-router-dom";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { faMedrt } from "@fortawesome/free-brands-svg-icons";
@@ -55,30 +57,30 @@ const Overview = () => {
                                 </h1>
 
                             </div>
-                            <div className="row">
-                                <div className="col">
+                            <div className="row row-general">
+                                <div className="col col-general">
                                     <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                     <p>In-network primary care at offices in many U.S. cities with onsite labs</p>
                                     <h3>Learn about our locations</h3>
                                 </div>
-                                <div className="col">
+                                <div className="col col-general">
                                     <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                     <p>In-network primary care at offices in many U.S. cities with onsite labs</p>
                                     <h3>Learn about virtual care </h3>
                                 </div>
-                                <div className="col">
+                                <div className="col col-general">
                                     <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                     <p>Pediatric and Family Care</p>
                                     <h3>One Medical Kids</h3>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col">
+                            <div className="row row-general">
+                                <div className="col col-general">
                                     <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                     <p>Integrated mental health with coaching and therapy</p>
                                     <h3>Mindset by One Medical</h3>
                                 </div>
-                                <div className="col">
+                                <div className="col col-general">
                                     <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                     <p>Chronic condition management and prevention program</p>
                                     <h3>Impact by One Care Medical</h3>
@@ -116,20 +118,20 @@ const Overview = () => {
                                 <h1 className="display-1">Good for the health of your teams and your bottom line</h1>
 
                             </div>
-                            <div className="row">
-                                <div className="col">
+                            <div className="row row-general">
+                                <div className="col col-general">
                                     <img className="img-fluid" src={Value_img1} alt="" />
                                     <h2>Easy access to care</h2>
                                     <p>Same/next-day appointments and 24/7 virtual care</p>
 
                                 </div>
-                                <div className="col">
+                                <div className="col col-general">
                                     <img className="img-fluid" src={Value_img2} alt="" />
                                     <h2>Happy, engaged employees</h2>
                                     <p>90+ Net Promoter Score and 9 of 10 clients renew 1</p>
 
                                 </div>
-                                <div className="col">
+                                <div className="col col-general">
                                     <img className="img-fluid" src={Value_img3} alt="" />
                                     <h2>Demonstrated cost savings</h2>
                                     <p>8%+ savings in total cost of care 2</p>
@@ -144,9 +146,7 @@ const Overview = () => {
                                 <div className="col-lg-3">
                                     <button className="primary-btn">See our results</button>
                                 </div>
-
                             </div>
-
                         </section>
                     </div>
                     {/** Testimonial Section */}
@@ -202,20 +202,20 @@ const Overview = () => {
                                     <h1 className="display-1">The latest from One Medical</h1>
 
                                 </div>
-                                <div className="row">
-                                    <div className="col">
+                                <div className="row row-general">
+                                    <div className="col col-general">
                                         <img className="img-fluid" src={Blog_img1} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
                                     </div>
-                                    <div className="col">
+                                    <div className="col col-general">
                                         <img className="img-fluid" src={Blog_img2} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
 
                                     </div>
-                                    <div className="col">
+                                    <div className="col col-general">
                                         <img className="img-fluid" src={Blog_img3} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
@@ -229,20 +229,18 @@ const Overview = () => {
                                     <h1 className="display-1">Blog</h1>
 
                                 </div>
-                                <div className="row">
-                                    <div className="col">
+                                <div className="row row-general">
+                                    <div className="col col-general">
                                         <img src={Blog_img4} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
-
                                     </div>
-                                    <div className="col">
+                                    <div className="col col-general">
                                         <img src={Blog_img5} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
-
                                     </div>
-                                    <div className="col">
+                                    <div className="col col-general">
                                         <img src={Blog_img6} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
