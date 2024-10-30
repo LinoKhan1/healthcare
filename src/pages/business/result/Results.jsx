@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import RowOfCircles from "./RowOfCircles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookOpen, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import Classpass_image from '../../../assets/images/classpass.png';
-import Zendesk_image from '../../../assets/images/zendesk.png';
-import Soulcycle_image from '../../../assets/images/soulcycle.png';
+import Classpass_image from '../../../assets/images/classpass.webp';
+import Zendesk_image from '../../../assets/images/zendesk.webp';
+import Soulcycle_image from '../../../assets/images/soulcycle.webp';
 import './result.scss';
 
 const Results = () => {
