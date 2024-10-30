@@ -2,6 +2,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// Import Swiper React components
+import { Navigation, Scrollbar } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+
 // Font awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
@@ -19,11 +24,18 @@ import Blog_img5 from '../../assets/images/blog_img5.webp';
 import Blog_img6 from '../../assets/images/blog_img6.webp';
 import Membership_img from '../../assets/images/membership.webp';
 
+
+// Styles & CSS
 import './business.scss';
+import 'swiper/css';
+
+// Components
 import TestimonialCarousel from "./TestimonialCarousel";
+import { Pagination } from "react-bootstrap";
+import IndustrySection from "./Swiper.jsx";
+
 
 const Overview = () => {
-
     return (
         <>
             <div className="overview-page">
@@ -43,7 +55,6 @@ const Overview = () => {
                                     <span>
                                         <button className="primary-btn">Get in touch</button>
                                         <button className="primary-btn">See our results</button>
-
                                     </span>
                                     <span>
                                         <p>Activating a sponsored membership? </p><Link to="">Click here</Link>
@@ -59,7 +70,6 @@ const Overview = () => {
                                 <h1 className="display-1">
                                     A modern benefit for physical and mental health
                                 </h1>
-
                             </div>
                             <div className="row row-general">
                                 <div className="col col-general">
@@ -99,7 +109,6 @@ const Overview = () => {
                             <div className="row">
                                 <div className="col-lg-9">
                                     <h1 className="display-1">One Medical now offers direct primary care</h1>
-
                                 </div>
                                 <div className="col-lg-3">
                                     <button className="secondary-btn">Learn More</button>
@@ -108,13 +117,94 @@ const Overview = () => {
                         </section>
                     </div>
                     {/** Industry Section */}
-                    <div className="industry-section">
+                    <IndustrySection/>
+                   {/* <div className="industry-section">
                         <section className="section">
                             <div className="title">
                                 <h1 className="display-1">We work with 8,500+ organizations of all shapes and sizes</h1>
                             </div>
+                            <Swiper
+                                spaceBetween={20}
+                                slidesPerView={1.5}
+                                onSlideChange={() => console.log('slide change')}
+                                onSwiper={(swiper) => console.log(swiper)}
+                            >
+                                <SwiperSlide>
+                                    <div className="swiper-image">
+                                        <img className="img-fluid" src={Swiper_img1} alt="" />
+                                    </div>
+                                    <div className="swiper-text">
+                                        <ul>
+                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                            </span></li>
+                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                                Remote mental health support for anxiety and depression
+                                            </span></li>
+                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                                In-app prescription renewal requests
+                                            </span></li>
+                                        </ul>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                <div className="swiper-image">
+                                        <img className="img-fluid" src={Swiper_img2} alt="" />
+                                    </div>
+                                    <div className="swiper-text">
+                                        <ul>
+                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                            </span></li>
+                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                                Remote mental health support for anxiety and depression
+                                            </span></li>
+                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                                In-app prescription renewal requests
+                                            </span></li>
+                                        </ul>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                <div className="swiper-image">
+                                        <img className="img-fluid" src={Swiper_img3} alt="" />
+                                    </div>
+                                    <div className="swiper-text">
+                                        <ul>
+                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                            </span></li>
+                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                                Remote mental health support for anxiety and depression
+                                            </span></li>
+                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                                In-app prescription renewal requests
+                                            </span></li>
+                                        </ul>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                <div className="swiper-image">
+                                        <img className="img-fluid" src={Swiper_img4} alt="" />
+                                    </div>
+                                    <div className="swiper-text">
+                                        <ul>
+                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
+                                            </span></li>
+                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                                Remote mental health support for anxiety and depression
+                                            </span></li>
+                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
+                                                In-app prescription renewal requests
+                                            </span></li>
+                                        </ul>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
                         </section>
                     </div>
+                    */}
                     {/** Value Section */}
                     <div className="value-section">
                         <section className="section">

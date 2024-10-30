@@ -63,6 +63,66 @@ h2{
 
 }
 
+.industry-section {
+    position: relative;
+
+    .swiper {
+        margin-top: 75px;
+    }
+
+    .swiper-navigation {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        pointer-events: none;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            background: #ffffff;
+            padding: 10px;
+            color: #004D49;
+            cursor: pointer;
+            border: none;
+            pointer-events: all;
+        }
+    }
+
+    .swiper-slide {
+        .swiper-image {
+            position: relative;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .swiper-text {
+            padding: 24px 75px;
+            color: #004D49;
+
+            .slide-title {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                li {
+                    list-style: none;
+                    .check {
+                        color: #004D49;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
 
 
 // Value Section
