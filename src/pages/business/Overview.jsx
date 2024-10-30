@@ -2,9 +2,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// Font awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { faMedrt } from "@fortawesome/free-brands-svg-icons";
+
+// Images
 import Value_img1 from '../../assets/images/value_one.webp';
 import Value_img2 from '../../assets/images/value_two.webp';
 import Value_img3 from '../../assets/images/value_three.webp';
@@ -14,6 +17,7 @@ import Blog_img3 from '../../assets/images/blog_img3.webp';
 import Blog_img4 from '../../assets/images/blog_img4.webp';
 import Blog_img5 from '../../assets/images/blog_img5.webp';
 import Blog_img6 from '../../assets/images/blog_img6.webp';
+import Membership_img from '../../assets/images/membership.webp';
 
 import './business.scss';
 import TestimonialCarousel from "./TestimonialCarousel";
@@ -152,7 +156,7 @@ const Overview = () => {
                     {/** Testimonial Section */}
                     <div className="testimonial-section">
                         <section className="section">
-                           <TestimonialCarousel/>
+                            <TestimonialCarousel />
 
                         </section>
                     </div>
@@ -187,7 +191,7 @@ const Overview = () => {
 
                                 </div>
                                 <div className="col-lg-6">
-                                    <img src="" alt="" />
+                                    <img src={Membership_img} className="img-fluid" alt="" />
 
                                 </div>
                             </div>
@@ -200,7 +204,6 @@ const Overview = () => {
                             <div className="blog-preview">
                                 <div className="title">
                                     <h1 className="display-1">The latest from One Medical</h1>
-
                                 </div>
                                 <div className="row row-general">
                                     <div className="col col-general">
@@ -219,10 +222,11 @@ const Overview = () => {
                                         <img className="img-fluid" src={Blog_img3} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
-
                                     </div>
                                 </div>
-                                <button className="primary-btn">See more</button>
+                                <div className="view-more">
+                                    <button className="quaternary-btn">See more</button>
+                                </div>
                             </div>
                             <div className="blogs">
                                 <div className="title">
@@ -231,28 +235,28 @@ const Overview = () => {
                                 </div>
                                 <div className="row row-general">
                                     <div className="col col-general">
-                                        <img src={Blog_img4} alt="" />
+                                        <img className="img-fluid" src={Blog_img4} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
                                     </div>
                                     <div className="col col-general">
-                                        <img src={Blog_img5} alt="" />
+                                        <img className="img-fluid" src={Blog_img5} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
                                     </div>
                                     <div className="col col-general">
-                                        <img src={Blog_img6} alt="" />
+                                        <img className="img-fluid" src={Blog_img6} alt="" />
                                         <h3>One Medical Report</h3>
                                         <h2>Study finds 65% of workers would give up bonuses, vacation, and flexible hours for better healthcare benefits</h2>
-
                                     </div>
                                 </div>
-                                <button className="primary-btn">See more</button>
-
+                                <div className="view-more">
+                                    <button className="quaternary-btn">See more</button>
+                                </div>
                             </div>
-
                         </section>
                     </div>
+
                     {/** Contact Section */}
                     <div className="contact-section">
                         <section className="section">
