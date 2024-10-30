@@ -1,18 +1,49 @@
-import React, { useState } from "react";
+// React
+import React, { useCallback, useMemo } from "react";
 import { Accordion } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+// Font Awesome Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+
+// Assets
 import Care_one from '../../../assets/images/value_one.webp';
 import Care_two from '../../../assets/images/value_two.webp';
 import Care_three from '../../../assets/images/value_three.webp';
 import Medical from '../../../assets/video/medical.mp4';
 
+// Styles & CSS
 import './mental.scss';
 
 const Mental = ({ title, children }) => {
-    const scrollToHelpSection = () => {
+    // Memoize assets to avoid re-imports on re-render
+    const assets = useMemo(() => ({
+        Care_one,
+        Care_two,
+        Care_three,
+        Medical
+    }), []);
+
+    // Optimize scroll function with useCallback
+    const scrollToHelpSection = useCallback(() => {
         document.querySelector(".help-section").scrollIntoView({ behavior: "smooth" });
-    };
+    }, []);
+
+    // Reusable Help Section Row component
+    const HelpSectionRow = ({ imgSrc, imgAlt, heading, text }) => (
+        <div className="row row-general">
+            <div className="col col-general">
+                <div className="image">
+                    <img className="img-fluid" src={imgSrc} alt={imgAlt} loading="lazy" />
+                </div>
+            </div>
+            <div className="col col-general help-text">
+                <h2>{heading}</h2>
+                <p>{text}</p>
+            </div>
+        </div>
+    );
 
     return (
         <div>
@@ -21,12 +52,15 @@ const Mental = ({ title, children }) => {
                     <div className="hero-section">
                         <section className="section">
                             <h1>Support for Your Mental Well-Being</h1>
-                            <button className="primary-btn">Join VitalPath Today</button>
+                            <Link to="/contact">
+                                <button className="primary-btn">Join VitalPath Today</button>
+                            </Link>
                             <div className="arrow-down" onClick={scrollToHelpSection}>
                                 <FontAwesomeIcon icon={faArrowDown} />
                             </div>
                         </section>
                     </div>
+
                     <div className="help-section">
                         <section className="section">
                             <div className="help-preview">
@@ -35,41 +69,31 @@ const Mental = ({ title, children }) => {
                                     <h1 className="display-1">How VitalPath Can Help</h1>
                                 </div>
                             </div>
-                            <div className="row row-general">
-                                <div className="col col-general">
-                                    <div className="image">
-                                        <img className="img-fluid" src={Care_one} alt="Mental Health Support" />
-                                    </div>
-                                </div>
-                                <div className="col col-general help-text">
-                                    <h2>Personalized Mental Health Consultation</h2>
-                                    <p>Schedule a consultation with our experienced providers to discuss your mental and emotional health. At VitalPath, our team listens without judgment and helps create a personalized plan that may include lifestyle recommendations, therapeutic guidance, or referrals for additional support.</p>
-                                </div>
-                            </div>
-                            <div className="row row-general">
-                                <div className="col col-general">
-                                    <div className="image">
-                                        <img className="img-fluid" src={Care_two} alt="Care Options" />
-                                    </div>
-                                </div>
-                                <div className="col col-general help-text">
-                                    <h2>Guided Support and Follow-Up</h2>
-                                    <p>Our follow-up care ensures you stay on track. We’re here to support your journey, offering regular check-ins to make sure your plan evolves with you. VitalPath values every step of your mental health journey.</p>
-                                </div>
-                            </div>
-                            <div className="row row-general">
-                                <div className="col col-general">
-                                    <div className="image">
-                                        <img className="img-fluid" src={Care_three} alt="Comprehensive Approach" />
-                                    </div>
-                                </div>
-                                <div className="col col-general help-text">
-                                    <h2>Integrated Health Care</h2>
-                                    <p>Your mental and physical health are connected. VitalPath provides a holistic approach, addressing how emotional well-being impacts overall health. Our team collaborates across specialties for comprehensive care.</p>
-                                </div>
-                            </div>
+
+                            {/* Use HelpSectionRow component for each repeated section */}
+                            <HelpSectionRow
+                                imgSrc={assets.Care_one}
+                                imgAlt="Mental Health Support"
+                                heading="Personalized Mental Health Consultation"
+                                text="Schedule a consultation with our experienced providers to discuss your mental and emotional health. At VitalPath, our team listens without judgment and helps create a personalized plan that may include lifestyle recommendations, therapeutic guidance, or referrals for additional support."
+                            />
+
+                            <HelpSectionRow
+                                imgSrc={assets.Care_two}
+                                imgAlt="Care Options"
+                                heading="Guided Support and Follow-Up"
+                                text="Our follow-up care ensures you stay on track. We’re here to support your journey, offering regular check-ins to make sure your plan evolves with you. VitalPath values every step of your mental health journey."
+                            />
+
+                            <HelpSectionRow
+                                imgSrc={assets.Care_three}
+                                imgAlt="Comprehensive Approach"
+                                heading="Integrated Health Care"
+                                text="Your mental and physical health are connected. VitalPath provides a holistic approach, addressing how emotional well-being impacts overall health. Our team collaborates across specialties for comprehensive care."
+                            />
                         </section>
                     </div>
+
                     <div className="book-section">
                         <section className="section">
                             <div className="row">
@@ -77,16 +101,19 @@ const Mental = ({ title, children }) => {
                                     <h1 className="display-1">Book a Mental Health Consultation with VitalPath</h1>
                                 </div>
                                 <div className="col-lg-3">
-                                    <button className="secondary-btn">Book Now</button>
+                                    <Link to="/contact">
+                                        <button className="secondary-btn">Book Now</button>
+                                    </Link>
                                 </div>
                             </div>
                         </section>
                     </div>
+
                     <div className="areas-section">
                         <section className="section">
                             <div className="row">
                                 <div className="col-lg-6">
-                                    <img className="img-fluid" src={Care_one} alt="Areas of Support" />
+                                    <img className="img-fluid" src={assets.Care_one} alt="Areas of Support" loading="lazy" />
                                 </div>
                                 <div className="col-lg-6">
                                     <h1 className="display-1">Areas We Support</h1>
@@ -102,19 +129,21 @@ const Mental = ({ title, children }) => {
                             </div>
                         </section>
                     </div>
+
                     <div className="testimonial-section">
                         <section className="section">
                             <div className="title">
                                 <h1 className="display-1">See How We Helped Alex Find Balance and Manage Anxiety</h1>
                             </div>
                             <div className="testimonial-video">
-                                <video width={1200} className="img-fluid" controls>
-                                    <source src={Medical} type="video/mp4" />
+                                <video width={1200} className="img-fluid" controls preload="metadata">
+                                    <source src={assets.Medical} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
                         </section>
                     </div>
+
                     <div className="faq-section">
                         <section className="section">
                             <h1 className="display-1">FAQ</h1>

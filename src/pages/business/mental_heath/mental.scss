@@ -1,262 +1,203 @@
+// Variables
+$color-primary: #004D49;
+$color-secondary: #005450;
+$color-light: #eff5e5;
+$color-white: #fff;
+$spacing-section: 150px;
+$spacing-medium: 50px;
+
 // Hero Section
 .mental-page {
-    .hero-section {
-        padding: 150px 0;
-        background-image: url('../../../assets/images/mental-hero-img.webp');
-        background-size: cover;
-        text-align: center;
-        color: #fff;
+  .hero-section {
+    padding: $spacing-section 0;
+    background: url('../../../assets/images/mental-hero-img.webp') center/cover;
+    text-align: center;
+    color: $color-white;
 
-        h1 {
-            width: 70%;
-            margin: auto;
-            font-size: 6rem;
-        }
-
-        button {
-            margin-top: 50px;
-        }
-
-        .arrow-down {
-            position: absolute;
-
-            bottom: -100px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 2rem;
-            color: #fff;
-            cursor: pointer;
-            animation: circular 2s infinite;
-
-            &:hover {
-                color: #004D49;
-            }
-        }
-
-        @keyframes circular {
-            0% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-            50% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            51% {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    h1 {
+      width: 70%;
+      margin: 0 auto;
+      font-size: 6rem;
     }
 
+    button {
+      margin-top: $spacing-medium;
+    }
+
+    .arrow-down {
+      position: absolute;
+      bottom: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      color: $color-white;
+      cursor: pointer;
+      animation: circular 2s infinite;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    @keyframes circular {
+      0%, 100% { opacity: 1; transform: translateY(0); }
+      50% { opacity: 0; transform: translateY(20px); }
+      51% { opacity: 0; transform: translateY(-20px); }
+    }
+  }
 }
 
-
-// Help section
+// Help Section
 .help-section {
-    .help-preview {
-        text-align: center;
-        margin-bottom: 75px;
+  .help-preview {
+    text-align: center;
+    margin-bottom: $spacing-medium;
 
-        p {
-            color: #004D49;
-            width: 60%;
-            margin: auto;
-        }
-
-        h1 {
-            margin-top: 24px;
-            color: #004D49;
-        }
+    p, h1 {
+      color: $color-primary;
+      margin: 0 auto;
     }
 
-    .row {
-        width: 70%;
-        margin: auto;
-        margin-bottom: 50px;
+    p { width: 60%; }
 
-        .col {
-            h2,p {
-                color: #004D49;
-            }
+    h1 { margin-top: 24px; }
+  }
 
-            .image {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+  .row {
+    width: 70%;
+    margin: 0 auto $spacing-medium;
 
-                img {
-                    width: 70%;
-                    border-radius: 50%;
+    .col {
+      h2, p { color: $color-primary; }
 
-                }
-            }
+      .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+        img {
+          width: 70%;
+          border-radius: 50%;
         }
+      }
     }
+  }
 }
 
 // Book Section
 .book-section {
-    background-color: #005450;
-    color: #fff;
+  background-color: $color-secondary;
+  color: $color-white;
 
-    .col-lg-3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .col-lg-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-
 
 // Areas Section
 .areas-section {
-    background-color: #eff5e5;
+  background-color: $color-light;
 
-    .row {
-        display: flex;
-        flex: 1;
+  .row {
+    display: flex;
+    flex: 1;
 
-        .col-lg-6 {
-            padding: 50px;
+    .col-lg-6 {
+      padding: $spacing-medium;
 
-            h1 {
-                color: #004D49;
-                line-height: 1;
-            }
+      h1 {
+        color: $color-primary;
+        line-height: 1;
+      }
 
-            ul {
-                margin: 0;
-                padding: 0;
+      ul {
+        padding: 0;
+        margin: 0;
 
-                li {
-                    list-style: none;
-                    margin-bottom: 16px;
-                    margin-top: 0;
-                    color: #004D49;
-                }
-            }
+        li {
+          list-style: none;
+          margin: 0 0 16px;
+          color: $color-primary;
         }
-
+      }
     }
-
-
+  }
 }
 
 // Testimonial Section
-
 .testimonial-section {
-    background-color: #004D49;
-    color: #fff;
+  background-color: $color-primary;
+  color: $color-white;
 
-    .title {
-        text-align: center;
+  .title {
+    text-align: center;
 
-        h1 {
-            width: 70%;
-            margin: auto;
-        }
+    h1 {
+      width: 70%;
+      margin: 0 auto;
     }
-    .testimonial-video{
-        text-align: center;
-        margin-top: 50px;
-    }
+  }
 
+  .testimonial-video {
+    text-align: center;
+    margin-top: $spacing-medium;
+  }
 }
 
 // FAQ Section
 .faq-section {
-    h1 {
-        text-align: center;
-        color: #004D49;
-        margin-bottom: 24px;
+  h1 {
+    text-align: center;
+    color: $color-primary;
+    margin-bottom: 24px;
+  }
+
+  .accordion {
+    width: 70%;
+    margin: 0 auto;
+
+    .accordion-item {
+      border: none;
     }
-
-    .accordion {
-        width: 70%;
-        margin: auto;
-
-        .accordion-item {
-            border: none;
-        }
-    }
-
-
+  }
 }
 
-// Media quries
-@media only screen and (max-width:1200px){
-
-    // Help Section
-    .help-section{
-        .row{
-            width: 100% ;
-        }
-    }
+// Media Queries
+@media only screen and (max-width: 1200px) {
+  .help-section {
+    .row { width: 100%; }
+  }
 }
 
-@media only screen and (max-width: 992px){
-
-    // FAQ Section
-    .faq-section{
-        .accordion{
-            width: 90%;
-        }
-       
-    }
+@media only screen and (max-width: 992px) {
+  .faq-section .accordion { width: 90%; }
 }
 
 @media only screen and (max-width: 768px) {
+  // Hero Section
+  .hero-section h1 {
+    font-size: 4rem;
+    width: 100%;
+  }
 
-    // Hero Section
-    .mental-page {
-        .hero-section {
-            h1 {
-                font-size: 4rem;
-                width: 100%;
-            }
-        }
+  // Help Section
+  .help-preview {
+    p { width: 100%; }
+    h1 { margin: 24px 0; }
+  }
 
-    }
+  .help-text {
+    text-align: center;
+    margin-top: 24px;
+  }
 
-    // Help Section
-    .help-section {
-        .help-preview {
-            p {
-                width: 100%;
-            }
-            h1{
-                margin-top: 24px;
-                margin-bottom: 24px;
-            }
-        }
-        .help-text{
-            text-align: center;
-            margin-top: 24px;
-        }
-    }
+  // Book Section
+  .book-section .row .col-lg-9 {
+    text-align: center;
+  }
 
-    // Book Section
-    .book-section{
-        .row{
-            .col-lg-9{
-                text-align: center;
-            }
-        }
-    }
-
-    // FAQ Section
-    .faq-section{
-        .accordion{
-            width: 100%;
-        }
-       
-    }
+  // FAQ Section
+  .faq-section .accordion { width: 100%; }
 }
