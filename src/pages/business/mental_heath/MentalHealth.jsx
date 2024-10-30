@@ -5,6 +5,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Care_one from '../../../assets/images/value_one.webp';
 import Care_two from '../../../assets/images/value_two.webp';
 import Care_three from '../../../assets/images/value_three.webp';
+import Medical from '../../../assets/video/medical.mp4';
 
 import './mental.scss';
 
@@ -12,7 +13,6 @@ const Mental = ({ title, children }) => {
     const scrollToHelpSection = () => {
         document.querySelector(".help-section").scrollIntoView({ behavior: "smooth" });
     };
-
 
     return (
         <div>
@@ -36,8 +36,8 @@ const Mental = ({ title, children }) => {
                                     <h1 className="display-1">How we can help</h1>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col">
+                            <div className="row row-general">
+                                <div className="col col-general">
                                     <div className="image">
                                         <img className="img-fluid" src={Care_one} alt="" />
 
@@ -45,13 +45,13 @@ const Mental = ({ title, children }) => {
                                     </div>
 
                                 </div>
-                                <div className="col">
+                                <div className="col col-general help-text">
                                     <h2>Mental Health Visit</h2>
                                     <p>Book a Mental Health Visit and talk to a primary care provider about how you’re feeling, physically and mentally. They’ll listen without judgment and help you make a plan to feel better — whether that’s recommending lifestyle changes, managing medications, or referring you to a therapist or psychiatrist.</p>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col">
+                            <div className="row row-general">
+                                <div className="col col-general">
                                     <div className="image">
                                         <img className="img-fluid" src={Care_two} alt="" />
 
@@ -59,20 +59,20 @@ const Mental = ({ title, children }) => {
                                     </div>
 
                                 </div>
-                                <div className="col">
+                                <div className="col col-general help-text">
                                     <h2>Mental Health Visit</h2>
                                     <p>Book a Mental Health Visit and talk to a primary care provider about how you’re feeling, physically and mentally. They’ll listen without judgment and help you make a plan to feel better — whether that’s recommending lifestyle changes, managing medications, or referring you to a therapist or psychiatrist.</p>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col">
+                            <div className="row row-general">
+                                <div className="col col-general">
                                     <div className="image">
                                         <img className="img-fluid" src={Care_three} alt="" />
 
                                     </div>
 
                                 </div>
-                                <div className="col">
+                                <div className="col col-general help-text">
                                     <h2>Mental Health Visit</h2>
                                     <p>Book a Mental Health Visit and talk to a primary care provider about how you’re feeling, physically and mentally. They’ll listen without judgment and help you make a plan to feel better — whether that’s recommending lifestyle changes, managing medications, or referring you to a therapist or psychiatrist.</p>
                                 </div>
@@ -88,13 +88,11 @@ const Mental = ({ title, children }) => {
                             <div className="row">
                                 <div className="col-lg-9">
                                     <h1 className="display-1">Book a Mental Health Visit to talk to a primary care provider</h1>
-
                                 </div>
                                 <div className="col-lg-3">
                                     <button className="secondary-btn">Book now</button>
-
                                 </div>
-                                
+
                             </div>
                         </section>
 
@@ -115,7 +113,7 @@ const Mental = ({ title, children }) => {
                                         <li>Depression or feeling sad</li>
                                         <li>Grief and suvivorship</li>
                                         <li>Insomnia</li>
-                                        
+
 
                                     </ul>
                                 </div>
@@ -130,9 +128,12 @@ const Mental = ({ title, children }) => {
                                 <h1 className="display-1">See how we helped Whitney take control of her anxiety</h1>
 
                             </div>
-                            <video src="">
-
-                            </video>
+                            <div className="testimonial-video">
+                                <video width={1200} className="img-fluid" controls>
+                                    <source src={Medical} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                         </section>
 
                     </div>
