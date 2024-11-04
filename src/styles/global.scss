@@ -1,6 +1,22 @@
 // Global styles
 @import url('./fonts.css');
 
+// Variables
+$primary-color: #005450;
+$secondary-color: #FFC776;
+$tertiary-color: #abcc76;
+$quaternary-color: #fff;
+$text-color: #068466;
+$font-family: 'GT-Super Regular';
+
+$font-size-h1: 4rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.2rem;
+$font-size-p: 1.4rem;
+$button-padding: 14px 32px;
+$border-radius: 36px;
+
+// Base styles
 body,
 html {
     margin: 0;
@@ -8,13 +24,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/*Section*/
-.section {
-    position: relative;
-    padding: 75px 50px;
-}
-
-/* Typography */
+// Typography
 h1,
 h2,
 h3,
@@ -22,32 +32,35 @@ p,
 li,
 a,
 button {
-    margin-top: 24px;
     margin-bottom: 24px;
-    font-family: 'GT-Super Regular';
+    font-family: $font-family;
 }
 
 h1 {
-    font-size: 4rem;
-    font-family: 'GT-Super Regular';
+    font-size: $font-size-h1;
+    line-height: 1;
 }
 
+<<<<<<< HEAD
 h2, .accordion-button,.circle-label {
     font-size: 2rem;
     font-family: 'GT-Super Regular';
 
+=======
+h2 {
+    font-size: $font-size-h2;
+>>>>>>> develop
 }
 
 h3 {
-    font-size: 1.2rem;
-    font-family: 'GT-Super Regular';
-    color: #068466;
-
+    font-size: $font-size-h3;
+    color: $text-color;
 }
 
 p,
 li,
 .accordion-body,
+<<<<<<< HEAD
 a, .circle-text {
     font-size: 1.4rem;
     font-family: 'GT-Super Regular';
@@ -79,3 +92,74 @@ button{
     background-color: #fff;
     color: #005450;
 }
+=======
+a,
+.circle-text {
+    font-size: $font-size-p;
+}
+
+// Buttons
+button {
+    font-size: $font-size-p;
+    padding: $button-padding;
+    border: none;
+    border-radius: $border-radius;
+}
+
+// Button Variants
+.primary-btn {
+    background-color: $primary-color;
+    color: $quaternary-color;
+}
+
+.secondary-btn {
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+
+.tertiary-btn {
+    background-color: $tertiary-color;
+    color: $primary-color;
+}
+
+.quaternary-btn {
+    background-color: $quaternary-color;
+    color: $primary-color;
+}
+
+// Sections
+.section {
+    position: relative;
+    padding: 75px 50px;
+}
+
+// Rows & Columns
+.row-general {
+    display: flex;
+    flex-wrap: wrap;
+
+    .col-general {
+        flex: 1;
+    }
+}
+
+// Title
+.title {
+    text-align: center;
+
+    h1 {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+// Media Queries
+@media only screen and (max-width: 768px) {
+    .row-general {
+        .col-general {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+}
+>>>>>>> develop
