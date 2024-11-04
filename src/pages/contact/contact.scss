@@ -1,37 +1,27 @@
-// Conatct Page 
+// Variables
+$primary-color: #004D49;
+$secondary-color: #005450;
+$text-color-light: #fff;
+$breakpoint-md: 992px;
+$breakpoint-sm: 768px;
 
-.hero-section {
-
-    background-image: url('../../assets/images/contact-hero-img.jpg');
-    background-size: cover;
-    color: #fff;
-    padding: 200px 0;
+// Mixins
+@mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
 
-    h1 {
-        font-size: 6rem;
+@mixin responsive-font($size-md, $size-sm) {
+    font-size: $size-md;
+    @media (max-width: $breakpoint-md) {
+        font-size: $size-sm;
     }
+}
 
-    h3 {
-        color: #fff;
-    }
-
-    .arrow-down {
-        position: absolute;
-
-        bottom: -150px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 2rem;
-        color: #fff;
-        cursor: pointer;
-        animation: circular 2s infinite;
-
-        &:hover {
-            color: #004D49;
-        }
-    }
-
+@mixin scroll-animation {
+    animation: circular 2s infinite;
     @keyframes circular {
         0% {
             opacity: 1;
@@ -50,60 +40,74 @@
             transform: translateY(0);
         }
     }
-
 }
 
+// Hero Section
+.hero-section {
+    background: url('../../assets/images/contact-hero-img.webp') no-repeat center/cover;
+    color: $text-color-light;
+    padding: 200px 0;
+    @include center-content;
+    flex-direction: column;
+
+    h1 {
+        @include responsive-font(6rem, 4rem);
+    }
+
+    h3 {
+        color: $text-color-light;
+    }
+
+    .arrow-down {
+        position: absolute;
+        bottom: -150px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        color: $text-color-light;
+        cursor: pointer;
+        @include scroll-animation;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+// Help and Contact Info Sections
 .help-section,
 .contact-info-section {
     .section {
         width: 70%;
         margin: auto;
-        color: #004D49;
-    }
-}
-.contact-info-section{
-    .section{
-        padding-top:0;
+        color: $primary-color;
+
+        @media (max-width: $breakpoint-md) {
+            width: 100%;
+        }
+        h1{
+            margin-bottom: 50px;
+        }
     }
 }
 
-.member-section{
-    background-color: #005450;
-    color: #fff;
-    text-align: center;
-    h1{
+.contact-info-section .section {
+    padding-top: 0;
+}
+
+// Membership Section
+.member-section {
+    background-color: $secondary-color;
+    color: $text-color-light;
+    @include center-content;
+    flex-direction: column;
+
+    h1 {
         width: 50%;
         margin: auto;
-    }
-}
 
-/* Media queries  */
-
-@media only screen and (max-width:992px){
-
-   
-    // Contact Info Section 
-    .help-section, .contact-info-section{
-        .section{
-            width: 100%;        
-        }
-    }
-
-    // Hero Section
-    .hero-section{
-        h1{
-            font-size: 4rem;
-        }
-    }
-
-
-}
-
-@media only screen and (max-width:768px){
-    .member-section{
-        h1{
+        @media (max-width: $breakpoint-sm) {
             width: 100%;
         }
     }
-
 }
