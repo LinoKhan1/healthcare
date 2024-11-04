@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Accordion } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import Care_one from '../../../assets/images/value_one.png';
-import Care_two from '../../../assets/images/value_two.png';
-import Care_three from '../../../assets/images/value_three.png';
+import Care_one from '../../../assets/images/value_one.webp';
+import Care_two from '../../../assets/images/value_two.webp';
+import Care_three from '../../../assets/images/value_three.webp';
 
 import './mental.scss';
 

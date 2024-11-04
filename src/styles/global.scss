@@ -41,15 +41,8 @@ h1 {
     line-height: 1;
 }
 
-<<<<<<< HEAD
-h2, .accordion-button,.circle-label {
-    font-size: 2rem;
-    font-family: 'GT-Super Regular';
-
-=======
 h2 {
     font-size: $font-size-h2;
->>>>>>> develop
 }
 
 h3 {
@@ -60,39 +53,6 @@ h3 {
 p,
 li,
 .accordion-body,
-<<<<<<< HEAD
-a, .circle-text {
-    font-size: 1.4rem;
-    font-family: 'GT-Super Regular';
-
-}
-/* Buttons */
-button{
-    font-size: 1.4rem;
-    padding: 14px 32px;
-    border: none;
-    border-radius: 36px;
-    font-family: 'GT-Super Regular';
-}
-
-.primary-btn {
-    background-color: #005450;
-    color: #fff;
-    
-}
-.secondary-btn {
-    background-color: #FFC776;
-    color: #004D49;
-}
-.tertiary-btn{
-    background-color: #abcc76;
-    color: #005450;
-}
-.quaternary-btn{
-    background-color: #fff;
-    color: #005450;
-}
-=======
 a,
 .circle-text {
     font-size: $font-size-p;
@@ -162,4 +122,3 @@ button {
         }
     }
 }
->>>>>>> develop
