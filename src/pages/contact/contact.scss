@@ -76,3 +76,34 @@
         margin: auto;
     }
 }
+
+/* Media queries  */
+
+@media only screen and (max-width:992px){
+
+   
+    // Contact Info Section 
+    .help-section, .contact-info-section{
+        .section{
+            width: 100%;        
+        }
+    }
+
+    // Hero Section
+    .hero-section{
+        h1{
+            font-size: 4rem;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width:768px){
+    .member-section{
+        h1{
+            width: 100%;
+        }
+    }
+
+}
