@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import RowOfCircles from "./RowOfCircles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookOpen, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Classpass_image from '../../../assets/images/classpass.webp';
 import Zendesk_image from '../../../assets/images/zendesk.webp';
 import Soulcycle_image from '../../../assets/images/soulcycle.webp';
 import './result.scss';
 
 const Results = () => {
-
     const [activeSection, setActiveSection] = useState(1);
 
     const handleSectionClick = (index) => {
@@ -24,51 +23,41 @@ const Results = () => {
                         <section className="section">
                             <div className="row">
                                 <div className="col-lg-7">
-                                    <h1 className="display-1">A primary care benefit with proven benefits</h1>
+                                    <h1 className="display-1">Your Pathway to Enhanced Healthcare</h1>
                                     <span>
-                                        <button className="tertiary-btn">Get in touch</button>
-                                        <button className="quaternary-btn">See what we do</button>
+                                        <button className="tertiary-btn">Contact Us</button>
+                                        <button className="quaternary-btn">Learn More</button>
                                     </span>
-
                                 </div>
-                                <div className="col-lg-5">
-
-                                </div>
+                                <div className="col-lg-5"></div>
                             </div>
                         </section>
-
                     </div>
+
                     {/** Result Section */}
                     <div className="result-section">
                         <section className="section">
                             <div className="title">
-                                <h1 className="display-1">We deliver better health and better care
-                                </h1>
-
+                                <h1 className="display-1">Delivering Healthier Outcomes and Superior Care</h1>
                             </div>
                             <RowOfCircles />
                         </section>
                     </div>
-                    {/** Illustration */}
+
+                    {/** Illustration Section */}
                     <div className="illustration-section">
                         <section className="section">
                             <div className="title">
-                                <h1 className="display-1">Keep your team and your CFO happy</h1>
+                                <h1 className="display-1">Maximize Satisfaction for Employees and Stakeholders</h1>
                             </div>
                             <div className="container my-4">
                                 <div className="row">
                                     {/* Left Column */}
                                     <div className="col-lg-6 text-left">
                                         <h1>8% +</h1>
-                                        <h2>Savings in total cost of care 7</h2>
-                                        <h3>Client: Professional Service Company</h3>
-                                        <p>Customer since 2015; currently covering 23k lives across all One Medical markets</p>
-
-                                        {/* Arrows */}
-                                        <div className="arrows d-flex justify-content-between">
-                                            <button className="arrow-btn">&larr;</button>
-                                            <button className="arrow-btn">&rarr;</button>
-                                        </div>
+                                        <h2>Reduction in Overall Care Costs</h2>
+                                        <h3>Client: VitalPath Corporate Solutions</h3>
+                                        <p>Partnered since 2015; serving over 23,000 individuals across all VitalPath markets.</p>
                                     </div>
 
                                     {/* Right Column with Three Sections */}
@@ -80,15 +69,14 @@ const Results = () => {
                                                     className="section-header d-flex justify-content-between align-items-center"
                                                     onClick={() => handleSectionClick(section)}
                                                 >
-                                                    <span>{section * 25}%</span>
-                                                    <span>Section {section} Header</span>
+                                                    <span><h2>{section * 25}%</h2></span>
+                                                    <span><p>Section {section} Overview</p></span>
                                                 </div>
-
                                                 {/* Section Body */}
                                                 {activeSection === section && (
                                                     <div className="section-body">
                                                         <div className="circle-info">
-                                                            <p>This is the content of section {section}. It provides additional information.</p>
+                                                            <p>This is the content of section {section}. It provides insights and valuable information.</p>
                                                         </div>
                                                     </div>
                                                 )}
@@ -97,14 +85,16 @@ const Results = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="metric-section">
-                                <div className="title">
-                                    <h1 className="display-1">Better access, better experience</h1>
-                                </div>
-                                <RowOfCircles />
+                        </section>
+                    </div>
 
+                    {/** Metric Section */}
+                    <div className="metric-section">
+                        <section className="section">
+                            <div className="title">
+                                <h1 className="display-1">Improved Access, Enhanced Experience</h1>
                             </div>
-
+                            <RowOfCircles />
                         </section>
                     </div>
 
@@ -112,66 +102,58 @@ const Results = () => {
                     <div className="testimonial-section">
                         <section className="section">
                             <div className="title">
-                                <h1 className="display-1">Hear from our clients</h1>
+                                <h1 className="display-1">What Our Partners Say</h1>
                             </div>
-                            <div className="row">
-                                <div className="col">
-                                    <video src=""></video>
-                                    <h2>zendesk</h2>
-                                    <p>Zendesk gives employees a cutting-edge healthacre experience</p>
+                            <div className="row row-general">
+                                <div className="col col-general">
+                                    <img className="img-fluid" src={Zendesk_image} alt="Zendesk" />
+                                    <h2>Zendesk</h2>
+                                    <p>VitalPath provides employees with a cutting-edge healthcare experience.</p>
                                 </div>
-                                <div className="col">
-                                    <video src="">
-
-                                    </video>
-                                    <h2>classpass</h2>
-                                    <p>ClassPass helps employees get modern care that fits into their busy lives</p>
+                                <div className="col col-general">
+                                    <img className="img-fluid" src={Classpass_image} alt="ClassPass" />
+                                    <h2>ClassPass</h2>
+                                    <p>ClassPass empowers employees to access modern care that fits into their busy schedules.</p>
                                 </div>
-                                <div className="col">
-                                    <video src=""></video>
-                                    <h2>SOULCYCLE</h2>
-                                    <p>Soulcycle keeps their team, including instructiors, healthy with 24/7 care.</p>
+                                <div className="col col-general">
+                                    <img className="img-fluid" src={Soulcycle_image} alt="SoulCycle" />
+                                    <h2>SoulCycle</h2>
+                                    <p>SoulCycle keeps their team healthy with accessible 24/7 care.</p>
                                 </div>
                             </div>
-
                         </section>
                     </div>
 
-                    {/** Books Section */}
+                    {/** Insights Section */}
                     <div className="books-section">
                         <section className="section">
                             <div className="title">
-                                <h1 className="display-1">Get insights on creating a healthy workforce</h1>
+                                <h1 className="display-1">Explore Insights for a Healthier Workforce</h1>
                             </div>
                             <div className="row">
                                 <div className="col">
                                     <span className="icon-text">
-                                        <FontAwesomeIcon icon={faBookOpen} />
                                         <p>Ebook</p>
                                     </span>
                                     <h1>Navigating the Deferred Care Crisis</h1>
                                     <div className="arrow-right">
                                         <FontAwesomeIcon icon={faArrowRight} size="3x" />
                                     </div>
-
                                 </div>
                                 <div className="col">
                                     <span>
-                                        <FontAwesomeIcon icon={faBookOpen} />
                                         <p>Ebook</p>
                                     </span>
-                                    <h1>A guide to building healthcare your employees will love</h1>
-
+                                    <h1>A Guide to Employee-Centric Healthcare Solutions</h1>
                                     <div className="arrow-right">
                                         <FontAwesomeIcon icon={faArrowRight} size="3x" />
                                     </div>
                                 </div>
                                 <div className="col">
                                     <span>
-                                        <FontAwesomeIcon icon={faBookOpen} />
                                         <p>Ebook</p>
                                     </span>
-                                    <h1>How patient experience fits into your health benefits strategy</h1>
+                                    <h1>Integrating Patient Experience into Your Health Benefits Strategy</h1>
                                     <div className="arrow-right">
                                         <FontAwesomeIcon icon={faArrowRight} size="3x" />
                                     </div>

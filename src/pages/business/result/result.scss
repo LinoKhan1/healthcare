@@ -1,15 +1,24 @@
-// Hero Section
-.result-page{
-  .hero-section{
+/* Hero Section */
+.result-page {
+  .hero-section {
     color: #fff;
     background-color: #005450;
-    .section{
+
+    .section {
       padding: 0px 0px 0px 50px;
     }
-    .col-lg-7{
+
+    .col-lg-7 {
       padding: 75px 0;
+
+      span {
+        button {
+          margin-right: 8px;
+        }
+      }
     }
-    .col-lg-5{
+
+    .col-lg-5 {
       background-image: url('../../../assets/images/result-hero-img.webp');
       background-size: cover;
     }
@@ -17,126 +26,178 @@
 }
 
 
-// Result Section
-.result-section{
-    background-color: #eef6f4;
-    color: #005450;
-    .title{
-        text-align: center;
-        h1{
-            width: 70%;
-            margin: auto;
-        }
-    }
+/*Result Section*/
+.result-section {
+  background-color: #eef6f4;
+  color: #005450;
+  .title{
+    margin-bottom: 50px;
+  }
+  .circle-label{
+    font-size: 2rem;
+  }
+
 }
 
-// Illustration Section
-.illustration-section{
-    padding: 0 50px;
-    .title{
-        text-align: center;
-        h1{
-            width: 70%;
-            margin: auto;
-            color: #005450;
-        }
+/*Illustration Section*/
+
+.illustration-section {
+  padding: 0 50px;
+
+  .title {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h1 {
+      width: 70%;
+      margin: auto;
+      color: #005450;
     }
-    .row{
-        .col-lg-6{
-            h1{
-                font-size: 15rem;
-                font-weight: bold;
-                color: #005450;
-            }
-            h2{
-                font-size: 2.5rem;
-            }
-            h3,p{
-                font-size: 1.4rem;
-            }
-        }
-    }
-    .arrows {
-        margin-top: 20px;
-      }
-      
-      .arrow-btn {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        font-size: 1.5em;
-        cursor: pointer;
-      }
-      
-      .sections {
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        margin-top: 16px;
-        overflow: hidden;
-      }
-      
-      .section-header {
-        padding: 12px;
-        cursor: pointer;
+  }
+
+  .row {
+    .col-lg-6 {
+      h1 {
+        font-size: 15rem;
         font-weight: bold;
+        color: #005450;
       }
-      
-      .section-body {
-        padding: 16px;
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+      h2 {
+        font-size: 2.5rem;
       }
-      
-      .circle-info {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background-color: #4caf50;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        text-align: center;
-        padding: 10px;
+
+      h3,
+      p {
+        font-size: 1.4rem;
       }
-      
+    }
+  }
+
+  .arrows {
+    margin-top: 20px;
+  }
+
+  .arrow-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+  .sections {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 16px;
+    overflow: hidden;
+  }
+
+  .section-header {
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    span{
+     h2{
+      font-size: 4rem;
+     }
+    }
+  }
+
+  .section-body {
+    padding: 16px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .circle-info {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+}
+// Metric Section
+
+.metric-section{
+  background-color: #eff5e5;
+  .title{
+    margin-bottom: 50px;
+    h1{
+      color: #005450;
+    }
+   
+  }
+  .circle-label{
+    font-size: 2rem;
+  }
+
+}
+
+/** Testimonial Section */
+.result-page{
+  .testimonial-section{
+    .title{
+      margin-bottom: 50px;
+    }
+    img{
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    
+  }
 }
 
 // Book Section
-.books-section{
+.books-section {
 
-  .title{
+  .title {
     text-align: center;
-    h1{
+
+    h1 {
       width: 70%;
       margin: auto;
+      color: #005450;
     }
   }
-  .row{
+
+  .row {
     margin-top: 50px;
-    .col{
+
+    .col {
       padding: 24px;
       margin: 24px;
       color: #005450;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      h1{
-        font-size: 3rem;
+
+      h1 {
+        font-size: 4rem;
       }
-      span{
+
+      span {
         display: flex;
         align-items: center;
-        p{
+
+        p {
           margin-right: 8px;
         }
       }
     }
 
-    .arrow-right{
+    .arrow-right {
       text-align: right;
     }
   }
@@ -144,3 +205,15 @@
 
 }
 
+@media only screen and (max-width:768px) {
+
+  .title {
+    h1 {
+      width: 100%;
+
+
+    }
+
+  }
+
+}
