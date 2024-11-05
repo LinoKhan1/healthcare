@@ -1,13 +1,41 @@
 // React
-import React from 'react';
+import React, { memo } from 'react';
 import { Link } from 'react-router-dom';
 
+// Assets 
+import Service_img1 from '../../assets/images/services-img1.webp';
+import Service_img2 from '../../assets/images/services-img2.webp';
+import Service_img3 from '../../assets/images/services-img3.webp';
+import Service_img4 from '../../assets/images/services-img4.webp';
+import Service_img5 from '../../assets/images/services-img5.webp';
+import Service_img6 from '../../assets/images/services-img6.webp';
+import Service_img7 from '../../assets/images/services-img7.webp';
 
+// CSS and Styles
+import './service.scss';
 
+// Reusable ServiceItem component to reduce code repetition
+const ServiceItem = memo(({ title, description, imgSrc, imgFirst }) => (
+    <div className="row row-general">
+        {imgFirst && (
+            <div className="col col-general">
+                <img className="img-fluid" src={imgSrc} alt={title} loading="lazy" />
+            </div>
+        )}
+        <div className="col col-general">
+            <h1 className="display-1">{title}</h1>
+            <p>{description}</p>
+            <h3>Contact us</h3>
+        </div>
+        {!imgFirst && (
+            <div className="col col-general">
+                <img className="img-fluid" src={imgSrc} alt={title} loading="lazy" />
+            </div>
+        )}
+    </div>
+));
 
-const Service = () => {
-
-
+const Service = memo(() => {
     return (
         <div className="service-page">
             <div className="main">
@@ -15,147 +43,79 @@ const Service = () => {
                 <div className="hero-section">
                     <section className="section">
                         <h3>services</h3>
-                        <h1 className="display-1">
-                            No ordinary doctor's office
-                        </h1>
-                        <Link to="/contact">
-                            <button className='quaternary-btn'>
+                        <h1 className="display-1">Your partner in healthcare</h1>
+                        <Link to="/contact" >
+                            <button className="quaternary-btn">
                                 Contact us
                             </button>
+
                         </Link>
                     </section>
                 </div>
                 {/** Service Section */}
                 <div className="service-section">
-                    <section className='section'>
-
+                    <section className="section">
                         <div className="service-preview">
                             <div className="title">
-                                <h1 className='display-1'>
-                                    A true partner in your health and wellness
-                                </h1>
+                                <h1 className="display-1">Comprehensive Care for Your Well-Being</h1>
                                 <p>
-                                    At One Medical, we care for everything from common illnesses to chronic diseases and mental health
-                                    concerns. Primary care isn’t just for when you’re sick — we’re also here to help you prevent
-                                    illness and maintain your optimal health. We’ll always take the time to listen to you, respect
-                                    your opinion, and care for you as a whole person.
+                                    At VitalPath, our care goes beyond treating illnesses. From common ailments to chronic conditions,
+                                    preventive care, and mental health support, we’re here to help you achieve and maintain your best
+                                    health. Our approach is personal and holistic, ensuring you feel heard, respected, and supported on
+                                    your health journey.
                                 </p>
                             </div>
-
                         </div>
+
                         <div className="service-list">
-                            <div className="row">
-                                <div className="col">
-                                    <img src="" alt="" />
-
-                                </div>
-                                <div className="col">
-                                    <h1>
-                                        Wellness and prevention
-                                    </h1>
-                                    <p>
-                                        We’ll help you get healthy and stay that way with state-of-the art screening, disease prevention, and lifestyle advice.
-                                    </p>
-                                    <h3>
-                                        Contact us
-                                    </h3>
-
-                                </div>
-
-                            </div>
-                            <div className="row">
-                                <div className="col">
-                                    <h1>
-                                        Everyday care
-                                    </h1>
-                                    <p>
-                                        Wake up with the flu or a questionable rash? We diagnose and treat a wide spectrum of illnesses, so you get the care you need without having to visit the ER or see specialists.
-                                    </p>
-                                    <h3>
-                                        Contact us
-                                    </h3>
-
-                                </div>
-                                <div className="col">
-                                    <img src="" alt="" />
-
-
-                                </div>
-
-                            </div>
-                            <div className="row">
-                                <div className="col">
-                                    <img src="" alt="" />
-
-                                </div>
-                                <div className="col">
-                                    <h1>Chronic conditions</h1>
-                                    <p>Chronic conditions like diabetes, hypertension, and obesity can be difficult to manage and prevent on your own. Impact by One Medical, our chronic condition management program, is here to make it easier, with the support and resources you need to find your way to better health.</p>
-                                    <h3>Contact us</h3>
-
-                                </div>
-
-                            </div>
-                            <div className="row">
-                                <div className="col">
-                                    <h1>Mental health</h1>
-                                    <p>Your mental health is an important part of the full picture. Whether you're feeling off or experiencing depression, anxiety, insomnia, or something more complex, our suite of mental health services – Mindset by One Medical – is here to help.</p>
-                                    <h3>Contact us</h3>
-
-                                </div>
-                                <div className="col">
-                                    <img src="" alt="" />
-
-                                </div>
-
-                            </div>
-                            <div className="row">
-                                <div className="col">
-                                    <img src="" alt="" />
-
-                                </div>
-                                <div className="col">
-                                    <h1>LGBTQIA+ services</h1>
-                                    <p>From illnesses and injuries to sexual and mental health to wellness goals, we’re here to provide the LGBTQIA+ community with the exceptional care they deserve — with no fear of being judged or dismissed.</p>
-                                    <h3>Contact us</h3>
-
-                                </div>
-
-                            </div>
-                            <div className="row">
-                                <div className="col">
-                                    <h1>Urgent concerns</h1>
-                                    <p>Injuries and illness pop up at the most inconvenient times, but the expanded hours of our Urgent In-Office Visits make care more convenient for you. Select offices are open late, seven days a week — so you can book an in-office visit for urgent concerns.</p>
-                                    <h3>Contact us</h3>
-
-                                </div>
-                                <div className="col">
-                                    <img src="" alt="" />
-
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col">
-                                    <img src="" alt="" />
-
-                                </div>
-                                <div className="col">
-                                    <h1>Sexual health</h1>
-                                    <p>Talking to your provider about your sex life doesn’t have to be uncomfortable. For anything from STI testing to birth control and family planning to erectile dysfunction, our friendly providers and comfortable, inclusive offices are there to put you at ease.</p>
-
-                                </div>
-                            </div>
-
+                            <ServiceItem
+                                title="Wellness and Prevention"
+                                description="Stay proactive with our advanced screening and prevention services, complemented by personalized lifestyle guidance for lasting wellness."
+                                imgSrc={Service_img2}
+                                imgFirst
+                            />
+                            <ServiceItem
+                                title="Everyday Care"
+                                description="From minor illnesses to sudden symptoms, we provide convenient, expert care, so you can avoid ER visits and specialist appointments whenever possible."
+                                imgSrc={Service_img4}
+                                imgFirst={false}
+                            />
+                            <ServiceItem
+                                title="Chronic Condition Support"
+                                description="Managing conditions like diabetes or hypertension can be challenging, but VitalPath offers resources, support, and guidance to make it easier and more effective."
+                                imgSrc={Service_img6}
+                                imgFirst
+                            />
+                            <ServiceItem
+                                title="Mental Health Services"
+                                description="Your mental well-being is key to a healthy life. Our mental health services are here to help with everything from mild stress to complex mental health challenges."
+                                imgSrc={Service_img1}
+                                imgFirst={false}
+                            />
+                            <ServiceItem
+                                title="Inclusive Care for LGBTQIA+ Individuals"
+                                description="We offer comprehensive, judgment-free care for the LGBTQIA+ community, ensuring that everyone has access to the health services they deserve."
+                                imgSrc={Service_img7}
+                                imgFirst
+                            />
+                            <ServiceItem
+                                title="Urgent Care Services"
+                                description="For unexpected illnesses or injuries, our extended hours and accessible care mean you can get help when you need it most."
+                                imgSrc={Service_img5}
+                                imgFirst={false}
+                            />
+                            <ServiceItem
+                                title="Sexual Health"
+                                description="Our providers offer sensitive, respectful care for all aspects of sexual health, including family planning, STI testing, and more."
+                                imgSrc={Service_img3}
+                                imgFirst
+                            />
                         </div>
-
                     </section>
                 </div>
-
             </div>
         </div>
-
-
     );
-}
+});
 
 export default Service;
