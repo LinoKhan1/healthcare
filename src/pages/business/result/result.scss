@@ -1,15 +1,38 @@
-/* Hero Section */
+// Variables
+$primary-color: #005450;
+$secondary-color: #007bff;
+$text-color: #fff;
+$light-bg-color: #eef6f4;
+$metric-bg-color: #eff5e5;
+$circle-bg-color: #4caf50;
+
+// Mixins
+@mixin title-styles {
+  width: 70%;
+  margin: auto;
+  color: $primary-color;
+}
+
+@mixin section-title {
+  margin-bottom: 50px;
+
+  h1 {
+    @include title-styles;
+  }
+}
+
 .result-page {
+  // Hero Section
   .hero-section {
-    color: #fff;
-    background-color: #005450;
+    color: $text-color;
+    background-color: $primary-color;
 
     .section {
-      padding: 0px 0px 0px 50px;
+      padding: 0 0 0 50px;
     }
 
     .col-lg-7 {
-      padding: 75px 0px 75px 24px;
+      padding: 75px 0 75px 24px;
 
       span {
         button {
@@ -23,197 +46,176 @@
       background-size: cover;
     }
   }
-}
 
+  // Result Section
+  .result-section {
+    background-color: $light-bg-color;
+    color: $primary-color;
 
-/*Result Section*/
-.result-section {
-  background-color: #eef6f4;
-  color: #005450;
-  .title{
-    margin-bottom: 50px;
-  }
-  .circle-label{
-    font-size: 2rem;
-  }
-
-}
-
-/*Illustration Section*/
-
-.illustration-section {
-  padding: 0 50px;
-
-  .title {
-    text-align: center;
-    margin-bottom: 50px;
-
-    h1 {
-      width: 70%;
-      margin: auto;
-      color: #005450;
-    }
-  }
-
-  .row {
-    .col-lg-6 {
-      h1 {
-        font-size: 15rem;
-        font-weight: bold;
-        color: #005450;
-      }
-
-      h2 {
-        font-size: 2.5rem;
-      }
-
-      h3,
-      p {
-        font-size: 1.4rem;
-      }
-    }
-  }
-
-  .arrows {
-    margin-top: 20px;
-  }
-
-  .arrow-btn {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 1.5em;
-    cursor: pointer;
-  }
-
-  .sections {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-top: 16px;
-    overflow: hidden;
-  }
-
-  .section-header {
-    padding: 12px;
-    cursor: pointer;
-    font-weight: bold;
-    span{
-     h2{
-      font-size: 4rem;
-     }
-    }
-  }
-
-  .section-body {
-    padding: 16px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-  }
-
-  .circle-info {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background-color: #4caf50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-
-}
-// Metric Section
-
-.metric-section{
-  background-color: #eff5e5;
-  .title{
-    margin-bottom: 50px;
-    h1{
-      color: #005450;
-    }
-   
-  }
-  .circle-label{
-    font-size: 2rem;
-  }
-
-}
-
-/** Testimonial Section */
-.result-page{
-  .testimonial-section{
-    .title{
+    .title {
       margin-bottom: 50px;
     }
-    img{
-      width: 100%;
-      margin-bottom: 24px;
-    }
-    
-  }
-}
 
-// Book Section
-.books-section {
-
-  .title {
-    text-align: center;
-
-    h1 {
-      width: 70%;
-      margin: auto;
-      color: #005450;
+    .circle-label {
+      font-size: 2rem;
     }
   }
 
-  .row {
-    margin-top: 50px;
+  // Illustration Section
+  .illustration-section {
+    padding: 0 50px;
 
-    .col {
-      padding: 24px;
-      margin: 24px;
-      color: #005450;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .title {
+      text-align: center;
+      @include section-title;
+    }
 
-      h1 {
-        font-size: 3.5rem;
-      }
+    .row {
+      .col-lg-6 {
+        h1 {
+          font-size: 15rem;
+          font-weight: bold;
+          color: $primary-color;
+        }
 
-      span {
-        display: flex;
-        align-items: center;
+        h2 {
+          font-size: 2.5rem;
+        }
 
+        h3,
         p {
-          margin-right: 8px;
+          font-size: 1.4rem;
         }
       }
     }
 
-    .arrow-right {
-      text-align: right;
+    .arrows {
+      margin-top: 20px;
+    }
+
+    .arrow-btn {
+      background-color: $secondary-color;
+      color: $text-color;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+    .sections {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-top: 16px;
+      overflow: hidden;
+
+      .section-header {
+        padding: 12px;
+        cursor: pointer;
+        font-weight: bold;
+
+        span {
+          h2 {
+            font-size: 4rem;
+          }
+        }
+      }
+
+      .section-body {
+        padding: 16px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .circle-info {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background-color: $circle-bg-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $text-color;
+      text-align: center;
+      padding: 10px;
     }
   }
 
+  // Metric Section
+  .metric-section {
+    background-color: $metric-bg-color;
 
-}
+    .title {
+      @include section-title;
+      
+      h1 {
+        color: $primary-color;
+      }
+    }
 
-@media only screen and (max-width:768px) {
+    .circle-label {
+      font-size: 2rem;
+    }
+  }
 
-  .title {
-    h1 {
+  // Testimonial Section
+  .testimonial-section {
+    .title {
+      margin-bottom: 50px;
+    }
+
+    img {
       width: 100%;
-
-
+      margin-bottom: 24px;
     }
-
   }
 
+  // Book Section
+  .books-section {
+    .title {
+      text-align: center;
+      @include section-title;
+    }
+
+    .row {
+      margin-top: 50px;
+
+      .col {
+        padding: 24px;
+        margin: 24px;
+        color: $primary-color;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+
+        h1 {
+          font-size: 3.5rem;
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+
+          p {
+            margin-right: 8px;
+          }
+        }
+
+        .arrow-right {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  // Media Queries
+  @media only screen and (max-width: 768px) {
+    .title {
+      h1 {
+        width: 100%;
+      }
+    }
+  }
 }
