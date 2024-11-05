@@ -8,20 +8,24 @@ $text-width-lg: 80%;
 $text-width-sm: 100%;
 
 // Hero Section
-.hero-section {
-    background: url('../../assets/images/service-hero-img.webp') center/cover;
-    text-align: center;
-    color: #fff;
-    padding: $hero-padding;
+.service-page {
+    .hero-section {
+        background: url('../../assets/images/service-hero-img.webp') center/cover;
+        text-align: center;
+        color: #fff;
+        padding: $hero-padding;
 
-    h3 {
-        color: inherit;
+        h3 {
+            color: inherit;
+        }
+
+        h1 {
+            font-size: $hero-font-size-lg;
+        }
     }
 
-    h1 {
-        font-size: $hero-font-size-lg;
-    }
 }
+
 
 // Service Section
 .service-section {
@@ -57,11 +61,15 @@ $text-width-sm: 100%;
 
 // Media Queries
 @media only screen and (max-width: 768px) {
+
     // Hero Section
-    .hero-section {
-        h1 {
-            font-size: $hero-font-size-sm;
+    .service-page {
+        .hero-section {
+            h1 {
+                font-size: $hero-font-size-sm;
+            }
         }
+
     }
 
     // Service Section
