@@ -20,9 +20,9 @@ function App() {
           <Route path="blogs" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
           <Route path="business" element={<Overview />} />
-          <Route path="mental" element={<Mental/>}/>
-          <Route path="results" element={<Results/>}/>
-          <Route path="results" element={<Service/>}/>
+          <Route path="mental" element={<Mental />} />
+          <Route path="results" element={<Results />} />
+          <Route path="services" element={<Service />} />
         </Route>
       </Routes>
     </BrowserRouter>
