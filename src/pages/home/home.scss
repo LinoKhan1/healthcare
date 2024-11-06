@@ -1,0 +1,294 @@
+/* home.scss */
+
+/* Variables */
+$light-gray: #f4f4f4;
+$main-color: #005450;
+$accent-color: #068466;
+$background-gradient: linear-gradient(180deg, $main-color 56.17%, #abcc76 215.69%);
+
+/* Hero Section */
+.hero-section {
+    background-color: $light-gray;
+
+    .section {
+        padding: 0 0 50px 50px;
+    }
+
+    .col-lg-7 {
+        .hero-text {
+            width: 80%;
+            margin: 50px 0;
+
+            h1 {
+                color: #0578FF;
+                line-height: 1;
+            }
+
+            h3 {
+                font-size: 1rem;
+                margin: 8px 0;
+                color: #000;
+            }
+        }
+    }
+
+    .hero-image {
+        background-image: url('../../assets/images/home-hero-image.webp');
+        background-size: cover;
+    }
+}
+
+/* Services Section */
+.services-section {
+    .section {
+        padding: 0;
+    }
+
+    .service-preview {
+        background-color: #e8f8f5;
+        padding: 0 50px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .col {
+            flex: 1;
+            padding: 25px;
+            position: relative;
+            margin-top: -75px;
+
+            h1 {
+                font-size: 1.2rem;
+                color: $accent-color;
+                margin-top: 24px;
+            }
+
+            h2 {
+                color: $main-color;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            img {
+                border-radius: 25px;
+            }
+        }
+    }
+
+    /* View Services */
+    .view-services {
+        text-align: center;
+        margin-top: 50px;
+
+        h1 {
+            color: $main-color;
+        }
+    }
+}
+
+/* About Section */
+.home-page {
+    .about-section {
+        text-align: center;
+        margin: auto;
+
+        .section {
+            padding: 50px;
+        }
+
+        h1 {
+            color: $main-color;
+        }
+
+        .preview {
+            width: 60%;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+
+            .col {
+                flex: 1;
+            }
+        }
+    }
+}
+
+/* Membership Section */
+.membership-section {
+    .section {
+        padding: 75px 0 0;
+    }
+
+    .list-options {
+        padding: 0 50px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .col {
+            flex: 1;
+        }
+    }
+
+    h1 {
+        color: $main-color;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+
+        .check {
+            margin-right: 8px;
+            color: $main-color;
+        }
+    }
+
+    .join {
+        text-align: center;
+        position: relative;
+        color: #fff;
+        margin: 75px 0;
+        padding: 75px 0;
+        background: $background-gradient;
+
+        h1 {
+            color: #fff;
+        }
+    }
+}
+
+/* Testimonial Section */
+.home-page {
+    .testimonial-section {
+        text-align: center;
+
+        .section {
+            padding: 0 50px;
+        }
+
+        h1 {
+            color: $accent-color;
+        }
+    }
+}
+
+/* Partner Section */
+.partners-section {
+    text-align: center;
+
+    h1 {
+        color: $main-color;
+    }
+
+    .brand-icons {
+        display: flex;
+        padding: 50px 0;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+
+        .icon {
+            color: $accent-color;
+        }
+    }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+    .membership-section {
+        .list-options {
+            h1 {
+                font-size: 3rem;
+            }
+
+            li {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .services-section {
+        .service-preview {
+            .col {
+                h1 {
+                    font-size: 1rem;
+                }
+
+                h2 {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    .membership-section {
+        .list-options {
+            h1 {
+                font-size: 4rem;
+            }
+
+            .col {
+                flex: 100%;
+                max-width: 100%;
+
+                li {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .services-section {
+        .service-preview {
+            .col {
+                flex: 100%;
+                max-width: 100%;
+                margin-bottom: 24px;
+
+                h1 {
+                    font-size: 1.2rem;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    .home-page {
+        .about-section {
+            .preview {
+                width: 100%;
+            }
+
+            .row {
+                .col {
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .membership-section {
+        .list-options {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
