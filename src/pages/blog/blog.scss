@@ -1,0 +1,59 @@
+// Variables
+$primary-color: #005450;
+$secondary-color: #abcc76;
+$hero-font-size-large: 6rem;
+$hero-font-size-small: 4rem;
+$span-margin-left: 50px;
+$col-margin-top: 16px;
+$section-padding: 150px 0;
+
+// Mixins (if needed in the future)
+@mixin center-text {
+    text-align: center;
+}
+
+// Hero Section
+.blog-page {
+    .hero-section {
+        @include center-text;
+        color: $primary-color;
+
+        h1 {
+            font-size: $hero-font-size-large;
+        }
+    }
+
+    // Blog Section
+    .blog-section {
+        .col {
+            span {
+                display: flex;
+                align-items: center;
+                margin-top: $col-margin-top;
+
+                p {
+                    margin-left: $span-margin-left;
+                }
+            }
+        }
+
+        .services-section {
+            background-color: $secondary-color;
+            color: $primary-color;
+            padding: $section-padding;
+            margin: 0;
+            @include center-text;
+        }
+    }
+}
+
+// Media Queries
+@media only screen and (max-width: 768px) {
+    .blog-page {
+        .hero-section {
+            h1 {
+                font-size: $hero-font-size-small;
+            }
+        }
+    }
+}

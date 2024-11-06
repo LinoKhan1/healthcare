@@ -1,7 +1,11 @@
 import React, { useState, useCallback } from "react";
 import RowOfCircles from "./RowOfCircles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+<<<<<<< HEAD
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+=======
+import { faBookOpen, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+>>>>>>> feature/blog-page
 import Classpass_image from '../../../assets/images/classpass.webp';
 import Zendesk_image from '../../../assets/images/zendesk.webp';
 import Soulcycle_image from '../../../assets/images/soulcycle.webp';

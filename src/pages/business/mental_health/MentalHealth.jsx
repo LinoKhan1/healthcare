@@ -6,6 +6,12 @@ import { Link } from "react-router-dom";
 // Font Awesome Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+<<<<<<< HEAD
+=======
+import Care_one from '../../../assets/images/value_one.webp';
+import Care_two from '../../../assets/images/value_two.webp';
+import Care_three from '../../../assets/images/value_three.webp';
+>>>>>>> feature/blog-page
 
 // Assets
 import Care_one from '../../../assets/images/value_one.webp';
