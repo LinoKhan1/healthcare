@@ -5,7 +5,7 @@ import Home from './pages/home/Home';
 import Overview from './pages/business/Overview';
 import Contact from './pages/contact/Contact';
 import Blog from './pages/blog/Blog';
-import Mental from './pages/business/mental_heath/MentalHealth.jsx';
+import Mental from './pages/business/mental_health/MentalHealth.jsx';
 import Results from './pages/business/result/Results.jsx';
 import Service from './pages/service/Service.jsx';
 
