@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import '../../styles/global.scss';
+import { Link } from "react-router-dom";
 
 
 
@@ -14,25 +15,45 @@ const Footer = () => {
             <div className="footer-component">
                 <section className="section">
                     <div className="membership-footer-section">
-                        <h1 className="display-1">
-                            Sign up for membership
-                        </h1>
-                        <button className="secondary-btn">
-                            Join now
-                        </button>
+                        <div className="title">
+                            <h1 className="display-1">
+                                Get Started with VitalPath Today
+                            </h1>
+                        </div>
+
+                        <Link to="/contact">
+                            <button className="quarternary-btn">
+                                Join now
+                            </button>
+                        </Link>
+                        <Link to="/business">
+                            <button className="tertiary-btn" >
+                                For Busniness
+                            </button>
+                        </Link>
                     </div>
                     <div className="footer-section">
-                        <div className="row">
-                            <div className="col">
+                        <div className="row row-general">
+                            <div className="col col-general">
                                 <ul>
-                                    <li>Blog</li>
-                                    <li>Media</li>
-                                    <li>Contact</li>
-                                    <li>Overview</li>
-                                    <li>Mental Health</li>
+                                    <Link className="link" to="/blog">
+                                        <li>Blog</li>
+                                    </Link>
+                                    <Link className="link" to="/services">
+                                        <li>Services</li>
+                                    </Link>
+                                    <Link className="link" to="/contact">
+                                        <li>Contact</li>
+                                    </Link>
+                                    <Link className="link" to="/business">
+                                        <li>Overview</li>
+                                    </Link>
+                                    <Link className="link" to="/mental">
+                                        <li>Mental Health</li>
+                                    </Link>
                                 </ul>
                             </div>
-                            <div className="col d-flex justify-content-end">
+                            <div className="col col-general d-flex icons ">
                                 <div className="social-icons">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={faFacebookF} />
@@ -51,7 +72,7 @@ const Footer = () => {
                             </div>
 
                         </div>
-                      
+
                         <div className="copyright-section">
                             <ul>
                                 <li>
