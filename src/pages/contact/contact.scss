@@ -1,0 +1,113 @@
+// Variables
+$primary-color: #004D49;
+$secondary-color: #005450;
+$text-color-light: #fff;
+$breakpoint-md: 992px;
+$breakpoint-sm: 768px;
+
+// Mixins
+@mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin responsive-font($size-md, $size-sm) {
+    font-size: $size-md;
+    @media (max-width: $breakpoint-md) {
+        font-size: $size-sm;
+    }
+}
+
+@mixin scroll-animation {
+    animation: circular 2s infinite;
+    @keyframes circular {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        50% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        51% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+// Hero Section
+.hero-section {
+    background: url('../../assets/images/contact-hero-img.webp') no-repeat center/cover;
+    color: $text-color-light;
+    padding: 200px 0;
+    @include center-content;
+    flex-direction: column;
+
+    h1 {
+        @include responsive-font(6rem, 4rem);
+    }
+
+    h3 {
+        color: $text-color-light;
+    }
+
+    .arrow-down {
+        position: absolute;
+        bottom: -150px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        color: $text-color-light;
+        cursor: pointer;
+        @include scroll-animation;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+// Help and Contact Info Sections
+.help-section,
+.contact-info-section {
+    .section {
+        width: 70%;
+        margin: auto;
+        color: $primary-color;
+
+        @media (max-width: $breakpoint-md) {
+            width: 100%;
+        }
+        h1{
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.contact-info-section .section {
+    padding-top: 0;
+}
+
+// Membership Section
+.member-section {
+    background-color: $secondary-color;
+    color: $text-color-light;
+    @include center-content;
+    flex-direction: column;
+
+    h1 {
+        width: 50%;
+        margin: auto;
+
+        @media (max-width: $breakpoint-sm) {
+            width: 100%;
+        }
+    }
+}
