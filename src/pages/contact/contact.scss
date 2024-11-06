@@ -15,6 +15,7 @@ $breakpoint-sm: 768px;
 
 @mixin responsive-font($size-md, $size-sm) {
     font-size: $size-md;
+
     @media (max-width: $breakpoint-md) {
         font-size: $size-sm;
     }
@@ -22,19 +23,23 @@ $breakpoint-sm: 768px;
 
 @mixin scroll-animation {
     animation: circular 2s infinite;
+
     @keyframes circular {
         0% {
             opacity: 1;
             transform: translateY(0);
         }
+
         50% {
             opacity: 0;
             transform: translateY(20px);
         }
+
         51% {
             opacity: 0;
             transform: translateY(-20px);
         }
+
         100% {
             opacity: 1;
             transform: translateY(0);
@@ -43,35 +48,39 @@ $breakpoint-sm: 768px;
 }
 
 // Hero Section
-.hero-section {
-    background: url('../../assets/images/contact-hero-img.webp') no-repeat center/cover;
-    color: $text-color-light;
-    padding: 200px 0;
-    @include center-content;
-    flex-direction: column;
-
-    h1 {
-        @include responsive-font(6rem, 4rem);
-    }
-
-    h3 {
+.contact-page {
+    .hero-section {
+        background: url('../../assets/images/contact-hero-img.webp') no-repeat center/cover;
         color: $text-color-light;
-    }
+        padding: 200px 0;
+        @include center-content;
+        flex-direction: column;
 
-    .arrow-down {
-        position: absolute;
-        bottom: -150px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 2rem;
-        color: $text-color-light;
-        cursor: pointer;
-        @include scroll-animation;
+        h1 {
+            @include responsive-font(6rem, 4rem);
+        }
 
-        &:hover {
-            color: $primary-color;
+        h3 {
+            color: $text-color-light;
+        }
+
+        .arrow-down {
+            position: absolute;
+            bottom: -150px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: $text-color-light;
+            cursor: pointer;
+            @include scroll-animation;
+
+            &:hover {
+                color: $primary-color;
+            }
         }
     }
+
+
 }
 
 // Help and Contact Info Sections
@@ -85,7 +94,8 @@ $breakpoint-sm: 768px;
         @media (max-width: $breakpoint-md) {
             width: 100%;
         }
-        h1{
+
+        h1 {
             margin-bottom: 50px;
         }
     }
