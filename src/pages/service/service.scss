@@ -1,0 +1,94 @@
+// Variables (for easy theme adjustments)
+$primary-color: #005450;
+$hero-font-size-lg: 6rem;
+$hero-font-size-sm: 4rem;
+$hero-padding: 75px 0;
+$service-padding: 50px;
+$text-width-lg: 80%;
+$text-width-sm: 100%;
+
+// Hero Section
+.service-page {
+    .hero-section {
+        background: url('../../assets/images/service-hero-img.webp') center/cover;
+        text-align: center;
+        color: #fff;
+        padding: $hero-padding;
+
+        h3 {
+            color: inherit;
+        }
+
+        h1 {
+            font-size: $hero-font-size-lg;
+        }
+    }
+
+}
+
+
+// Service Section
+.service-section {
+    .service-preview {
+        .title {
+            width: 70%;
+            margin: auto;
+            color: $primary-color;
+            margin-bottom: 100px;
+
+            h1 {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .service-list {
+        .row {
+            margin-top: 50px;
+
+            .col {
+                padding: $service-padding;
+            }
+
+            h1,
+            p {
+                color: $primary-color;
+                width: $text-width-lg;
+            }
+        }
+    }
+}
+
+// Media Queries
+@media only screen and (max-width: 768px) {
+
+    // Hero Section
+    .service-page {
+        .hero-section {
+            h1 {
+                font-size: $hero-font-size-sm;
+            }
+        }
+
+    }
+
+    // Service Section
+    .service-section {
+        .service-preview .title {
+            width: 100%;
+        }
+
+        .service-list .row {
+            margin-top: 0;
+
+            .col {
+                padding: 0;
+
+                h1,
+                p {
+                    width: $text-width-sm;
+                }
+            }
+        }
+    }
+}
