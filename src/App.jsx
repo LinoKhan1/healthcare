@@ -5,12 +5,9 @@ import Home from './pages/home/Home';
 import Overview from './pages/business/Overview';
 import Contact from './pages/contact/Contact';
 import Blog from './pages/blog/Blog';
-<<<<<<< HEAD
 import Mental from './pages/business/mental_heath/MentalHealth.jsx';
 import Results from './pages/business/result/Results.jsx';
-=======
-import Service from './pages/service/Service';
->>>>>>> feature/services-page
+import Service from './pages/service/Service.jsx';
 
 
 function App() {
@@ -23,12 +20,9 @@ function App() {
           <Route path="blogs" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
           <Route path="business" element={<Overview />} />
-<<<<<<< HEAD
           <Route path="mental" element={<Mental/>}/>
           <Route path="results" element={<Results/>}/>
-=======
-          <Route path="services" element={<Service />} />
->>>>>>> feature/services-page
+          <Route path="results" element={<Service/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
