@@ -5,6 +5,8 @@ import Home from './pages/home/Home';
 import Overview from './pages/business/Overview';
 import Contact from './pages/contact/Contact';
 import Blog from './pages/blog/Blog';
+import Mental from './pages/business/mental_heath/MentalHealth.jsx';
+import Results from './pages/business/result/Results.jsx';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Route path="blogs" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
           <Route path="business" element={<Overview />} />
+          <Route path="mental" element={<Mental/>}/>
+          <Route path="results" element={<Results/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
