@@ -7,19 +7,6 @@ $spacing-section: 150px;
 $spacing-medium: 50px;
 
 // Hero Section
-<<<<<<< HEAD
-.mental-page {
-  .hero-section {
-    padding: $spacing-section 0;
-    background: url('../../../assets/images/mental-hero-img.webp') center/cover;
-    text-align: center;
-    color: $color-white;
-
-    h1 {
-      width: 70%;
-      margin: 0 auto;
-      font-size: 6rem;
-=======
 .mental-page{
     .hero-section {
         padding: 150px 0;
@@ -71,7 +58,6 @@ $spacing-medium: 50px;
                 transform: translateY(0);
             }
         }
->>>>>>> feature/blog-page
     }
 
     button {
@@ -99,7 +85,7 @@ $spacing-medium: 50px;
       51% { opacity: 0; transform: translateY(-20px); }
     }
   }
-}
+
 
 // Help Section
 .help-section {
