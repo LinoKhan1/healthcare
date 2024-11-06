@@ -1,10 +1,13 @@
+// React
 import React from "react";
+import { Link } from "react-router-dom";
+
+// CSS & Styles
 import './layout.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import '../../styles/global.scss';
-import { Link } from "react-router-dom";
 
 
 
@@ -12,8 +15,10 @@ const Footer = () => {
     return (
 
         <>
+            {/** Footer Component */}
             <div className="footer-component">
                 <section className="section">
+                    {/** Contact Section */}
                     <div className="membership-footer-section">
                         <div className="title">
                             <h1 className="display-1">
@@ -32,6 +37,7 @@ const Footer = () => {
                             </button>
                         </Link>
                     </div>
+                    {/** Footer Links */}
                     <div className="footer-section">
                         <div className="row row-general">
                             <div className="col col-general">
@@ -72,6 +78,7 @@ const Footer = () => {
                             </div>
 
                         </div>
+                        {/** Copyright Section */}
 
                         <div className="copyright-section">
                             <ul>

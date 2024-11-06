@@ -9,38 +9,29 @@ html {
 /* Navbar */
 .navbar {
     .container-fluid {
-        padding: 0px 50px;
-        margin: 0;
-
+        padding: 0 50px;
+       
         .navbar-brand {
             color: #005450;
             font-size: 3rem;
         }
-
-        .navbar-brand,
-        li {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+        
     }
 }
 
 .navbar .nav-link {
     margin-left: 15px;
+    color: #005450;
     /* Add space between nav links */
+    button{
+        background-color: #005450;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+    }
 }
 
-.navbar .btn {
-    /* Ensure button has space from links */
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: #005450;
-    border: none;
-    border-radius: 36px;
-    padding: 14px 32px;
-    margin-top: -10px;
 
-}
 
 /* Footer CSS */
 .footer-component {
@@ -56,14 +47,14 @@ html {
         text-align: center;
 
         .title {
-            width: 60%;
+            width: 70%;
             margin: auto;
             margin-bottom: 24px;
 
         }
-
         h1 {
             color: #fff;
+            font-size: 6rem;
         }
 
         button {
@@ -162,17 +153,38 @@ html {
             .title {
                 width: 90%;
             }
+            h1{
+                font-size: 4rem;
+            }
         }
 
-        .footer-section {
-
-        }
+       
     }
 
 }
 
 @media only screen and (max-width:768px) {
 
+
+    // Navbar Component
+    .navbar{
+        .container-fluid{
+            padding: 0 25px;
+            .navbar-brand{
+                font-size: 2rem;
+            }
+            .navbar-toggler{
+                border: none;
+            
+
+            }
+            .navbar-toggler:active{
+                border: none;
+            }
+        }
+    }
+
+    // Footer Component
     .footer-component {
         .membership-footer-section {
             .title {

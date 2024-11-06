@@ -1,5 +1,8 @@
+// React
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// Components & pages
 import Layout from './components/layout/Layout';
 import Home from './pages/home/Home';
 import Overview from './pages/business/Overview';
@@ -9,9 +12,14 @@ import Mental from './pages/business/mental_health/MentalHealth.jsx';
 import Results from './pages/business/result/Results.jsx';
 import Service from './pages/service/Service.jsx';
 
+// CSS & Styles
+import './styles/global.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+
 
 function App() {
-
   return (
     <BrowserRouter>
       <Routes>
@@ -26,7 +34,6 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-
   )
 }
 
