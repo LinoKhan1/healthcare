@@ -13,9 +13,10 @@ import Results from './pages/business/result/Results.jsx';
 import Service from './pages/service/Service.jsx';
 
 // CSS & Styles
-import './styles/global.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './styles/global.scss';
+
 
 
 
