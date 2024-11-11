@@ -9,35 +9,29 @@ html {
 /* Navbar */
 .navbar {
     .container-fluid {
-        padding: 0px 50px;
-        margin: 0;
-        .navbar-brand{
+        padding: 0 50px;
+       
+        .navbar-brand {
             color: #005450;
             font-size: 3rem;
         }
-        .navbar-brand, li{
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+        
     }
 }
 
 .navbar .nav-link {
     margin-left: 15px;
+    color: #005450;
     /* Add space between nav links */
+    button{
+        background-color: #005450;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+    }
 }
 
-.navbar .btn {
-    /* Ensure button has space from links */
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: #005450;
-    border: none;
-    border-radius: 36px;
-    padding: 14px 32px;
-    margin-top: -10px;
 
-}
 
 /* Footer CSS */
 .footer-component {
@@ -52,8 +46,19 @@ html {
         background: linear-gradient(1turn, #005450 56.17%, #ffc776 215.69%, #ffc776 0);
         text-align: center;
 
+        .title {
+            width: 70%;
+            margin: auto;
+            margin-bottom: 24px;
+
+        }
         h1 {
             color: #fff;
+            font-size: 6rem;
+        }
+
+        button {
+            margin-right: 16px;
         }
     }
 
@@ -77,10 +82,20 @@ html {
             align-items: center;
 
             /* Align the list items inline */
+            .link {
+                text-decoration: none;
+
+            }
+
             li {
                 margin-right: 36px;
+                color: #fff;
+                text-decoration: none;
                 /* Add some spacing between list items (optional) */
             }
+        }
+        .icons{
+            justify-content: end;
         }
 
         .social-icons {
@@ -128,4 +143,66 @@ html {
         font-size: 1rem;
         margin-bottom: 0;
     }
+}
+
+// Media queries
+@media only screen and (max-width:992px) {
+
+    .footer-component {
+        .membership-footer-section {
+            .title {
+                width: 90%;
+            }
+            h1{
+                font-size: 4rem;
+            }
+        }
+
+       
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+
+
+    // Navbar Component
+    .navbar{
+        .container-fluid{
+            padding: 0 25px;
+            .navbar-brand{
+                font-size: 2rem;
+            }
+            .navbar-toggler{
+                border: none;
+            
+
+            }
+            .navbar-toggler:active{
+                border: none;
+            }
+        }
+    }
+
+    // Footer Component
+    .footer-component {
+        .membership-footer-section {
+            .title {
+                width: 100%;
+            }
+        }
+        .footer-section{
+            padding-top: 24px;
+            text-align: center;
+            ul{
+                display: block;
+            }
+            .icons{
+                justify-content: center;
+            }
+        }
+
+    }
+
+
 }

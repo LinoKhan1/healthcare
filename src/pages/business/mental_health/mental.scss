@@ -45,7 +45,8 @@ $spacing-medium: 50px;
       51% { opacity: 0; transform: translateY(-20px); }
     }
   }
-}
+
+
 
 // Help Section
 .help-section {
@@ -200,4 +201,5 @@ $spacing-medium: 50px;
 
   // FAQ Section
   .faq-section .accordion { width: 100%; }
+}
 }

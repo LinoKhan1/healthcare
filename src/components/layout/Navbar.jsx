@@ -1,6 +1,8 @@
+// React 
 import React from "react";
 import { Link } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+// CSS & Styles
 import './layout.scss';
 
 const NavbarComponent = () => {
@@ -24,10 +26,14 @@ const NavbarComponent = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="/">Home</Link>
               </li>
+              {/** Service Link */}
+              <li>
+                <Link className="nav-link" to="/services">Services</Link>
+              </li>
   
               {/* Blog Link */}
               <li className="nav-item">
-                <Link className="nav-link" to="/blog">Blog</Link>
+                <Link className="nav-link" to="/blogs">Blog</Link>
               </li>
   
               {/* Dropdown for Business */}
@@ -36,10 +42,9 @@ const NavbarComponent = () => {
                   Business
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><Link className="dropdown-item" to="/business/overview">Overview</Link></li>
-                  <li><Link className="dropdown-item" to="/business/results">Results</Link></li>
-                  <li><Link className="dropdown-item" to="/business/mental-health">Mental Health</Link></li>
-                  <li><Link className="dropdown-item" to="/business/get-in-touch">Get in Touch</Link></li>
+                  <li><Link className="dropdown-item" to="/business">Overview</Link></li>
+                  <li><Link className="dropdown-item" to="/results">Results</Link></li>
+                  <li><Link className="dropdown-item" to="/mental">Mental Health</Link></li>
                 </ul>
               </li>
   
