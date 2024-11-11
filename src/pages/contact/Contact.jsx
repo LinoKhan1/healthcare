@@ -76,16 +76,7 @@ const Contact = () => {
                             <p>If you're interested in becoming a VitalPath supplier, send your information to sourcing@vitalpath.com. A team member will contact you shortly.</p>
                         </section>
                     </div>
-                    {/** Membership Section */}
-                    <div className="member-section">
-                        <section className="section">
-                            <h1 className="display-1">Get Started with VitalPath Today</h1>
-                            <span>
-                                <button className="secondary-btn">Join VitalPath</button>
-                                <button className="secondary-btn">For Business</button>
-                            </span>
-                        </section>
-                    </div>
+                   
                 </div>
 
             </div>

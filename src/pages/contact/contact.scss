@@ -50,6 +50,9 @@ $breakpoint-sm: 768px;
 // Hero Section
 .contact-page {
     .hero-section {
+        .section{
+            padding: 75px 50px;
+        }
         background: url('../../assets/images/contact-hero-img.webp') no-repeat center/cover;
         color: $text-color-light;
         padding: 200px 0;
@@ -105,19 +108,3 @@ $breakpoint-sm: 768px;
     padding-top: 0;
 }
 
-// Membership Section
-.member-section {
-    background-color: $secondary-color;
-    color: $text-color-light;
-    @include center-content;
-    flex-direction: column;
-
-    h1 {
-        width: 50%;
-        margin: auto;
-
-        @media (max-width: $breakpoint-sm) {
-            width: 100%;
-        }
-    }
-}
