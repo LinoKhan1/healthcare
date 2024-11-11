@@ -43,12 +43,24 @@ $background-gradient: linear-gradient(180deg, $main-color 56.17%, #abcc76 215.69
     .section {
         padding: 0;
     }
+   
+
+    .link {
+        text-decoration: none;
+        margin-top: 50px;
+
+        h3 {
+            font-size: 1.4rem;
+
+        }
+    }
 
     .service-preview {
         background-color: #e8f8f5;
         padding: 0 50px;
         display: flex;
         flex-wrap: wrap;
+
 
         .col {
             flex: 1;
@@ -73,6 +85,7 @@ $background-gradient: linear-gradient(180deg, $main-color 56.17%, #abcc76 215.69
             img {
                 border-radius: 25px;
             }
+           
         }
     }
 
@@ -110,9 +123,13 @@ $background-gradient: linear-gradient(180deg, $main-color 56.17%, #abcc76 215.69
         .row {
             display: flex;
             flex-wrap: wrap;
+            margin-top: 24px;
 
             .col {
                 flex: 1;
+                .icon{
+                    padding-bottom: 50px;
+                }
             }
         }
     }
@@ -170,6 +187,7 @@ $background-gradient: linear-gradient(180deg, $main-color 56.17%, #abcc76 215.69
 .home-page {
     .testimonial-section {
         text-align: center;
+        background-color: #fff;
 
         .section {
             padding: 0 50px;
@@ -177,6 +195,7 @@ $background-gradient: linear-gradient(180deg, $main-color 56.17%, #abcc76 215.69
 
         h1 {
             color: $accent-color;
+            margin-bottom: 50px;
         }
     }
 }

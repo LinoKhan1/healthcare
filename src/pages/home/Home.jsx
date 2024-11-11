@@ -101,7 +101,7 @@ const Home = React.memo(() => {
                             <div className="title">
                                 <h1 className="display-1">Get personalized care for all your healthcare needs</h1>
                             </div>
-                            <Link to="/services">
+                            <Link className="link" to="/services">
                                 <h3>
                                     See all our services
                                 </h3>
@@ -125,34 +125,34 @@ const Home = React.memo(() => {
                         </div>
                         <div className="row">
                             <div className="col">
-                                <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                 <p>Convenient, same-day or next-day appointments</p>
                                 <h3>Learn more</h3>
                             </div>
                             <div className="col">
-                                <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                 <p>Extended appointment times so you never feel rushed</p>
                                 <h3>Discover the difference</h3>
                             </div>
                             <div className="col">
-                                <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                 <p>Comprehensive lab services at our locations</p>
                                 <h3>Explore lab services</h3>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col">
-                                <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                 <p>Access to virtual consultations and telemedicine</p>
                                 <h3>Start a virtual visit</h3>
                             </div>
                             <div className="col">
-                                <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                 <p>Personalized healthcare plans tailored to you</p>
                                 <h3>Get a custom plan</h3>
                             </div>
                             <div className="col">
-                                <FontAwesomeIcon icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
+                                <FontAwesomeIcon className="icon" icon={faMedrt} style={{ color: '#00ab6c', fontSize: '5rem' }} />
                                 <p>Wellness programs for long-term health</p>
                                 <h3>Explore wellness programs</h3>
                             </div>
