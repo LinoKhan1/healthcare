@@ -1,6 +1,7 @@
 // React
 import React, { memo } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 // Assets 
 import Service_img1 from '../../assets/images/services-img1.webp';
@@ -19,7 +20,7 @@ const ServiceItem = memo(({ title, description, imgSrc, imgFirst }) => (
     <div className="row row-general">
         {imgFirst && (
             <div className="col col-general">
-                <img className="img-fluid" src={imgSrc} alt={title} loading="lazy" />
+                <img className="img-fluid" src={imgSrc} alt={`Image for ${title}`} loading="lazy" />
             </div>
         )}
         <div className="col col-general">
@@ -29,7 +30,7 @@ const ServiceItem = memo(({ title, description, imgSrc, imgFirst }) => (
         </div>
         {!imgFirst && (
             <div className="col col-general">
-                <img className="img-fluid" src={imgSrc} alt={title} loading="lazy" />
+                <img className="img-fluid" src={imgSrc} alt={`Image for ${title}`} loading="lazy" />
             </div>
         )}
     </div>
@@ -38,17 +39,31 @@ const ServiceItem = memo(({ title, description, imgSrc, imgFirst }) => (
 const Service = memo(() => {
     return (
         <div className="service-page">
+            <Helmet>
+                <title>Our Healthcare Services | VitalPath</title>
+                <meta name="description" content="Explore the healthcare services offered by VitalPath, including wellness, chronic condition support, mental health services, and more." />
+                <meta name="keywords" content="healthcare services, wellness, chronic conditions, mental health, urgent care, LGBTQIA+ healthcare, sexual health, preventive care, everyday care" />
+                <meta name="robots" content="index, follow" />
+                <meta property="og:title" content="Our Healthcare Services | VitalPath" />
+                <meta property="og:description" content="Explore the healthcare services offered by VitalPath, including wellness, chronic condition support, mental health services, and more." />
+                <meta property="og:image" content={Service_img1} />
+                <meta property="og:url" content="https://www.vitalpath.com/services" />
+                <meta name="twitter:title" content="Our Healthcare Services | VitalPath" />
+                <meta name="twitter:description" content="Explore the healthcare services offered by VitalPath, including wellness, chronic condition support, mental health services, and more." />
+                <meta name="twitter:image" content={Service_img1} />
+                <meta name="twitter:card" content="summary_large_image" />
+                <link rel="canonical" href="https://www.vitalpath.com/services" />
+            </Helmet>
             <div className="main">
                 {/** Hero Section */}
                 <div className="hero-section">
                     <section className="section">
                         <h3>services</h3>
                         <h1 className="display-1">Your partner in healthcare</h1>
-                        <Link to="/contact" >
+                        <Link to="/contact">
                             <button className="quaternary-btn">
                                 Contact us
                             </button>
-
                         </Link>
                     </section>
                 </div>

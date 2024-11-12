@@ -1,6 +1,7 @@
 // React
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 
 // Font awesome icons
@@ -19,8 +20,6 @@ import Blog_img4 from '../../assets/images/blog_img4.webp';
 import Blog_img5 from '../../assets/images/blog_img5.webp';
 import Blog_img6 from '../../assets/images/blog_img6.webp';
 import Membership_img from '../../assets/images/membership.webp';
-
-
 
 // Styles & CSS
 import './business.scss';
@@ -121,93 +120,7 @@ const Overview = () => {
                     </div>
                     {/** Industry Section */}
                     <IndustrySection />
-                    {/* <div className="industry-section">
-                        <section className="section">
-                            <div className="title">
-                                <h1 className="display-1">We work with 8,500+ organizations of all shapes and sizes</h1>
-                            </div>
-                            <Swiper
-                                spaceBetween={20}
-                                slidesPerView={1.5}
-                                onSlideChange={() => console.log('slide change')}
-                                onSwiper={(swiper) => console.log(swiper)}
-                            >
-                                <SwiperSlide>
-                                    <div className="swiper-image">
-                                        <img className="img-fluid" src={Swiper_img1} alt="" />
-                                    </div>
-                                    <div className="swiper-text">
-                                        <ul>
-                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
-                                            </span></li>
-                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                Remote mental health support for anxiety and depression
-                                            </span></li>
-                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                In-app prescription renewal requests
-                                            </span></li>
-                                        </ul>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                <div className="swiper-image">
-                                        <img className="img-fluid" src={Swiper_img2} alt="" />
-                                    </div>
-                                    <div className="swiper-text">
-                                        <ul>
-                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
-                                            </span></li>
-                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                Remote mental health support for anxiety and depression
-                                            </span></li>
-                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                In-app prescription renewal requests
-                                            </span></li>
-                                        </ul>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                <div className="swiper-image">
-                                        <img className="img-fluid" src={Swiper_img3} alt="" />
-                                    </div>
-                                    <div className="swiper-text">
-                                        <ul>
-                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
-                                            </span></li>
-                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                Remote mental health support for anxiety and depression
-                                            </span></li>
-                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                In-app prescription renewal requests
-                                            </span></li>
-                                        </ul>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                <div className="swiper-image">
-                                        <img className="img-fluid" src={Swiper_img4} alt="" />
-                                    </div>
-                                    <div className="swiper-text">
-                                        <ul>
-                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                Get 24/7 on-demand care nationwide via Video Chat or Treat Me Now at no extra cost
-                                            </span></li>
-                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                Remote mental health support for anxiety and depression
-                                            </span></li>
-                                            <li> <span><FontAwesomeIcon className="check" icon={faCheckCircle} />
-                                                In-app prescription renewal requests
-                                            </span></li>
-                                        </ul>
-                                    </div>
-                                </SwiperSlide>
-                            </Swiper>
-                        </section>
-                    </div>
-                    */}
+                   
                     {/** Value Section */}
                     <div className="value-section">
                         <section className="section">
