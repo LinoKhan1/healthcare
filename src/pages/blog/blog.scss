@@ -15,6 +15,9 @@ $section-padding: 150px 0;
 // Hero Section
 .blog-page {
     .hero-section {
+        .section{
+            padding: 75px 50px;
+          }
         @include center-text;
         color: $primary-color;
         background-color: #fff;

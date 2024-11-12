@@ -9,7 +9,10 @@ $spacing-medium: 50px;
 // Hero Section
 .mental-page {
   .hero-section {
-    padding: $spacing-section 0;
+    .section{
+      padding: 75px 50px;
+    }
+    padding: 200px 0px 150px 0px;
     background: url('../../../assets/images/mental-hero-img.webp') center/cover;
     text-align: center;
     color: $color-white;

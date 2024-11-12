@@ -81,44 +81,44 @@ h2 {
 
 
 }
-// Industry Section
 
 .industry-section {
     position: relative;
 
-    .section {
-        padding: 75px 0;
-        padding-left: 100px;
-    }
+    
 
     .swiper {
         margin-top: 75px;
     }
+    .swiper-slide{
+        padding: 75px 0px 0px 100px;
+
+    }
 
     .swiper-pagination {
+        position: relative;
+        padding: 75px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
         .swiper-pagination-bullet {
             height: 15px;
             width: 15px;
             margin: 0 5px;
             background-color: #bbb;
             border-radius: 50%;
-            display: inline-block;
             cursor: pointer;
         }
-        
-        // To make active bullet larger and more prominent
-        .swiper-pagination-bullet-active{
-            background-color: #717171;
 
+        .swiper-pagination-bullet-active {
+            background-color: #717171;
         }
-       
     }
 
     .swiper-navigation {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        pointer-events: none;
 
         .swiper-button-prev,
         .swiper-button-next {
@@ -130,41 +130,15 @@ h2 {
             pointer-events: all;
         }
     }
+    .swiper-text{
+        width: 60%;
+        color: #005450;
 
-    .swiper-slide {
-        padding-bottom: 75px;
-
-        .swiper-image {
-            position: relative;
-
-            img {
-                display: block;
-                width: 100%;
-                height: auto;
-            }
+        h2{
+            margin-top: 24px;
         }
-
-        .swiper-text {
-            padding: 24px 0px;
-            color: #004D49;
-
-            .slide-title {
-                font-weight: bold;
-                margin-bottom: 24px;
-            }
-
-            ul {
-                width: 70%;
-
-                li {
-                    list-style: none;
-
-                    .check {
-                        color: #004D49;
-                        margin-right: 8px;
-                    }
-                }
-            }
+        li{
+            list-style:none ;
         }
     }
 }
@@ -173,12 +147,10 @@ h2 {
 
 
 
-
 // Value Section
 .value-section {
     .section {
-        padding: 75px 0;
-        padding-bottom: 0;
+        padding: 0;
     }
 
 
@@ -440,6 +412,26 @@ h2 {
     }
 }
 
+@media only screen and (max-width:1024px) {
+
+    // Industry Section
+    .industry-section {
+
+        .section {
+            padding: 75px 75px;
+            .swiper-slide{
+                padding: 0;
+            }
+
+            .title {
+                h1 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:992px) {
 
     .title {
@@ -457,12 +449,29 @@ h2 {
         }
 
     }
+
+
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:768px) {
 
-    .industry-section{
-        padding: 0 50px;
-        padding-left: 0px;
+    // Industry Section
+    .industry-section {
+
+
+        .section {
+            padding-bottom: 0;
+            .title {
+                h1 {
+                    width: 100%;
+                }
+            }
+        }
+
+       
+            .swiper-text {
+               width: 100%;
+            }
+
     }
 }

@@ -1,6 +1,7 @@
 // React
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // Assets
 import Blog_img1 from '../../assets/images/Blog_img1.webp';
@@ -47,6 +48,13 @@ const BlogEntry = ({ img, title, subtitle, date, alt }) => (
 const Blog = () => {
     return (
         <div className="blog-page">
+            <Helmet>
+                <meta name="description" content="Explore the latest health tips, wellness advice, and fitness insights on our blog. Stay informed with expert advice and tips for a healthier lifestyle." />
+                <meta name="keywords" content="health tips, flu prevention, immunity, hydration, fitness, mental health, wellness, lifestyle choices, healthcare technology, community health, wellness initiatives" />
+                <link rel="canonical" href="https://www.yourwebsite.com/blog" />
+                <title>Health Blog - Expert Advice for a Better Life</title>
+            </Helmet>
+
             <div className="main">
                 {/* Hero Section */}
                 <div className="hero-section">
@@ -74,7 +82,6 @@ const Blog = () => {
                             ))}
                         </div>
                     </section>
-
                     <div className="row services-section">
                         <h1 className="display-1">Better Health Starts Here</h1>
                         <Link className="links" to="/services">

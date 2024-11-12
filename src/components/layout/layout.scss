@@ -11,17 +11,18 @@ html {
     .container-fluid {
         padding: 0 50px;
 
-        ul,a,button,li{
+        ul,
+        a,
+        button,
+        li {
             margin-bottom: 0px;
         }
-        
-       
+
         .navbar-brand {
             color: #005450;
             font-size: 3rem;
             margin-bottom: 0px;
         }
-        
     }
 }
 
@@ -29,12 +30,27 @@ html {
     margin-left: 15px;
     color: #005450;
     /* Add space between nav links */
-    button{
+    button {
         background-color: #005450;
         color: #fff;
         border: none;
         border-radius: 25px;
     }
+}
+
+/* Special Navbar Styles for Certain Pages (e.g., /mental) */
+.special-navbar .navbar {
+    position: absolute; /* Or 'relative', 'fixed', or 'sticky' as needed */
+    width: 100%;
+    z-index: 9999;
+    .navbar-brand,.nav-link{
+        color: #fff;
+    }
+}
+
+/* Optional: Adjust the content below the navbar when it has a special positioning */
+.special-navbar + main {
+    margin-top: 150px; /* Adjust this to make sure content isn't hidden under the navbar */
 }
 
 

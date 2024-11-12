@@ -1,5 +1,6 @@
 // React
 import React from "react";
+import { Helmet } from "react-helmet";
 
 // CSS & Styles
 import './contact.scss';
@@ -16,6 +17,14 @@ const Contact = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Contact Us | VitalPath Healthcare</title>
+                <meta name="description" content="Contact VitalPath Healthcare for support, inquiries, billing questions, and more. Reach out to us through our contact information or app support." />
+                <meta name="keywords" content="VitalPath, healthcare, contact, support, billing, insurance, medical records, customer service" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://www.vitalpath.com/contact" />
+            </Helmet>
+
             <div className="contact-page">
                 <div className="main">
                     {/** Hero Section */}
@@ -28,6 +37,7 @@ const Contact = () => {
                             </div>
                         </section>
                     </div>
+
                     {/** Help Section */}
                     <div className="help-section">
                         <section className="section">
@@ -53,6 +63,7 @@ const Contact = () => {
                             </div>
                         </section>
                     </div>
+
                     {/** Contact Info Section */}
                     <div className="contact-info-section">
                         <section className="section">
@@ -76,11 +87,8 @@ const Contact = () => {
                             <p>If you're interested in becoming a VitalPath supplier, send your information to sourcing@vitalpath.com. A team member will contact you shortly.</p>
                         </section>
                     </div>
-                   
                 </div>
-
             </div>
-
         </div>
     );
 }
