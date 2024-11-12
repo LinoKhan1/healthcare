@@ -13,12 +13,12 @@ import { faMedrt } from "@fortawesome/free-brands-svg-icons";
 import Value_img1 from '../../assets/images/value_one.webp';
 import Value_img2 from '../../assets/images/value_two.webp';
 import Value_img3 from '../../assets/images/value_three.webp';
-import Blog_img1 from '../../assets/images/blog_img1.webp';
-import Blog_img2 from '../../assets/images/blog_img2.webp';
-import Blog_img3 from '../../assets/images/blog_img3.webp';
-import Blog_img4 from '../../assets/images/blog_img4.webp';
-import Blog_img5 from '../../assets/images/blog_img5.webp';
-import Blog_img6 from '../../assets/images/blog_img6.webp';
+import Blog_img1 from '../../assets/images/Blog_img1.webp';
+import Blog_img2 from '../../assets/images/Blog_img2.webp';
+import Blog_img3 from '../../assets/images/Blog_img3.webp';
+import Blog_img4 from '../../assets/images/Blog_img4.webp';
+import Blog_img5 from '../../assets/images/Blog_img5.webp';
+import Blog_img6 from '../../assets/images/Blog_img6.webp';
 import Membership_img from '../../assets/images/membership.webp';
 
 // Styles & CSS
