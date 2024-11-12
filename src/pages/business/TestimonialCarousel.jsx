@@ -58,7 +58,6 @@ const TestimonialCarousel = () => {
                         )}
                     </div>
                 ))}
-
             </div>
             <button className="prev" onClick={prevSlide}>&#8249;</button>
             <button className="next" onClick={nextSlide}>&#8250;</button>

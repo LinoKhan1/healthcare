@@ -1,27 +1,43 @@
-// business.scss
+// Define colors for easy updates and consistency
+$primary-color: #005450;
+$secondary-color: #004D49;
+$white: #fff;
+$light-gray: #bbb;
+$medium-gray: #717171;
+$background-light: #f1dfca;
+$testimonial-bg: #EEF6F4;
 
+// Define padding and margin variables for consistent spacing
+$section-padding: 50px;
+$section-padding-lg: 75px;
+$margin-small: 8px;
+$margin-medium: 16px;
+$margin-large: 24px;
 
-// Overview Page
+// General heading styles
+h1, h2 {
+    color: $primary-color;
+}
+
 .title {
     h1 {
-        color: #005450;
+        color: $primary-color;
     }
 }
 
-h2 {
-    color: #005450;
-}
-
+// Overview Page
 .overview-page {
 
     // Hero Section
     .hero-section {
-        background-image: url("../../assets/images/overview-hero-img.webp");
-        background-size: cover;
-        color: #005450;
+        background: {
+            image: url("../../assets/images/overview-hero-img.webp");
+            size: cover;
+        }
+        color: $primary-color;
 
         .section {
-            padding: 50px 50px;
+            padding: $section-padding $section-padding;
         }
 
         h1 {
@@ -29,32 +45,28 @@ h2 {
         }
 
         button {
-            margin-right: 16px;
+            margin-right: $margin-medium;
         }
 
         .link {
             text-decoration: none;
-            color: #005450;
+            color: $primary-color;
         }
-
-
     }
 
     // About Section
     .about-section {
-
-
         .row {
-            margin: 50px 0;
+            margin: $section-padding 0;
             text-align: center;
 
             .col {
                 .icon {
-                    margin-bottom: 24px;
+                    margin-bottom: $margin-large;
                 }
 
                 p {
-                    color: #004D49;
+                    color: $secondary-color;
                 }
             }
         }
@@ -62,14 +74,13 @@ h2 {
 
     // Offer Section
     .offer-section {
-        background-color: #005450;
-        color: #fff;
+        background-color: $primary-color;
+        color: $white;
 
         .row {
             .col-lg-3 {
                 display: flex;
                 justify-content: center;
-                /* Center horizontally */
                 align-items: center;
 
                 button {
@@ -78,40 +89,38 @@ h2 {
             }
         }
     }
-
-
 }
 
+// Industry Section
 .industry-section {
     position: relative;
 
-    
-
     .swiper {
-        margin-top: 75px;
+        margin-top: $section-padding-lg;
     }
-    .swiper-slide{
-        padding: 75px 0px 0px 100px;
 
+    .swiper-slide {
+        padding: $section-padding-lg 0 0 $section-padding-lg;
     }
 
     .swiper-pagination {
         position: relative;
-        padding: 75px 0;
+        padding: $section-padding-lg 0;
         width: 100%;
         display: flex;
         justify-content: center;
+
         .swiper-pagination-bullet {
             height: 15px;
             width: 15px;
-            margin: 0 5px;
-            background-color: #bbb;
+            margin: 0 $margin-small;
+            background-color: $light-gray;
             border-radius: 50%;
             cursor: pointer;
         }
 
         .swiper-pagination-bullet-active {
-            background-color: #717171;
+            background-color: $medium-gray;
         }
     }
 
@@ -122,30 +131,27 @@ h2 {
 
         .swiper-button-prev,
         .swiper-button-next {
-            background: #ffffff;
+            background: $white;
             padding: 10px;
-            color: #004D49;
+            color: $secondary-color;
             cursor: pointer;
             border: none;
-            pointer-events: all;
         }
     }
-    .swiper-text{
-        width: 60%;
-        color: #005450;
 
-        h2{
-            margin-top: 24px;
+    .swiper-text {
+        width: 60%;
+        color: $primary-color;
+
+        h2 {
+            margin-top: $margin-large;
         }
-        li{
-            list-style:none ;
+
+        li {
+            list-style: none;
         }
     }
 }
-
-
-
-
 
 // Value Section
 .value-section {
@@ -153,33 +159,29 @@ h2 {
         padding: 0;
     }
 
-
-
     .row {
-        margin-top: 50px;
-        padding: 0 75px;
+        margin-top: $section-padding;
+        padding: 0 $section-padding-lg;
         text-align: center;
-
 
         .col {
             img {
                 border-radius: 50%;
                 width: 70%;
-                margin-bottom: 50px;
-
+                margin-bottom: $section-padding;
             }
 
             p {
-                color: #004D49;
+                color: $secondary-color;
             }
         }
     }
 
     // View results
     .view-results {
-        background-color: #f1dfca;
-        color: #005450;
-        padding: 75px 75px;
+        background-color: $background-light;
+        color: $primary-color;
+        padding: $section-padding-lg $section-padding-lg;
 
         h1 {
             text-align: left;
@@ -188,20 +190,16 @@ h2 {
         .col-lg-3 {
             display: flex;
             justify-content: center;
-            /* Center horizontally */
             align-items: center;
-            /* Center vertically */
         }
-
-
     }
 }
 
-//Access Section
+// Access Section
 .access-section {
     .col-lg-6 {
         h1 {
-            color: #005450;
+            color: $primary-color;
         }
 
         ul {
@@ -210,25 +208,22 @@ h2 {
 
             li {
                 list-style: none;
-                color: #004D49;
+                color: $secondary-color;
 
                 .check {
-                    margin-right: 8px;
-                    color: #005450;
+                    margin-right: $margin-small;
+                    color: $primary-color;
                 }
             }
         }
-
     }
-
 }
 
 // Blog Section
 .blog-section {
     .section {
-        padding: 0px 50px;
+        padding: 0 $section-padding;
     }
-
 
     .blog-preview {
         .title {
@@ -237,174 +232,24 @@ h2 {
             h1 {
                 width: 40%;
                 margin: auto;
-                color: #005450;
+                color: $primary-color;
             }
         }
 
         .row {
-
-            margin-top: 50px;
+            margin-top: $section-padding;
 
             .col {
                 h3 {
-                    margin-top: 24px;
-
+                    margin-top: $margin-large;
                 }
             }
-        }
-    }
-}
-
-// Testimonial
-.testimonial-section {
-    background-color: #EEF6F4;
-    padding: 50px 0;
-
-}
-
-.carousel-container {
-    position: relative;
-    /* Ensure this container is a positioning reference */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.carousel {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    height: 400px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.testimonial-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-
-    .title {
-        font-style: italic;
-        color: #555;
-    }
-}
-
-.profile-img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 50px;
-}
-
-h2 {
-    margin: 20px 0;
-    color: #005450;
-}
-
-.name {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-
-
-.slide {
-    display: none;
-}
-
-.slide.active {
-    display: block;
-    animation: fade 1s ease-in-out;
-}
-
-@keyframes fade {
-    from {
-        opacity: 0.4;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #005450;
-    border: 1px solid #005450;
-    padding: 10px;
-    width: 75px;
-    /* Ensuring a perfect circle */
-    height: 75px;
-    /* Ensuring a perfect circle */
-    border-radius: 50%;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 24px;
-    transition: background-color 0.3s ease;
-    z-index: 1;
-    /* Make sure arrows are above other elements */
-}
-
-.prev {
-    left: 20px;
-    /* Ensures it's within the container and visible */
-}
-
-.next {
-    right: 20px;
-    /* Ensures it's within the container and visible */
-}
-
-.prev:hover,
-.next:hover {
-    background-color: #005450;
-    color: #fff;
-}
-
-.dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #717171;
-}
-
-/* Blog Section */
-.blog-section {
-    .row {
-        margin-bottom: 50px;
-
-        .col {
-            padding: 24px;
         }
     }
 
     .view-more {
         text-align: center;
-        margin-bottom: 24px;
+        margin-bottom: $margin-large;
 
         .quaternary-btn {
             border: 1px solid gray;
@@ -412,66 +257,146 @@ h2 {
     }
 }
 
-@media only screen and (max-width:1024px) {
+// Testimonial Section
+.testimonial-section {
+    background-color: $testimonial-bg;
+    padding: $section-padding 0;
 
-    // Industry Section
-    .industry-section {
+    .carousel-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
 
-        .section {
-            padding: 75px 75px;
-            .swiper-slide{
-                padding: 0;
-            }
-
-            .title {
-                h1 {
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width:992px) {
-
-    .title {
-        h1 {
+        .carousel {
+            position: relative;
             width: 100%;
-        }
-    }
-
-    // Offer Section
-    .offer-section,
-    .value-section .view-results {
-
-        h1 {
+            max-width: 600px;
+            height: 500px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-        }
 
-    }
+            .testimonial-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
 
-
-}
-
-@media only screen and (max-width:768px) {
-
-    // Industry Section
-    .industry-section {
-
-
-        .section {
-            padding-bottom: 0;
-            .title {
-                h1 {
-                    width: 100%;
+                .title {
+                    font-style: italic;
+                    color: #555;
                 }
             }
+
+            .profile-img {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                margin-bottom: $section-padding;
+            }
         }
 
-       
-            .swiper-text {
-               width: 100%;
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            padding: 10px;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            transition: background-color 0.3s ease;
+            z-index: 1;
+
+            &:hover {
+                background-color: $primary-color;
+                color: $white;
+            }
+        }
+
+        .prev { left: 20px; }
+        .next { right: 20px; }
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        margin-top: $margin-medium;
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 $margin-small;
+            background-color: $light-gray;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &.active {
+                background-color: $medium-gray;
+            }
+        }
+    }
+}
+
+// Responsive Styles
+@media only screen and (max-width: 1024px) {
+    .industry-section .section {
+        padding: $section-padding-lg;
+
+        .swiper-slide { padding: 0; }
+
+        .title h1 { width: 100%; }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .title h1 { width: 100%; }
+
+    .offer-section,
+    .value-section .view-results h1 {
+        text-align: center;
+    }
+
+    // Testimonial Section
+    .testimonial-section{
+        .carousel-container{
+            width: 100%;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .industry-section .section {
+        padding-bottom: 0;
+
+        .title h1 { width: 100%; }
+
+        .swiper-text { width: 100%; }
+    }
+
+    // Testimonial Section
+    .testimonial-section{
+        .carousel-container{
+            width: 100%;
+            height: fit-content;
+            .carousel{
+                max-width: 100%;
+                height: 100%;
+            }
+            .prev, .next{
+                display: none;
             }
 
+        }
     }
 }
