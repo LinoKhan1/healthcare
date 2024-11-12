@@ -1,10 +1,20 @@
+// React
 import React, { useState, useCallback } from "react";
+import { Helmet } from "react-helmet";
+
+// Components
 import RowOfCircles from "./RowOfCircles";
+
+// Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
+// Assests
 import Classpass_image from '../../../assets/images/classpass.webp';
 import Zendesk_image from '../../../assets/images/zendesk.webp';
 import Soulcycle_image from '../../../assets/images/soulcycle.webp';
+
+// CSS & Styles
 import './result.scss';
 
 const Results = () => {
@@ -16,8 +26,15 @@ const Results = () => {
 
     return (
         <div className="result-page">
+            <Helmet>
+                <title>Your Pathway to Enhanced Healthcare - VitalPath</title>
+                <meta name="description" content="Explore how VitalPath enhances healthcare outcomes with superior care, cost reductions, and better employee satisfaction." />
+                <meta name="keywords" content="healthcare, employee care, cost reduction, VitalPath, corporate healthcare solutions" />
+                <meta property="og:title" content="Your Pathway to Enhanced Healthcare - VitalPath" />
+                <meta property="og:description" content="Explore how VitalPath enhances healthcare outcomes with superior care, cost reductions, and better employee satisfaction." />
+                <link rel="canonical" href="https://www.yourwebsite.com/results" />
+            </Helmet>
             <div className="main">
-
                 {/* Hero Section */}
                 <div className="hero-section">
                     <section className="section">
@@ -30,13 +47,9 @@ const Results = () => {
                                 </span>
                             </div>
                             <div className="col-lg-5"></div>
-
-
                         </div>
                     </section>
-
                 </div>
-
 
                 {/* Result Section */}
                 <section className="result-section">
@@ -46,13 +59,11 @@ const Results = () => {
                         </div>
                         <RowOfCircles />
                     </section>
-
                 </section>
 
                 {/* Illustration Section */}
                 <div className="illustration-section">
                     <section className="section">
-
                         <div className="title">
                             <h1 className="display-1">Maximize Satisfaction for Employees and Stakeholders</h1>
                         </div>
@@ -86,9 +97,7 @@ const Results = () => {
                             </div>
                         </div>
                     </section>
-
                 </div>
-
 
                 {/* Metric Section */}
                 <section className="metric-section section">
@@ -104,13 +113,13 @@ const Results = () => {
                         <h1 className="display-1">What Our Partners Say</h1>
                     </div>
                     <div className="row row-general">
-                        {[
+                        {[ 
                             { img: Zendesk_image, name: 'Zendesk', description: 'VitalPath provides employees with a cutting-edge healthcare experience.' },
                             { img: Classpass_image, name: 'ClassPass', description: 'ClassPass empowers employees to access modern care that fits into their busy schedules.' },
                             { img: Soulcycle_image, name: 'SoulCycle', description: 'SoulCycle keeps their team healthy with accessible 24/7 care.' },
                         ].map(({ img, name, description }) => (
                             <div className="col col-general" key={name}>
-                                <img className="img-fluid" src={img} alt={name} loading="lazy" />
+                                <img className="img-fluid" src={img} alt={`${name} logo`} loading="lazy" />
                                 <h2>{name}</h2>
                                 <p>{description}</p>
                             </div>
@@ -124,7 +133,7 @@ const Results = () => {
                         <h1 className="display-1">Explore Insights for a Healthier Workforce</h1>
                     </div>
                     <div className="row">
-                        {[
+                        {[ 
                             { title: 'Navigating the Deferred Care Crisis' },
                             { title: 'A Guide to Employee-Centric Healthcare Solutions' },
                             { title: 'Integrating Patient Experience into Your Health Benefits Strategy' },
