@@ -2,6 +2,7 @@
 import React, { useCallback, useMemo } from "react";
 import { Accordion } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // Font Awesome Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -47,9 +48,10 @@ const Mental = ({ title, children }) => {
 
     return (
         <div className="mental-page">
-           {/* <Helmet>
+            <Helmet>
                 <title>Support for Mental Well-Being | VitalPath</title>
                 <meta name="description" content="VitalPath offers compassionate mental health support, including consultations and personalized care plans for stress, anxiety, sleep, and emotional well-being." />
+                <meta name="keywords" content="mental health support, anxiety, depression, stress management, insomnia treatment, mental health consultation, emotional well-being, holistic mental health care" />
 
                 <meta property="og:title" content="Support for Mental Well-Being | VitalPath" />
                 <meta property="og:description" content="Join VitalPath for holistic mental health support tailored to your needs. Book a consultation to discuss your emotional and mental well-being." />
@@ -60,7 +62,7 @@ const Mental = ({ title, children }) => {
                 <meta name="twitter:title" content="Support for Mental Well-Being | VitalPath" />
                 <meta name="twitter:description" content="Discover comprehensive mental health support with VitalPath. Personalized consultations and care for anxiety, stress, and well-being." />
                 <meta name="twitter:image" content={Care_one} />
-            </Helmet>*/}
+            </Helmet>
             <div className="main">
                 <div className="hero-section">
                     <section className="section">
@@ -126,7 +128,7 @@ const Mental = ({ title, children }) => {
                     <section className="section">
                         <div className="row">
                             <div className="col-lg-6">
-                                <img className="img-fluid" src={assets.Care_one} alt="Areas of Support" loading="lazy" />
+                                <img className="img-fluid" src={assets.Care_one} alt="Areas of Support in Mental Health" loading="lazy" />
                             </div>
                             <div className="col-lg-6">
                                 <h1 className="display-1">Areas We Support</h1>
