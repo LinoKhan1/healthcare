@@ -17,6 +17,8 @@ $section-padding: 150px 0;
     .hero-section {
         @include center-text;
         color: $primary-color;
+        background-color: #fff;
+        padding: 100px 0;
 
         h1 {
             font-size: $hero-font-size-large;
@@ -42,7 +44,11 @@ $section-padding: 150px 0;
             color: $primary-color;
             padding: $section-padding;
             margin: 0;
+            margin-bottom: 75px;
             @include center-text;
+            .links{
+                text-decoration: none;
+            }
         }
     }
 }

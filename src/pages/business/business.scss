@@ -1,13 +1,17 @@
 // business.scss
+
+
 // Overview Page
-.title{
-    h1{
+.title {
+    h1 {
         color: #005450;
     }
 }
-h2{
+
+h2 {
     color: #005450;
 }
+
 .overview-page {
 
     // Hero Section
@@ -16,9 +20,23 @@ h2{
         background-size: cover;
         color: #005450;
 
+        .section {
+            padding: 50px 50px;
+        }
+
         h1 {
             line-height: 1;
         }
+
+        button {
+            margin-right: 16px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #005450;
+        }
+
 
     }
 
@@ -34,7 +52,8 @@ h2{
                 .icon {
                     margin-bottom: 24px;
                 }
-                p{
+
+                p {
                     color: #004D49;
                 }
             }
@@ -62,12 +81,37 @@ h2{
 
 
 }
+// Industry Section
 
 .industry-section {
     position: relative;
 
+    .section {
+        padding: 75px 0;
+        padding-left: 100px;
+    }
+
     .swiper {
         margin-top: 75px;
+    }
+
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        // To make active bullet larger and more prominent
+        .swiper-pagination-bullet-active{
+            background-color: #717171;
+
+        }
+       
     }
 
     .swiper-navigation {
@@ -88,6 +132,8 @@ h2{
     }
 
     .swiper-slide {
+        padding-bottom: 75px;
+
         .swiper-image {
             position: relative;
 
@@ -99,18 +145,20 @@ h2{
         }
 
         .swiper-text {
-            padding: 24px 75px;
+            padding: 24px 0px;
             color: #004D49;
 
             .slide-title {
-                font-size: 20px;
                 font-weight: bold;
-                margin-bottom: 10px;
+                margin-bottom: 24px;
             }
 
             ul {
+                width: 70%;
+
                 li {
                     list-style: none;
+
                     .check {
                         color: #004D49;
                         margin-right: 8px;
@@ -120,6 +168,7 @@ h2{
         }
     }
 }
+
 
 
 
@@ -147,7 +196,8 @@ h2{
                 margin-bottom: 50px;
 
             }
-            p{
+
+            p {
                 color: #004D49;
             }
         }
@@ -176,18 +226,21 @@ h2{
 }
 
 //Access Section
-.access-section{
-    .col-lg-6{
-        h1{
+.access-section {
+    .col-lg-6 {
+        h1 {
             color: #005450;
         }
-        ul{
+
+        ul {
             margin: 0;
             padding: 0;
-            li{
+
+            li {
                 list-style: none;
                 color: #004D49;
-                .check{
+
+                .check {
                     margin-right: 8px;
                     color: #005450;
                 }
@@ -195,12 +248,15 @@ h2{
         }
 
     }
-    
+
 }
 
 // Blog Section
 .blog-section {
-   
+    .section {
+        padding: 0px 50px;
+    }
+
 
     .blog-preview {
         .title {
@@ -212,11 +268,13 @@ h2{
                 color: #005450;
             }
         }
+
         .row {
 
             margin-top: 50px;
-            .col{
-                h3{
+
+            .col {
+                h3 {
                     margin-top: 24px;
 
                 }
@@ -271,10 +329,12 @@ h2{
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    margin-bottom: 50px;
 }
 
 h2 {
     margin: 20px 0;
+    color: #005450;
 }
 
 .name {
@@ -359,35 +419,24 @@ h2 {
 .dot.active {
     background-color: #717171;
 }
+
 /* Blog Section */
-.blog-section{
-    .row{
+.blog-section {
+    .row {
         margin-bottom: 50px;
-        .col{
+
+        .col {
             padding: 24px;
         }
     }
-    .view-more{
+
+    .view-more {
         text-align: center;
         margin-bottom: 24px;
-        .quaternary-btn{
+
+        .quaternary-btn {
             border: 1px solid gray;
         }
-    }
-}
-
-
-
-
-/* Contact Section */
-.contact-section {
-    background-color: #005450;
-    text-align: center;
-    color: #fff;
-
-    h1 {
-        width: 70%;
-        margin: auto;
     }
 }
 
@@ -407,5 +456,13 @@ h2 {
             text-align: center;
         }
 
+    }
+}
+
+@media only screen and (max-width:768px){
+
+    .industry-section{
+        padding: 0 50px;
+        padding-left: 0px;
     }
 }

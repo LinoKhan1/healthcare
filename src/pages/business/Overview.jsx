@@ -2,10 +2,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// Import Swiper React components
-import { Navigation, Scrollbar } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-
 
 // Font awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,6 +19,7 @@ import Blog_img4 from '../../assets/images/blog_img4.webp';
 import Blog_img5 from '../../assets/images/blog_img5.webp';
 import Blog_img6 from '../../assets/images/blog_img6.webp';
 import Membership_img from '../../assets/images/membership.webp';
+
 
 
 // Styles & CSS
@@ -53,12 +50,18 @@ const Overview = () => {
                                         Attract and retain top talent with a modern healthcare benefit (and doctor’s office) that helps your team stay healthy and happy.
                                     </p>
                                     <span>
+                                        <Link to="/contact">
                                         <button className="primary-btn">Get in touch</button>
-                                        <button className="primary-btn">See our results</button>
+                                        </Link>
+                                        <Link to="/results">
+                                        <button  className="primary-btn">See our results</button>
+                                        </Link>
                                     </span>
-                                    <span>
-                                        <p>Activating a sponsored membership? </p><Link to="">Click here</Link>
+                                    <span style={{ display: 'flex', alignItems: 'center' }}>
+                                        <p>Activating a sponsored membership?</p>
+                                        <Link className="link" to="/contact" style={{ marginLeft: '10px' }}>Click here</Link>
                                     </span>
+
                                 </div>
                             </div>
                         </section>
@@ -117,8 +120,8 @@ const Overview = () => {
                         </section>
                     </div>
                     {/** Industry Section */}
-                    <IndustrySection/>
-                   {/* <div className="industry-section">
+                    <IndustrySection />
+                    {/* <div className="industry-section">
                         <section className="section">
                             <div className="title">
                                 <h1 className="display-1">We work with 8,500+ organizations of all shapes and sizes</h1>
@@ -347,14 +350,7 @@ const Overview = () => {
                         </section>
                     </div>
 
-                    {/** Contact Section */}
-                    <div className="contact-section">
-                        <section className="section">
-                            <h1 className="display-1">Help your employees stay healthy and happy</h1>
-                            <button className="secondary-btn">Get in touch</button>
 
-                        </section>
-                    </div>
                 </div>
 
             </div>

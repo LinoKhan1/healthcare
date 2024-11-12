@@ -10,6 +10,7 @@ import Swiper_img1 from '../../assets/images/swiper-img1.webp';
 import Swiper_img2 from '../../assets/images/swiper-img2.webp';
 import Swiper_img3 from '../../assets/images/swiper-img3.webp';
 import Swiper_img4 from '../../assets/images/swiper-img4.webp';
+
 const IndustrySection = () => {
     const slidesData = [
         { title: "Education", image: Swiper_img1, content: "Description for Education slide" },
@@ -30,15 +31,8 @@ const IndustrySection = () => {
                 <div className="title">
                     <h1 className="display-1">We work with 8,500+ organizations of all shapes and sizes</h1>
                 </div>
-                
-                <div className="swiper-navigation">
-                    <button className="swiper-button-prev">
-                        <FontAwesomeIcon icon={faArrowCircleLeft} />
-                    </button>
-                    <button className="swiper-button-next">
-                        <FontAwesomeIcon icon={faArrowCircleRight} />
-                    </button>
-                </div>
+
+              
 
                 <Swiper
                     spaceBetween={20}
@@ -50,6 +44,19 @@ const IndustrySection = () => {
                         prevEl: '.swiper-button-prev'
                     }}
                     pagination={{ clickable: true }}
+                    breakpoints={{
+                       
+                        1024:{
+                            slidesPerView:1.5,
+                        },
+                        480:{
+                            slidesPerView: 480,
+                        },
+                        0:{
+                            slidesPerView:1,
+                        },
+
+                    }}
                 >
                     {slidesData.map((slide, index) => (
                         <SwiperSlide key={index}>

@@ -17,62 +17,78 @@ const Results = () => {
     return (
         <div className="result-page">
             <div className="main">
+
                 {/* Hero Section */}
-                <section className="hero-section section">
-                    <div className="row">
-                        <div className="col-lg-7">
-                            <h1 className="display-1">Your Pathway to Enhanced Healthcare</h1>
-                            <span>
-                                <button className="tertiary-btn">Contact Us</button>
-                                <button className="quaternary-btn">Learn More</button>
-                            </span>
+                <div className="hero-section">
+                    <section className="section">
+                        <div className="row">
+                            <div className="col-lg-7">
+                                <h1 className="display-1">Your Pathway to Enhanced Healthcare</h1>
+                                <span>
+                                    <button className="tertiary-btn">Contact Us</button>
+                                    <button className="quaternary-btn">Learn More</button>
+                                </span>
+                            </div>
+                            <div className="col-lg-5"></div>
+
+
                         </div>
-                    </div>
-                </section>
+                    </section>
+
+                </div>
+
 
                 {/* Result Section */}
-                <section className="result-section section">
-                    <div className="title">
-                        <h1 className="display-1">Delivering Healthier Outcomes and Superior Care</h1>
-                    </div>
-                    <RowOfCircles />
+                <section className="result-section">
+                    <section className="section">
+                        <div className="title">
+                            <h1 className="display-1">Delivering Healthier Outcomes and Superior Care</h1>
+                        </div>
+                        <RowOfCircles />
+                    </section>
+
                 </section>
 
                 {/* Illustration Section */}
-                <section className="illustration-section section">
-                    <div className="title">
-                        <h1 className="display-1">Maximize Satisfaction for Employees and Stakeholders</h1>
-                    </div>
-                    <div className="container my-4 row">
-                        {/* Left Column */}
-                        <div className="col-lg-6 text-left">
-                            <h1>8% +</h1>
-                            <h2>Reduction in Overall Care Costs</h2>
-                            <h3>Client: VitalPath Corporate Solutions</h3>
-                            <p>Partnered since 2015; serving over 23,000 individuals across all VitalPath markets.</p>
-                        </div>
+                <div className="illustration-section">
+                    <section className="section">
 
-                        {/* Right Column with Three Sections */}
-                        <div className="col-lg-6">
-                            {[1, 2, 3].map((section) => (
-                                <div key={section} className="sections">
-                                    <div
-                                        className={`section-header d-flex justify-content-between align-items-center ${activeSection === section ? 'active' : ''}`}
-                                        onClick={() => handleSectionClick(section)}
-                                    >
-                                        <h2>{section * 25}%</h2>
-                                        <p>Section {section} Overview</p>
-                                    </div>
-                                    {activeSection === section && (
-                                        <div className="section-body">
-                                            <p>This is the content of section {section}. It provides insights and valuable information.</p>
-                                        </div>
-                                    )}
-                                </div>
-                            ))}
+                        <div className="title">
+                            <h1 className="display-1">Maximize Satisfaction for Employees and Stakeholders</h1>
                         </div>
-                    </div>
-                </section>
+                        <div className="container my-4 row">
+                            {/* Left Column */}
+                            <div className="col-lg-6 text-left">
+                                <h1 className="percentage">8% +</h1>
+                                <h2>Reduction in Overall Care Costs</h2>
+                                <h3>Client: VitalPath Corporate Solutions</h3>
+                                <p>Partnered since 2015; serving over 23,000 individuals across all VitalPath markets.</p>
+                            </div>
+
+                            {/* Right Column with Three Sections */}
+                            <div className="col-lg-6">
+                                {[1, 2, 3].map((section) => (
+                                    <div key={section} className="sections">
+                                        <div
+                                            className={`section-header d-flex justify-content-between align-items-center ${activeSection === section ? 'active' : ''}`}
+                                            onClick={() => handleSectionClick(section)}
+                                        >
+                                            <h2>{section * 25}%</h2>
+                                            <p>Section {section} Overview</p>
+                                        </div>
+                                        {activeSection === section && (
+                                            <div className="section-body">
+                                                <p>This is the content of section {section}. It provides insights and valuable information.</p>
+                                            </div>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
 
                 {/* Metric Section */}
                 <section className="metric-section section">

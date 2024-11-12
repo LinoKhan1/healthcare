@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './business.scss'; // Import the CSS file
+import John_smith_img from '../../assets/images/John_smith_profile.webp';
+import Alicia_johnson_img from '../../assets/images/Alicia_johnson_profile.webp';
+import Jane_doe_img from '../../assets/images/Jane_doe_profile.webp';
 
 const testimonials = [
     {
@@ -7,21 +10,21 @@ const testimonials = [
         name: "Jane Doe",
         title: "Software Engineer",
         testimonial: "I was thoroughly impressed with the level of professionalism and expertise that this company brought to the table. ",
-        image: "https://via.placeholder.com/100"
+        image: Jane_doe_img
     },
     {
         id: 2,
         name: "John Smith",
         title: "Project Manager",
         testimonial: "As a small business owner, finding a reliable partner that understands your vision can be challenging. This team exceeded my expectations in every way.",
-        image: "https://via.placeholder.com/100"
+        image: John_smith_img
     },
     {
         id: 3,
-        name: "Alice Johnson",
+        name: "Alicia Johnson",
         title: "Designer",
         testimonial: "I’ve worked with many service providers, but none have matched the level of care and dedication this team has shown. ",
-        image: "https://via.placeholder.com/100"
+        image: Alicia_johnson_img
     }
 ];
 

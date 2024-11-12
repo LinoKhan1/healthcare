@@ -28,11 +28,14 @@ $circle-bg-color: #4caf50;
     background-color: $primary-color;
 
     .section {
-      padding: 0 0 0 50px;
+      padding: 0px 0px;
+    }
+    .row{
+      padding: 0;
     }
 
     .col-lg-7 {
-      padding: 75px 0 75px 24px;
+      padding: 75px 50px;
 
       span {
         button {
@@ -53,7 +56,7 @@ $circle-bg-color: #4caf50;
     color: $primary-color;
 
     .title {
-      margin-bottom: 50px;
+      margin-bottom: 75px;
     }
 
     .circle-label {
@@ -63,7 +66,6 @@ $circle-bg-color: #4caf50;
 
   // Illustration Section
   .illustration-section {
-    padding: 0 50px;
 
     .title {
       text-align: center;
@@ -212,9 +214,21 @@ $circle-bg-color: #4caf50;
 
   // Media Queries
   @media only screen and (max-width: 768px) {
+    
     .title {
       h1 {
         width: 100%;
+      }
+    }
+
+    // Illustration Section
+    .illustration-section{
+
+      .col-lg-6{
+
+        .percentage{
+          font-size: 6rem;
+          }
       }
     }
   }

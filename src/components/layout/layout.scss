@@ -10,10 +10,16 @@ html {
 .navbar {
     .container-fluid {
         padding: 0 50px;
+
+        ul,a,button,li{
+            margin-bottom: 0px;
+        }
+        
        
         .navbar-brand {
             color: #005450;
             font-size: 3rem;
+            margin-bottom: 0px;
         }
         
     }

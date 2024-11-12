@@ -1,5 +1,6 @@
 // React
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Assets
 import Blog_img1 from '../../assets/images/Blog_img1.webp';
@@ -76,7 +77,9 @@ const Blog = () => {
 
                     <div className="row services-section">
                         <h1 className="display-1">Better Health Starts Here</h1>
-                        <h3>Discover Our Services</h3>
+                        <Link className="links" to="/services">
+                            <h3>Discover Our Services</h3>
+                        </Link>
                     </div>
                     <section className="section">
                         <div className="row row-general">
