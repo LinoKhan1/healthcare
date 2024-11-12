@@ -27,7 +27,6 @@ import 'swiper/css';
 
 // Components
 import TestimonialCarousel from "./TestimonialCarousel";
-import { Pagination } from "react-bootstrap";
 import IndustrySection from "./Swiper.jsx";
 
 
@@ -35,6 +34,18 @@ const Overview = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Vital Path Healthcare - Employee Healthcare Benefits</title>
+                <meta name="description" content="Discover healthcare benefits that prioritize your employees' physical and mental well-being. Learn more about our services including in-network care, virtual care, and mental health support." />
+                <meta name="keywords" content="healthcare benefits, employee wellness, virtual care, mental health support, Vital Path Healthcare" />
+                <meta property="og:title" content="Vital Path Healthcare - Employee Healthcare Benefits" />
+                <meta property="og:description" content="Comprehensive healthcare benefits for your team’s physical and mental well-being. Explore our services today." />
+                <meta property="og:image" content="/path/to/your/social-share-image.jpg" />
+                <meta property="og:url" content="https://yourwebsite.com/overview" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Vital Path Healthcare - Employee Healthcare Benefits" />
+                <meta name="twitter:description" content="Empower your employees with top-tier healthcare benefits tailored to physical and mental well-being." />
+            </Helmet>
             <div className="overview-page">
                 <div className="main">
 
