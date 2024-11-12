@@ -1,6 +1,7 @@
 // React
 import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 
 // Styles & CSS
@@ -52,6 +53,60 @@ const Home = React.memo(() => {
 
     return (
         <div className="home-page">
+            <Helmet>
+                <title>VitalPath - Quality Healthcare at Your Fingertips</title>
+                <meta name="description" content="Experience convenient and personalized healthcare with VitalPath. Join today for affordable, 24/7 on-demand healthcare nationwide." />
+                <meta name="keywords" content="healthcare, on-demand care, vaccinations, children's health, pharmacy services, telemedicine, VitalPath membership" />
+                <link rel="canonical" href="https://vitalpath.com" />
+                <meta property="og:title" content="VitalPath - Quality Healthcare at Your Fingertips" />
+                <meta property="og:description" content="Join VitalPath today to access quality healthcare with convenient, personalized options." />
+                <meta property="og:image" content={Care_one} />
+                <meta property="og:url" content="https://yourwebsite.com/" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="VitalPath - Quality Healthcare at Your Fingertips" />
+                <meta name="twitter:description" content="Join VitalPath today to access quality healthcare with convenient, personalized options." />
+                <meta name="twitter:image" content={Care_one} />
+                {/* JSON-LD Schema Markup for Structured Data */}
+                <script type="application/ld+json">
+                   {/* {{
+                        "@context": "https://schema.org",
+                        "@type": "HealthService",
+                        "name": "VitalPath",
+                        "url": "https://vitalpath.com",
+                        "logo": "https://vitalpath.com/logo.png",
+                        "sameAs": [
+                            "https://www.facebook.com/vitalpath",
+                            "https://twitter.com/vitalpath",
+                            "https://www.linkedin.com/company/vitalpath"
+                        ],
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "+1-800-123-4567",
+                            "contactType": "Customer Service",
+                            "areaServed": "US",
+                            "availableLanguage": "English"
+                        },
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "123 Health St",
+                            "addressLocality": "CityName",
+                            "addressRegion": "StateName",
+                            "postalCode": "12345",
+                            "addressCountry": "US"
+                        },
+                        "serviceType": "On-demand Healthcare, Telemedicine, Vaccinations, Pharmacy Services",
+                        "offers": {
+                            "@type": "Offer",
+                            "url": "https://vitalpath.com/membership",
+                            "priceCurrency": "USD",
+                            "price": "199.00",
+                            "eligibleRegion": "US",
+                            "priceValidUntil": "2025-12-31",
+                            "name": "VitalPath Membership"
+                        }
+                    }}*/}
+                </script>
+            </Helmet>
 
             <div className="main">
                 {/** Hero Section */}
@@ -178,7 +233,7 @@ const Home = React.memo(() => {
                                 <h3>Learn more about VitalPath membership</h3>
                             </div>
                             <div className="col">
-                                <img className="img-fluid" src={Membership} alt="" />
+                                <img className="img-fluid" src={Membership} alt="List of Membership options" />
                             </div>
                         </div>
                         <div className="row join">
@@ -196,7 +251,7 @@ const Home = React.memo(() => {
                     <section className="section">
                         <h1 className="display-1">Why Patients Choose VitalPath</h1>
                         <div className="testimonial-video">
-                            <video width={1200} className="img-fluid" controls>
+                            <video alt="Testimonial video" width={1200} className="img-fluid" controls>
                                 <source src={Medical} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
